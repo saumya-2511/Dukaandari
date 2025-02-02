@@ -140,7 +140,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
 /*=============== SWIPER JS ===============*/
 let swiperCards = new Swiper(".card__content", {
   loop: true,
@@ -167,5 +166,3 @@ let swiperCards = new Swiper(".card__content", {
     },
   },
 });
-
-
