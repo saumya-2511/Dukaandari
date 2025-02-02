@@ -55,6 +55,7 @@ img {
 
 .card__container {
   padding-block: 5rem;
+  padding-top: 50px;
 }
 
 .card__content {
@@ -187,7 +188,7 @@ img {
 /* For large devices */
 @media screen and (min-width: 1120px) {
   .card__container {
-    max-width: 1357px;
+    max-width: 1360px;
   }
 
   .swiper-button-prev {
