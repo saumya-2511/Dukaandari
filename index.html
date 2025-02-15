@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dukaandari</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/test.css">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="/swiper-bundle.min.css">
+
+    <!-- font codes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- ends here  -->
+
+    <script src="https://kit.fontawesome.com/73945c6808.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- form starts here  -->
+
+    <div class="overlay"></div> <!-- This will be used for blurring the background -->
+
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h2>ERP software for <strong>Retailers and Manufacturers</strong></h2>
+        <div class="flex">
+          <div class="flexbox1">
+            <img src="/assests/6505894.jpg" alt="image" />
+            <div class="downbx">
+              <div>
+                <img src="/assests/analytic.png" alt="image" />
+                <h2>Integrated Module</h2>
+              </div>
+              <div>
+                <img src="/assests/computer.png" alt="image" />
+                <h2>POS</h2>
+              </div>
+              <div>
+                <img src="/assests/settings.png" alt="image" />
+                <h2>Efficient working</h2>
+              </div>
+            </div>
+          </div>
+          <div class="flexbox2">
+            <div class="form-container">
+              <h2>Request a Free Demo</h2>
+              <form>
+                <input type="text" placeholder="Name *" required />
+                <input type="text" placeholder="Business Name *" required />
+  
+                <div class="phone-input">
+                  <span class="flag">🇮🇳 +91 ▼</span>
+                  <input
+                    type="tel"
+                    placeholder="Enter Your Contact Number"
+                    required
+                  />
+                </div>
+  
+                <input type="email" placeholder="Email *" required />
+                <input type="text" placeholder="City *" required />
+  
+                <div class="consent">
+                  <input type="checkbox" id="consent" required />
+                  <label for="consent">
+                    I hereby provide my consent to receive emails, phone calls,
+                    messages, and other communications from VasyERP to understand
+                    about Vasy services, offerings, promotions, and other related
+                    information.
+                  </label>
+                </div>
+  
+                <button type="submit">Book a Demo</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- form ends here  -->
+
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false"
+        aria-controls="navbar">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000">
+            <path
+                d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+        </svg>
+    </button>
+
+    <nav id="navbar">
+        <ul>
+            <li>
+                <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                        fill="#000">
+                        <path
+                            d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
+                    </svg>
+                </button>
+            </li>
+            <!-- <li><a href="/index.html"><img src="/assests/dukaandari_logo2-new.png" alt="logoimage"></a></li> -->
+            <li class="home-li"><a class="active-link" aria-current="page" href="/index.html">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="/our_customers.html">Our Customers</a></li>
+            <li><a class="accent-link" href="#">Book a Demo!</a></li>
+            <!-- <li><a class="accent-link" href="#">Signup</a></li> -->
+        </ul>
+    </nav>
+
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+
+
+
+ <div class="hero-section">
+        <div>
+            <h1>Best <b>ERP system</b> <br> for Selling Industry</h1>
+            <p>A complete management system for managing your daily businesses. <br>
+                Take a step towards an innovative billing system
+                <br> for Retailers and Manufacturers
+            </p>
+            <button class="accent-link btn">Transform Business</button>
+
+        </div>
+        <div><img src="/assests/Online 247.jpg" alt="image"></div>
+    </div>
+    <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#3578b3" fill-opacity="1"
+            d="M0,288L80,245.3C160,203,320,117,480,106.7C640,96,800,160,960,181.3C1120,203,1280,181,1360,170.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+        </path>
+    </svg>
+    <div class="bxs">
+
+        <!-- <div class="maincontainer">
+
+            <div class="thecard">
+
+                <div class="thefront front1">
+                    <h2>Retail POS</h2>
+                </div>
+
+                <div class="theback">
+                    <p>A Retail POS (Point of Sale) system is used in stores to process sales, track inventory, and manage transactions. It typically includes: <br>
+                        ✅ Hardware: Barcode scanner, receipt printer, cash drawer, card reader, touchscreen terminal <br>
+                        ✅ Software: Inventory management, sales tracking, customer management, reports & analytics <br>
+                        
+                    </p>
+                </div>
+            </div>
+
+            <div class="thecard">
+
+                <div class="thefront front2">
+                    <h2>Warehouse Management</h2>
+                </div>
+
+                <div class="theback">
+                    <p>✅ Inventory Management: Tracks stock levels, movements, and locations in real-time. <br>
+                        ✅ Order Processing: Automates order picking, packing, and shipping. <br>
+                        ✅ Billing & Invoicing: Generates invoices automatically based on sales and stock movement. <br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="thecard">
+
+                <div class="thefront front3">
+                    <h2>Sales Consolidation</h2>
+                </div>
+
+                <div class="theback">
+                    <p>Sales consolidation in an ERP billing system refers to aggregating sales data from multiple channels, locations, or business units into a unified system for analysis, reporting, and financial reconciliation. This process helps businesses streamline operations, improve decision-making, and enhance financial accuracy.
+                    </p>
+                </div>
+            </div>
+        </div> -->
+    
+
+        <div class="row">
+            <div class="card-box"><b>100+ </b> <p>Engineering Team</p></div>
+            <div class="card-box"><b>24*7</b> <p> Helping Desk</p></div>
+            <div class="card-box"><b>200+ </b> <p>Trusted Customers</p></div>
+            <div class="card-box"><b>200+ </b> <p>Successful Customizations</p></div>
+            <div class="card-box"><b>5+ </b> <p>Industries Serve</p></div>
+        </div>
+    
+    
+    </div> 
+
+    <section class="info">
+        <h2>Have a glimpse, How Dukaandari fits your needs!</h2>
+        <h4>DUKAANDARI</h4>
+
+        <div class="containers">
+            <aside class="HTMList">
+                <div>
+                    <img src="/assests/animated-icons/pos-terminal.gif" alt="image" /><a href="#"
+                        onclick="showContent('content1',event)" id="LinkId1">POS</a>
+                </div>
+                <div class="HTMList2">
+                    <img src="/assests/animated-icons/cloud-network.gif" alt="image" /><a href="#"
+                        onclick="showContent('content2',event)">Omnichannel Platform</a>
+                </div>
+                <div>
+                    <img src="/assests/animated-icons/dashboard.gif" alt="image" /><a href="#"
+                        onclick="showContent('content3',event)">Comprehensive Dashboard</a>
+                </div>
+                <div>
+                    <img src="/assests/animated-icons/line-chart.gif" alt="image" /><a href="#"
+                        onclick="showContent('content4',event)">Inventory Management</a>
+                </div>
+                <div class="HTMList4">
+                    <img src="/assests/animated-icons/worldwide.gif" alt="image" /><a href="#"
+                        onclick="showContent('content5',event)">Reports and Analytics</a>
+                </div>
+                <div>
+                    <img src="/assests/animated-icons/home.gif" alt="image" /><a href="#"
+                        onclick="showContent('content6',event)">User-Friendly Interface</a>
+                </div>
+                <div>
+                    <img src="/assests/animated-icons/diagram.gif" alt="image" /><a href="#"
+                        onclick="showContent('content7',event)">Customizable Features</a>
+                </div>
+            </aside>
+
+            <main class="content">
+                <div class="contents" id="content1">
+                    <h2>
+                        In the context of an ERP (Enterprise Resource Planning) billing
+                        system, a Point of Sale (POS) refers to the module or feature that
+                        handles the transactions where a customer purchases goods or
+                        services. It integrates with the ERP system to provide a seamless
+                        flow of data between sales, inventory, accounting, and other
+                        business operations.
+                    </h2>
+                    <br />
+                    <ul class="key-points">
+                        <li>POS integrates seamlessly with ERP systems.</li>
+                        <li>Real-time inventory updates after each transaction.</li>
+                        <li>
+                            Supports multiple payment methods for customer convenience.
+                        </li>
+                        <li>
+                            Enhances operational efficiency with accurate data
+                            synchronization.
+                        </li>
+                        <li>Provides tax-compliant invoicing and reporting.</li>
+                    </ul>
+                </div>
+
+                <div class="contents" id="content2">
+                    <h2>
+                        Omnichannel strategies enable businesses to meet modern customer
+                        expectations by delivering a consistent, personalized, and
+                        convenient experience. It leverages technology and data
+                        integration to foster engagement, boost sales, and enhance
+                        loyalty.
+                    </h2>
+                    <br />
+                    <h3 style="margin-bottom: 20px">Key Features</h3>
+                    <ul class="key-points">
+                        <li>Unified Customer Experience.</li>
+                        <li>Integration Across Channels.</li>
+                        <li>Personalized Customer Engagement.</li>
+                        <li>Enhanced Customer Convenience.</li>
+                        <li>Improved Customer Retention.</li>
+                        <li>Data-Driven Insights.</li>
+                        <li>Challenges in Implementation.</li>
+                    </ul>
+                </div>
+
+                <div class="contents" id="content3">
+                    <h2>Key Features of Comprehensive Dashboard</h2>
+                    <ul class="key-points">
+                        <li>
+                            Clearly define the dashboard's purpose and what decisions it
+                            supports.
+                        </li>
+                        <li>
+                            Focus on essential metrics that align with business objectives.
+                        </li>
+                        <li>
+                            Ensure the data presented is reliable, up-to-date, and
+                            validated.
+                        </li>
+                        <li>
+                            Tailor the dashboard to the audience, considering their roles
+                            and needs.
+                        </li>
+                        <li>
+                            Organize data in a logical and user-friendly structure. Group
+                            similar metrics together.
+                        </li>
+                        <li>
+                            Use appropriate charts (e.g., bar, line, pie) to convey insights
+                            effectively.
+                        </li>
+                        <li>
+                            Display live or near-real-time data for time-sensitive
+                            decision-making.
+                        </li>
+                        <li>
+                            Allow users to explore detailed data by interacting with
+                            summarized metrics.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contents" id="content4">
+                    <h2>Key Features of Comprehensive Dashboard</h2>
+                    <ul class="key-points">
+                        <li>
+                            Align inventory management with customer demand to improve
+                            service levels and reduce delivery times.
+                        </li>
+                        <li>Actionable Insights and Alerts.</li>
+                        <li>Compliance and Reporting.</li>
+                        <li>
+                            Ensure centralized visibility of stock for businesses managing
+                            multiple sales channels, warehouses, or fulfillment centers.
+                        </li>
+                        <li>
+                            Implement software solutions, IoT devices, and AI-driven tools
+                            for tasks like inventory tracking, analytics, and process
+                            automation.
+                        </li>
+                        <li>Inventory Optimization.</li>
+                        <li>
+                            Maintain strong relationships with reliable suppliers to ensure
+                            timely deliveries and negotiate favorable terms.
+                        </li>
+                        <li>
+                            Reduce expenses associated with storing inventory, such as rent,
+                            utilities, and depreciation, by optimizing stock levels.
+                        </li>
+                    </ul>
+                </div>
+                <div class="contents" id="content5">
+                    <h2>Reports and Analytics</h2>
+                    <ul class="key-points">
+                        <li>Real-Time Reporting.</li>
+                        <li>Customizable Dashboards.</li>
+                        <li>Predefined and Ad-Hoc Reports.</li>
+                        <li>Data Integration Across Modules.</li>
+                        <li>Compliance and Regulatory Reporting.</li>
+                        <li>Error Detection and Anomaly Alerts.</li>
+                        <li>Data Accuracy and Consistency.</li>
+                        <li>Scalability for Large Data Sets.</li>
+                        <li>Historical Data Analysis.</li>
+                        <li>User-Friendly Interface.</li>
+                    </ul>
+                </div>
+                <div class="contents" id="content6">
+                    <h2>User-Friendly Interface</h2>
+                    <h2>
+                        A user-friendly interface is designed to prioritize ease of use,
+                        ensuring users can interact with a system effortlessly. It
+                        features intuitive navigation, clear labels, and logical layouts
+                        that guide users seamlessly through tasks. Consistent design
+                        elements, such as fonts, colors, and icons, create familiarity and
+                        reduce confusion. Responsive functionality ensures accessibility
+                        across devices, including desktops, tablets, and smartphones.
+                        Error messages are clear and actionable, helping users resolve
+                        issues quickly. Minimal loading times and clutter-free designs
+                        enhance efficiency. Overall, a user-friendly interface focuses on
+                        simplifying complex processes, improving user satisfaction, and
+                        ensuring an enjoyable, productive experience for all users.
+                    </h2>
+                </div>
+                <div class="contents" id="content7">
+                    <h2>Customizable Features</h2>
+                    <ul class="key-points">
+                        <li>Customizable Invoice Templates.</li>
+                        <li>Flexible Tax Configuration.</li>
+                        <li>Adjustable Pricing Rules and Discounts.</li>
+                        <li>User-Defined Payment Terms.</li>
+                        <li>Multi-Currency and Multi-Language Support.</li>
+                        <li>Role-Based Access Control.</li>
+                        <li>Customizable Reports and Analytics .</li>
+                        <li>Integration with Third-Party Applications .</li>
+                        <li>Scalable Modules for Business Growth.</li>
+                        <li>Custom Fields for Unique Business Needs.</li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+
+    </section>
+
+    <div id="dkndari">
+        <h2>Why Choose Dukaandari?</h2>
+        <h3>Dukaandari: Empowering Your Business, Simplifying Your Operations</h3>
+        <p>
+            Streamline your business processes with our cutting-edge ERP system.
+            From inventory management to analytics, our solution integrates all
+            operations into a single platform, enhancing efficiency, improving
+            decision-making, and driving growth with real-time insights and
+            customizable features..
+        </p>
+
+        <button>Book a demo!</button>
+    </div>
+
+    <section class="mobile">
+        <div class="flex1">
+            <h2 style="font-size: 28px;">Run your business by your mobile</h2>
+            <h3>Experience Seamless Operations on the Go</h3>
+            <p>"Manage billing and inventory seamlessly from your mobile device. Create invoices, track stock levels,
+                and monitor sales in real-time, all on the go. Stay in control of your business with a user-friendly
+                interface and instant accessibility anywhere, anytime."</p>
+
+            <button>Book a free Demo</button>
+        </div>
+        <div class="data">
+            <img src="/assests/Untitled design (1).png" alt="image">
+            <div>
+    </section>
+
+    <div class="pricing">
+        <h2>Simple and Transparent Pricing</h2>
+        <h3>Choose a Plan That Fits Your Business Needs</h3>
+        <div class="plans">
+            <div class="plan">
+                <h4><img src="/assests/send.png">Basic</h4>
+                <p>For small businesses</p>
+                <h2>₹ 999/month</h2>
+                <h5>Price/Month Billed Annually</h5>
+                <ul>
+                    <li>Inventory Management</li>
+                    <li>POS Integration</li>
+                    <li>Basic Reporting</li>
+                    <li>Customer Support</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+            <div class="plan">
+                <h4><img src="/assests/badge.png">Standard</h4>
+                <p>For growing businesses</p>
+                <h2>₹ 1999/month</h2>
+                <h5>Price/Month Billed Annually</h5>
+                <ul>
+                    <li>Advanced Inventory</li>
+                    <li>CRM Integration</li>
+                    <li>Custom Reports</li>
+                    <li>24/7 Support</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+            <div class="plan">
+                <h4><img src="/assests/crown.png">Premium</h4>
+                <p>For established businesses</p>
+                <h2>₹ 2999/month</h2>
+                <h5>Price/Month Billed Annually</h5>
+                <ul>
+                    <li>Full Suite of Features</li>
+                    <li>API Access</li>
+                    <li>Custom Development</li>
+                    <li>Dedicated Account Manager</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="customers">
+        <h2>Don’t just take our words for it, See what customers like you are saying </h2>
+
+
+        <div class="card__container swiper">
+            <div class="card__content">
+                <div class="swiper-wrapper">
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="/assests/4529.jpg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <p class="card__description">
+                                Dukaandari has completely transformed my retail business! Managing inventory,
+                                tracking sales, and handling accounts have become so easy. The user-friendly
+                                interface and automated reports save me hours of manual work. Customer support is
+                                also fantastic, always quick to resolve any queries. The best part is the
+                                affordability compared to other ERP systems. I highly recommend Dukaandari to any
+                                business looking for efficiency and growth.
+                            </p>
+                            <strong>-By Rahul Gupta</strong> <br> <br>
+
+                            <a href="#" class="card__button">View More</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="assests/264816-P57YFF-396.jpg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <p class="card__description">
+                                I've been using Dukaandari for my small store, and it's been a
+                                game-changer. The real-time inventory tracking ensures I never run out of stock, and
+                                the sales insights help me make better decisions. The system is very easy to use,
+                                even for someone like me with limited technical knowledge. Plus, their customer
+                                service is excellent, always responsive and helpful. Dukaandari is a must-have for
+                                any retailer!
+                            </p>
+                            <strong>-By Pooja Sharma</strong> <br> <br>
+
+                            <a href="#" class="card__button">View More</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="assests/7939485.jpg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <p class="card__description">
+                                As a wholesaler, I struggled with inventory and order management before Dukaandari.
+                                This ERP has streamlined everything for me! Now, I can manage my suppliers, track
+                                orders, and generate invoices effortlessly. The dashboard gives me a clear view of
+                                my business performance, making planning much easier. It’s an affordable yet
+                                powerful solution for any business owner looking to simplify operations. Highly
+                                recommended!
+                            </p>
+                            <strong>-By Ankit Verma</strong> <br> <br>
+
+                            <a href="#" class="card__button">View More</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="assests/OIUG2I0.jpg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <p class="card__description">
+                                Dukaandari is a blessing for my online and offline store management. It syncs my
+                                inventory across platforms, reducing errors and improving efficiency. The automated
+                                GST calculations save me from tax-related headaches, and the reporting tools provide
+                                deep insights into my business. It’s a very reliable ERP system, and I appreciate
+                                how frequently they update features based on user feedback. Great investment!
+                            </p>
+                            <strong>-By Sneha Kapoor</strong> <br> <br>
+
+                            <a href="#" class="card__button">View More</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="assests/3538433.jpg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <p class="card__description">
+                                I own a store, and Dukaandari has made managing my stock so much easier.
+                                Earlier, I had trouble keeping track of fast-moving items, but now I get alerts
+                                before running out. The system also helps me track customer orders and payments,
+                                reducing errors. It’s a simple but highly effective tool for business owners. The
+                                customer support team is also very helpful and patient.
+                            </p>
+                            <strong>-By Ramesh Gupta</strong> <br> <br>
+
+                            <a href="#" class="card__button">View More</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next">
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+
+            <div class="swiper-button-prev">
+                <i class="ri-arrow-left-s-line"></i>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+
+
+    <section class="faq">
+        <img src="/assests/faq.png" alt="image">
+        <h2>Frequently Asked Questions</h2>
+        <div class="data">
+            <div class="slide">
+                <h3>1. What is an ERP billing omnichannel application, and why is it important?</h3>
+                <p>An ERP (Enterprise Resource Planning) billing omnichannel application is a unified software system
+                    designed to manage and automate billing processes across multiple sales channels, such as online
+                    stores, physical retail outlets, and mobile platforms.
+
+                    Its importance lies in its ability to centralize data and operations. Businesses often face
+                    challenges in synchronizing transactions across diverse channels, which can lead to errors,
+                    inefficiencies, and poor customer experiences. An omnichannel ERP resolves these issues by ensuring
+                    consistency in pricing, tax calculations, and invoicing while providing a 360-degree view of
+                    financial data. This centralization enhances decision-making and streamlines operations.
+
+                    For example, a retail chain can use an omnichannel ERP to handle in-store purchases, online orders,
+                    and app transactions seamlessly, ensuring that inventory, pricing, and customer details are
+                    synchronized across all platforms.</p>
+            </div>
+            <div class="slide">
+                <h3>2. How does an omnichannel ERP billing system ensure data accuracy?
+                </h3>
+                <p>Data accuracy in omnichannel ERP systems is achieved through real-time synchronization of
+                    information. The system updates and shares inventory, sales, and customer data across all connected
+                    channels simultaneously. This reduces the risk of discrepancies, such as double billing or inventory
+                    mismatches.
+
+                    Key features include:
+
+                    Real-time Data Updates: Any transaction, whether online or offline, immediately reflects in the
+                    system, ensuring data consistency.
+                    Centralized Database: A unified database prevents conflicting information from being generated in
+                    different channels.
+                    Audit Trails: ERP systems often include logging mechanisms that allow administrators to track and
+                    verify changes, ensuring accountability.
+                    For instance, if a customer purchases a product online and opts for in-store pickup, the system
+                    updates inventory levels for both channels instantaneously. This minimizes errors and enhances
+                    operational efficiency.
+
+                </p>
+            </div>
+            <div class="slide">
+                <h3>3. What integrations are available with an ERP billing omnichannel application?</h3>
+                <p>Integrations are a core strength of ERP systems, allowing businesses to extend their functionalities
+                    by connecting with other tools and platforms. Common integrations include:
+
+                    Customer Relationship Management (CRM): CRM integration helps track customer interactions and
+                    personalize experiences. For example, if a customer purchases from a physical store, their
+                    preferences can be recorded and used for targeted online marketing.
+                    Inventory Management Systems: These ensure that stock levels are updated across all channels in
+                    real-time.
+                    Payment Gateways: ERP applications integrate with multiple payment processors, such as Stripe,
+                    PayPal, and local options, ensuring flexibility in transactions.
+                    E-commerce Platforms: Popular platforms like Shopify, WooCommerce, and Magento can be integrated for
+                    seamless online store management.
+                    Accounting Tools: Integration with accounting software like QuickBooks or Tally helps streamline
+                    financial reporting and compliance.
+                    By leveraging these integrations, businesses can create a cohesive ecosystem that supports all their
+                    operational needs.</p>
+            </div>
+            <div class="slide">
+                <h3>4. Can the system handle tax compliance across regions?</h3>
+                <p>Yes, modern ERP billing systems are equipped to manage tax compliance for multiple jurisdictions.
+                    They are pre-configured with regional tax regulations such as GST (Goods and Services Tax) in India,
+                    VAT (Value Added Tax) in Europe, or sales tax in the United States. Additionally, many systems allow
+                    custom tax configurations to adapt to specific business needs.
+
+                    Key features include:
+
+                    Automatic tax calculation based on customer location.
+                    Tax-inclusive and tax-exclusive pricing options.
+                    Filing and reporting tools to simplify compliance audits.
+                    This functionality is particularly useful for businesses operating across state or country lines,
+                    where tax rules may vary significantly.</p>
+            </div>
+            <div class="slide">
+                <h3>5. How secure is the application?</h3>
+                <p>Security is a major consideration in ERP systems, particularly for billing applications handling
+                    sensitive customer data and payment information. Key security measures include:
+
+                    Data Encryption: Ensures that transaction details and personal data are protected during
+                    transmission.
+                    Role-based Access Control (RBAC): Restricts access based on user roles, ensuring that only
+                    authorized personnel can view or modify sensitive data.
+                    Regular Updates: Vendors often release updates to address vulnerabilities and enhance system
+                    security.
+                    Compliance Standards: Most ERP systems adhere to regulatory frameworks like PCI DSS (for payment
+                    data security) and GDPR (for data privacy in the EU).
+                    Investing in a secure ERP ensures customer trust and prevents financial losses from breaches.
+                </p>
+            </div>
+            <div class="slide">
+                <h3>6. Does the ERP system provide analytics and reporting?</h3>
+                <p>Yes, ERP billing systems include robust analytics and reporting tools to help businesses make
+                    informed decisions. Dashboards display key performance indicators (KPIs) such as:
+
+                    Total sales and revenue by channel.
+                    Customer acquisition and retention metrics.
+                    Inventory turnover rates.
+                    Regional or product-specific performance.
+                    Customizable reports allow businesses to drill down into data, identify trends, and optimize
+                    operations. For example, a retailer can analyze which channels contribute the most to revenue and
+                    adjust strategies accordingly.</p>
+            </div>
+        </div>
+
+        <div class="nav">
+            <button onclick="goPrev()"><img src="/assests/back-button.png" alt=""></button>
+            <button onclick="goNext()"><img src="/assests/right.png" alt=""></button>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <div style="display: flex;flex-direction: column;align-items: center; margin-bottom: 20px;">
+                <h3 style="letter-spacing: 17px; font-size: 23px;">DUKAANDARI</h3>
+                <div><i class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-facebook-messenger"></i><i
+                        class="fa-brands fa-square-x-twitter"></i><i class="fa-brands fa-linkedin"></i></div>
+            </div>
+            <div>
+                <p>Dukaandari ERP is a comprehensive enterprise resource planning system designed to streamline and
+                    automate business operations. It offers modules for inventory management, sales tracking, billing,
+                    accounting, customer relationship management (CRM), and supplier coordination. Tailored for small to
+                    medium-sized enterprises (SMEs), Dukaandari simplifies daily workflows, enhances decision-making
+                    with real-time data insights, and boosts overall operational efficiency. Its user-friendly interface
+                    and customizable features make it accessible for businesses across industries, from retail to
+                    wholesale. With Dukaandari, businesses can reduce manual tasks, minimize errors, and achieve better
+                    control over their processes, leading to increased productivity and profitability.</p>
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li>Omnichannel</li>
+                    <li>POS</li>
+                    <li>Retail Stores</li>
+                    <li>ERP Software</li>
+                </ul>
+                <ul>
+                    <li>Partners</li>
+                    <li>How it works??</li>
+                    <li>Clients Feedback</li>
+                    <li>Smart Retail</li>
+                </ul>
+                <ul>
+                    <li>About</li>
+                    <li>Contact us</li>
+                    <li>Career</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+                <div style="color: black; ">
+                    <li style="display: flex; align-items: center; gap: 12px;"><i class="fa-solid fa-envelope"></i>
+                        <h4>mail@dukaandari.com</h4>
+                    </li>
+                    <li style="display: flex; align-items: center; gap: 12px;"><i class="fa-solid fa-phone"></i>
+                        <h4>+91-8521454900</h4>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <strong>© 2024 Dukaandari</strong>
+    </footer>
+
+
+
+    <!-- || -->
+    <script>
+        const openButton = document.getElementById('open-sidebar-button')
+        const navbar = document.getElementById('navbar')
+
+        const media = window.matchMedia("(width < 700px)")
+
+        media.addEventListener('change', (e) => updateNavbar(e))
+
+        function updateNavbar(e) {
+            const isMobile = e.matches
+            console.log(isMobile)
+            if (isMobile) {
+                navbar.setAttribute('inert', '')
+            }
+            else {
+                // desktop device
+                navbar.removeAttribute('inert')
+            }
+        }
+
+        function openSidebar() {
+            navbar.classList.add('show')
+            openButton.setAttribute('aria-expanded', 'true')
+            navbar.removeAttribute('inert')
+        }
+
+        function closeSidebar() {
+            navbar.classList.remove('show')
+            openButton.setAttribute('aria-expanded', 'false')
+            navbar.setAttribute('inert', '')
+        }
+
+        updateNavbar(media)
+
+    </script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- form script  -->
+
+    <script>
+        window.addEventListener("load", function () {
+          setTimeout(function open(event) {
+            document.querySelector(".popup").style.display = "block";
+            document.querySelector(".overlay").classList.add("active");
+          }, 1000);
+        });
+  
+        document.querySelector("#close").addEventListener("click", function () {
+          document.querySelector(".popup").style.display = "none";
+          document.querySelector(".overlay").classList.remove("active");
+        });
+      </script>
+</body>
+
+</html>

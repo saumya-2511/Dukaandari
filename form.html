@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a demo</title>
+  </head>
+
+  <style>
+    *,
+    *:before,
+    *:after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Plus Jakarta Sans", sans-serif;
+    }
+    .popup {
+      background-color: #fff;
+      width: 70%;
+      /* padding: 30px 40px; */
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      border-radius: 8px;
+      font-family: "Poppins", sans-serif;
+      display: none;
+      /* border: 2px solid red; */
+      box-shadow: 10px 10px 30px rgb(178, 180, 182);
+      height: 90vh;
+    }
+    /* .popup button {
+      display: block;
+      margin: 0 0 20px auto;
+      background-color: transparent;
+      font-size: 30px;
+      color: #c5c5c5;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    } */
+    .popup>button {
+        background-color: transparent;
+  font-size: 30px;
+  /* color: #2c5ba4; */
+  color: #259694;
+  cursor: pointer;
+  position: relative;
+  left: 68vw;
+  bottom: 29px;
+}
+    .popup p {
+      font-size: 14px;
+      text-align: justify;
+      margin: 20px 0;
+    }
+    a {
+      width: 150px;
+      display: block;
+      position: relative;
+      margin: auto;
+      text-align: center;
+      background-color: #0f72e5;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 5px 0;
+    }
+    .flexbox1 {
+      display: flex;
+      flex-direction: column;
+      img {
+        height: 292px;
+      }
+    }
+    .downbx {
+      display: flex;
+      justify-content: center;
+      gap: 34px;
+    }
+    .downbx > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        font-size: 13px;
+        text-align: center;
+      }
+    }
+    .downbx img {
+      height: 50px;
+      /* background-color: #6fa3d1; */
+      background-color: #d16f6f;
+      padding: 18px;
+      display: block;
+      height: 77px;
+      border-radius: 50%;
+      margin-bottom: 12px;
+      margin: 12px 0;
+    }
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+    flex-wrap: wrap;
+}
+
+    .form-container {
+      /* background: white; */
+      background: #f7f7f7;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+
+  .flexbox2 h2 {
+      /* color: #3e7cb3; */
+      color: #259694;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .phone-input {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      background: white;
+      margin-bottom: 10px;
+    }
+
+    .phone-input > input{
+        margin-bottom: 0;
+    }
+    .phone-input .flag {
+      background: #f1f1f1;
+      padding: 10px;
+      font-size: 14px;
+      border-right: 1px solid #ccc;
+      white-space: nowrap;
+    }
+
+    .phone-input input {
+      border: none;
+      flex: 1;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    .consent {
+      display: flex;
+      align-items: flex-start;
+      font-size: 12px;
+      text-align: left;
+      margin-bottom: 15px;
+    }
+
+    .consent input {
+      /* margin-right: 10px; */
+	width: 25%;
+    }
+
+    button {
+      /* background-color: #0074d9; */
+      background-color: #259694;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* button:hover {
+      background-color: #005bb5;
+    } */
+    .popup > h2 {
+	text-align: center;
+	margin-top: -28px;
+	margin-bottom: 31px;
+}
+strong{
+    /* color: #2c5ba4; */
+    color: #d16f6f;
+}
+  </style>
+  <body>
+    <div class="popup">
+      <button id="close">&times;</button>
+      <h2>ERP software for <strong>Retailers and Manufacturers</strong></h2>
+      <div class="flex">
+        <div class="flexbox1">
+          <img src="/assests/6505894.jpg" alt="image" />
+          <div class="downbx">
+            <div>
+              <img src="/assests/analytic.png" alt="image" />
+              <h2>Integrated Module</h2>
+            </div>
+            <div>
+              <img src="/assests/computer.png" alt="image" />
+              <h2>POS</h2>
+            </div>
+            <div>
+              <img src="/assests/settings.png" alt="image" />
+              <h2>Efficient working</h2>
+            </div>
+          </div>
+        </div>
+        <div class="flexbox2">
+          <div class="form-container">
+            <h2>Request a Free Demo</h2>
+            <form>
+              <input type="text" placeholder="Name *" required />
+              <input type="text" placeholder="Business Name *" required />
+
+              <div class="phone-input">
+                <span class="flag">🇮🇳 +91 ▼</span>
+                <input
+                  type="tel"
+                  placeholder="Enter Your Contact Number"
+                  required
+                />
+              </div>
+
+              <input type="email" placeholder="Email *" required />
+              <input type="text" placeholder="City *" required />
+
+              <div class="consent">
+                <input type="checkbox" id="consent" required />
+                <label for="consent">
+                  I hereby provide my consent to receive emails, phone calls,
+                  messages, and other communications from VasyERP to understand
+                  about Vasy services, offerings, promotions, and other related
+                  information.
+                </label>
+              </div>
+
+              <button type="submit">Book a Demo</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener("load", function () {
+        setTimeout(function open(event) {
+          document.querySelector(".popup").style.display = "block";
+        }, 1000);
+      });
+      document.querySelector("#close").addEventListener("click", function () {
+        document.querySelector(".popup").style.display = "none";
+      });
+    </script>
+  </body>
+</html>

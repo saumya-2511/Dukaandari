@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Selected Link</title>
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        /* General Styles */
+        .containers {
+            display: flex;
+        }
+
+        aside {
+            width: 20%;
+            padding: 10px;
+        }
+
+        main {
+            width: 80%;
+            padding: 10px;
+        }
+
+        .HTMList div {
+            margin-bottom: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+            position: relative;
+        }
+
+        a:hover,
+        a.active {
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #007BFF;
+        }
+
+        .contents {
+            display: none;
+        }
+
+        .contents.active {
+            display: block;
+        }
+
+        /* Highlight active link and hide/show content */
+        .HTMList a.active-link {
+            font-weight: bold;
+            color: #007BFF;
+            /* Highlighted color */
+            text-decoration: underline;
+        }
+
+        .contents {
+            display: none;
+        }
+
+        .contents.active-content {
+            display: block;
+        }
+    </style>
+    <script>
+        function showContent(contentId) {
+            var contentSections = document.getElementsByClassName("contents");
+            var links = document.querySelectorAll(".HTMList a");
+
+            // Reset all content and links
+            for (var i = 0; i < contentSections.length; i++) {
+                contentSections[i].classList.remove("active-content");
+            }
+            links.forEach((link) => link.classList.remove("active-link"));
+
+            // Activate selected content and link
+            var selectedContent = document.getElementById(contentId);
+            var activeLink = document.querySelector(`.HTMList a[onclick="showContent('${contentId}')"]`);
+
+            if (selectedContent) {
+                selectedContent.classList.add("active-content");
+            }
+            if (activeLink) {
+                activeLink.classList.add("active-link");
+            }
+        }
+
+        // Set default active link and content on page load
+        document.addEventListener("DOMContentLoaded", function () {
+            const defaultContentId = "content1"; // ID of the first content
+            showContent(defaultContentId);
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="containers">
+        <aside class="HTMList">
+            <div>
+                <img src="/assests/animated-icons/pos-terminal.gif" alt="image">
+                <a href="#" onclick="showContent('content1')" id="LinkId1">POS</a>
+            </div>
+            <div style="position: relative; top: 67px;">
+                <img src="/assests/animated-icons/cloud-network.gif" alt="image">
+                <a href="#" onclick="showContent('content2')">Omnichannel Platform</a>
+            </div>
+            <div>
+                <img src="/assests/animated-icons/dashboard.gif" alt="image">
+                <a href="#" onclick="showContent('content3')">Comprehensive Dashboard</a>
+            </div>
+            <div>
+                <img src="/assests/animated-icons/line-chart.gif" alt="image">
+                <a href="#" onclick="showContent('content4')">Inventory Management</a>
+            </div>
+            <div style="position: relative;top: 64px;">
+                <img src="/assests/animated-icons/worldwide.gif" alt="image">
+                <a href="#" onclick="showContent('content5')">Reports and Analytics</a>
+            </div>
+            <div>
+                <img src="/assests/animated-icons/home.gif" alt="image">
+                <a href="#" onclick="showContent('content6')">User-Friendly Interface</a>
+            </div>
+            <div>
+                <img src="/assests/animated-icons/diagram.gif" alt="image">
+                <a href="#" onclick="showContent('content7')">Customizable Features</a>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="contents" id="content1">
+                <h2>POS Content</h2>
+                <p>Description of the POS feature...</p>
+            </div>
+
+            <div class="contents" id="content2">
+                <h2>Omnichannel Platform Content</h2>
+                <p>Description of the Omnichannel Platform feature...</p>
+            </div>
+
+            <div class="contents" id="content3">
+                <h2>Comprehensive Dashboard Content</h2>
+                <p>Description of the Comprehensive Dashboard feature...</p>
+            </div>
+
+            <div class="contents" id="content4">
+                <h2>Inventory Management Content</h2>
+                <p>Description of the Inventory Management feature...</p>
+            </div>
+
+            <div class="contents" id="content5">
+                <h2>Reports and Analytics Content</h2>
+                <p>Description of the Reports and Analytics feature...</p>
+            </div>
+
+            <div class="contents" id="content6">
+                <h2>User-Friendly Interface Content</h2>
+                <p>Description of the User-Friendly Interface feature...</p>
+            </div>
+
+            <div class="contents" id="content7">
+                <h2>Customizable Features Content</h2>
+                <p>Description of the Customizable Features feature...</p>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>||Dukaandari-OurCustomers||</title>
+    <link rel="shortcut icon" href="/assests/dukaandari_logo2-new.png" type="image/x-icon">
+    <link rel="stylesheet" href="our_customers.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/test.css">
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false"
+        aria-controls="navbar">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000">
+            <path
+                d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+        </svg>
+    </button>
+
+    <nav id="navbar">
+        <ul>
+            <li>
+                <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                        fill="#000">
+                        <path
+                            d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
+                    </svg>
+                </button>
+            </li>
+            <!-- <li><a href="/index.html"><img src="/assests/dukaandari_logo2-new.png" alt="logoimage"></a></li> -->
+            <li class="home-li"><a class="active-link" aria-current="page" href="nav.html">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">Our Customers</a></li>
+            <li><a class="accent-link" href="#">Login</a></li>
+            <li><a class="accent-link" href="#">Signup</a></li>
+        </ul>
+    </nav>
+
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+
+    <header>
+        <div class="header-container">
+            <div class="header-content">
+                <h1>Our Customers</h1>
+                <b>Success Stories of an ERP System: Empowering Businesses Worldwide</b>
+                <p>Join the thousands of innovative businesses that trust Dukaandari to run their business.</p>
+                <p>
+                    ERP systems have revolutionized the way businesses operate, enabling them to streamline processes,
+                    improve efficiency, and make data-driven decisions. Customers from various industries have
+                    experienced remarkable transformations through the implementation of ERP solutions.
+                    <br>
+                    Retailers have enhanced inventory management by gaining real-time visibility into stock levels,
+                    reducing overstock and stockouts. With seamless integrations across departments, manufacturing
+                    companies have optimized production schedules, ensuring timely delivery and reduced costs.
+                    Service-based businesses have seen improved customer satisfaction through efficient resource
+                    allocation and faster response times.
+            </div>
+            <button>Talk To our expert!</button>
+        </div>
+
+        <div class="header-image">
+            <!-- <a href="#"><img src="/assests/grocery-store-with-fruits-vegetables-shopping-variety-tastes_1204564-5376.avif" alt=""></a> -->
+            <span class="cd-1"><img src="/assests/7510951.jpg" alt="image" class="md1"></span>
+            <span class="cd-2"><img src="/assests/4529.jpg" alt="image" class="md2"></span>
+            <span class="cd-3"><img src="/assests/7939485.jpg" alt="image" class="md3"></span>
+            <span class="cd-4"><img src="/assests/57206-O97UOA-740.jpg" alt="image" class="md4"></span>
+            <span class="cd-5"><img src="/assests/6631237.jpg" alt="image" class="md5"></span>
+            <span class="cd-6"><img src="/assests/3538433.jpg" alt="image" class="md6"></span>
+            <span class="cd-7"><img src="/assests/OIUG2I0.jpg" alt="image" class="md7"></span>
+            <span class="cd-8"><img src="/assests/264816-P57YFF-396.jpg" alt="image" class="md8"></span>
+        </div>
+    </header>
+
+    <div class="exp">
+        <div class="dv">
+            <h2>5</h2>
+        </div>
+        <div class="inner-dv">
+            <h3>Years of Experience</h3>
+            <p>With over 5 years of experience in the industry, we have developed a deep understanding of the
+                challenges faced by businesses and the solutions needed to overcome them.</p>
+            <button>Book a Demo!</button>
+        </div>
+        <div class="grid">
+            <div style="border-right: 1px solid;border-bottom: 1px solid;"><strong>100+</strong>
+                <p>Employee</p>
+            </div>
+            <div style="border-bottom: 1px solid;"><strong>10</strong>
+                <p>Awards win</p>
+            </div>
+            <div style="border-right: 1px solid;"><strong>40</strong>
+                <p>consultants</p>
+            </div>
+            <div><strong>100+</strong>
+                <p>Businesses</p>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div style="flex: 1;">
+            <h2>Get More With Us</h2>
+            <div class="containers">
+                <aside class="HTMList">
+                    <div>
+                        <a href="#" onclick="showContent('content1',event)" id="LinkId1">01</a>
+                    </div>
+                    <div>
+                        <a href="#" onclick="showContent('content2',event)">02</a>
+                    </div>
+                    <div>
+                        <a href="#" onclick="showContent('content3',event)">03</a>
+                    </div>
+                    <div>
+                        <a href="#" onclick="showContent('content4',event)">04 </a>
+                    </div>
+                </aside>
+
+                <main class="content">
+                    <div class="contents" id="content1">
+                        <h2>
+                            CUSTOMER SERVICE
+                        </h2>
+                      <p>Every customer of DreamSoft can get access to our friendly and qualified 24/7 support via chat or phone. Feel free to ask us any questions!</p>
+                      <span><button class="btn1">Get in touch</button></span><span><button class="btn2">Book a demo</button></span>
+                    </div>
+
+                    <div class="contents" id="content2">
+                        <h2>
+                            GREAT USABILITY
+                        </h2>
+                      <p>All our apps are designed to have great usability in order to easily operate our applications. That is why our software has high ratings and lots of awards.</p>
+                      <span><button class="btn1">Get in touch</button></span><span><button class="btn2">Book a demo</button></span>
+                    </div>
+
+                    <div class="contents" id="content3">
+                        <h2>
+                            CUSTOMER SERVICE
+                        </h2>
+                      <p>Every customer of DreamSoft can get access to our friendly and qualified 24/7 support via chat or phone. Feel free to ask us any questions!</p>
+                      <span><button class="btn1">Get in touch</button></span><span><button class="btn2">Book a demo</button></span>
+                    </div>
+
+                    <div class="contents" id="content4">
+                        <h2>
+                            CUSTOMER SERVICE
+                        </h2>
+                      <p>Every customer of DreamSoft can get access to our friendly and qualified 24/7 support via chat or phone. Feel free to ask us any questions!</p>
+                      <span><button class="btn1">Get in touch</button></span><span><button class="btn2">Book a demo</button></span>
+                    </div>
+
+                </main>
+            </div>
+        </div>
+        <div>
+            <img src="/assests/combined.png" alt="Image">
+        </div>
+    </main>
+    <section style="padding-top: 60px;text-align: center;color: black;height: 121vh;">
+        <h2 class="ed">Our Customers</h2>
+        <i style="letter-spacing: 3px; font-weight: 600;color: #3d6588;">Making Dukaandari a reliable and trustable
+            System among Customers</i>
+        <section class="container">
+            <!-- <h2>Our Customers</h2> -->
+            <div class="card__container swiper">
+                <div class="card__content">
+                    <div class="swiper-wrapper">
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="/assests/4529.jpg" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <p class="card__description">
+                                    Dukaandari has completely transformed my retail business! Managing inventory,
+                                    tracking sales, and handling accounts have become so easy. The user-friendly
+                                    interface and automated reports save me hours of manual work. Customer support is
+                                    also fantastic, always quick to resolve any queries. The best part is the
+                                    affordability compared to other ERP systems. I highly recommend Dukaandari to any
+                                    business looking for efficiency and growth.
+                                </p>
+                                <strong>-By Rahul Gupta</strong> <br> <br>
+
+                                <a href="#" class="card__button">View More</a>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assests/264816-P57YFF-396.jpg" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <p class="card__description">
+                                    I've been using Dukaandari for my small store, and it's been a
+                                    game-changer. The real-time inventory tracking ensures I never run out of stock, and
+                                    the sales insights help me make better decisions. The system is very easy to use,
+                                    even for someone like me with limited technical knowledge. Plus, their customer
+                                    service is excellent, always responsive and helpful. Dukaandari is a must-have for
+                                    any retailer!
+                                </p>
+                                <strong>-By Pooja Sharma</strong> <br> <br>
+
+                                <a href="#" class="card__button">View More</a>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assests/7939485.jpg" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <p class="card__description">
+                                    As a wholesaler, I struggled with inventory and order management before Dukaandari.
+                                    This ERP has streamlined everything for me! Now, I can manage my suppliers, track
+                                    orders, and generate invoices effortlessly. The dashboard gives me a clear view of
+                                    my business performance, making planning much easier. It’s an affordable yet
+                                    powerful solution for any business owner looking to simplify operations. Highly
+                                    recommended!
+                                </p>
+                                <strong>-By Ankit Verma</strong> <br> <br>
+
+                                <a href="#" class="card__button">View More</a>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assests/OIUG2I0.jpg" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <p class="card__description">
+                                    Dukaandari is a blessing for my online and offline store management. It syncs my
+                                    inventory across platforms, reducing errors and improving efficiency. The automated
+                                    GST calculations save me from tax-related headaches, and the reporting tools provide
+                                    deep insights into my business. It’s a very reliable ERP system, and I appreciate
+                                    how frequently they update features based on user feedback. Great investment!
+                                </p>
+                                <strong>-By Sneha Kapoor</strong> <br> <br>
+
+                                <a href="#" class="card__button">View More</a>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assests/3538433.jpg" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <p class="card__description">
+                                    I own a store, and Dukaandari has made managing my stock so much easier.
+                                    Earlier, I had trouble keeping track of fast-moving items, but now I get alerts
+                                    before running out. The system also helps me track customer orders and payments,
+                                    reducing errors. It’s a simple but highly effective tool for business owners. The
+                                    customer support team is also very helpful and patient.
+                                </p>
+                                <strong>-By Ramesh Gupta</strong> <br> <br>
+
+                                <a href="#" class="card__button">View More</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <div>
+            <div style="display: flex;flex-direction: column;align-items: center; margin-bottom: 20px;">
+                <h3 style="letter-spacing: 17px; font-size: 23px;">DUKAANDARI</h3>
+                <div><i class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-facebook-messenger"></i><i
+                        class="fa-brands fa-square-x-twitter"></i><i class="fa-brands fa-linkedin"></i></div>
+            </div>
+            <div>
+                <p>Dukaandari ERP is a comprehensive enterprise resource planning system designed to streamline and
+                    automate business operations. It offers modules for inventory management, sales tracking, billing,
+                    accounting, customer relationship management (CRM), and supplier coordination. Tailored for small to
+                    medium-sized enterprises (SMEs), Dukaandari simplifies daily workflows, enhances decision-making
+                    with real-time data insights, and boosts overall operational efficiency. Its user-friendly interface
+                    and customizable features make it accessible for businesses across industries, from retail to
+                    wholesale. With Dukaandari, businesses can reduce manual tasks, minimize errors, and achieve better
+                    control over their processes, leading to increased productivity and profitability.</p>
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li>Omnichannel</li>
+                    <li>POS</li>
+                    <li>Retail Stores</li>
+                    <li>ERP Software</li>
+                </ul>
+                <ul>
+                    <li>Partners</li>
+                    <li>How it works??</li>
+                    <li>Clients Feedback</li>
+                    <li>Smart Retail</li>
+                </ul>
+                <ul>
+                    <li>About</li>
+                    <li>Contact us</li>
+                    <li>Career</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+                <div style="color: black; ">
+                    <li style="display: flex; align-items: center; gap: 12px;"><i class="fa-solid fa-envelope"></i>
+                        <h4>mail@dukaandari.com</h4>
+                    </li>
+                    <li style="display: flex; align-items: center; gap: 12px;"><i class="fa-solid fa-phone"></i>
+                        <h4>+91-8521454900</h4>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <strong>© 2024 Dukaandari</strong>
+    </footer>
+
+
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="/swiper-bundle.min.js"></script>
+    <script>
+        const openButton = document.getElementById('open-sidebar-button')
+        const navbar = document.getElementById('navbar')
+
+        const media = window.matchMedia("(width < 700px)")
+
+        media.addEventListener('change', (e) => updateNavbar(e))
+
+        function updateNavbar(e) {
+            const isMobile = e.matches
+            console.log(isMobile)
+            if (isMobile) {
+                navbar.setAttribute('inert', '')
+            }
+            else {
+                // desktop device
+                navbar.removeAttribute('inert')
+            }
+        }
+
+        function openSidebar() {
+            navbar.classList.add('show')
+            openButton.setAttribute('aria-expanded', 'true')
+            navbar.removeAttribute('inert')
+        }
+
+        function closeSidebar() {
+            navbar.classList.remove('show')
+            openButton.setAttribute('aria-expanded', 'false')
+            navbar.setAttribute('inert', '')
+        }
+
+        updateNavbar(media)
+    </script>
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
