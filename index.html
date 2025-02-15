@@ -36,10 +36,10 @@
 
     <!-- form starts here  -->
 
-    <div class="overlay"></div> <!-- This will be used for blurring the background -->
+    <div class="overlay" id="overlay"></div> <!-- This will be used for blurring the background -->
 
-    <div class="popup">
-        <button id="close">&times;</button>
+    <div class="popup" id="popup-1">
+        <button id="close" onclick="togglePopup()">&times;</button>
         <h2>ERP software for <strong>Retailers and Manufacturers</strong></h2>
         <div class="flex">
           <div class="flexbox1">
@@ -124,7 +124,7 @@
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Enterprise</a></li>
             <li><a href="/our_customers.html">Our Customers</a></li>
-            <li><a class="accent-link" href="#">Book a Demo!</a></li>
+            <li><a class="accent-link" onclick="togglePopup()">Book a Demo!</a></li>
             <!-- <li><a class="accent-link" href="#">Signup</a></li> -->
         </ul>
     </nav>
@@ -825,7 +825,7 @@
           setTimeout(function open(event) {
             document.querySelector(".popup").style.display = "block";
             document.querySelector(".overlay").classList.add("active");
-          }, 1000);
+          }, 5000);
         });
   
         document.querySelector("#close").addEventListener("click", function () {

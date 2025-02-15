@@ -1086,6 +1086,7 @@ color: #d16f6f;
   z-index: -1; /* Keep it behind the content */
   opacity: 0;
   transition: opacity 0.3s ease;
+  /* display: none; */
 }
 
 /* When active, make the overlay visible */
@@ -1133,4 +1134,8 @@ color: #d16f6f;
 
 .card-box:nth-of-type(2n+1) {
   margin-bottom: -60px;
+}
+
+.popup.active{
+  display: block !important;
 }

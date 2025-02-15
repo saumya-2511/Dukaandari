@@ -166,3 +166,16 @@ let swiperCards = new Swiper(".card__content", {
     },
   },
 });
+
+
+//popup form
+function togglePopup() {
+  document.getElementById("popup-1").classList.toggle("active");
+}
+
+// function togglePopup() {
+//   document.getElementById("overlay").classList.toggle("active");
+// }
+
+
+
