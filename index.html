@@ -36,64 +36,61 @@
 
     <!-- form starts here  -->
 
-    <div class="overlay" id="overlay"></div> <!-- This will be used for blurring the background -->
+    <div class="overlay" id="overlay" onclick="togglePopup()"></div>
+    <!-- This will be used for blurring the background -->
 
     <div class="popup" id="popup-1">
         <button id="close" onclick="togglePopup()">&times;</button>
         <h2>ERP software for <strong>Retailers and Manufacturers</strong></h2>
         <div class="flex">
-          <div class="flexbox1">
-            <img src="/assests/6505894.jpg" alt="image" />
-            <div class="downbx">
-              <div>
-                <img src="/assests/analytic.png" alt="image" />
-                <h2>Integrated Module</h2>
-              </div>
-              <div>
-                <img src="/assests/computer.png" alt="image" />
-                <h2>POS</h2>
-              </div>
-              <div>
-                <img src="/assests/settings.png" alt="image" />
-                <h2>Efficient working</h2>
-              </div>
-            </div>
-          </div>
-          <div class="flexbox2">
-            <div class="form-container">
-              <h2>Request a Free Demo</h2>
-              <form>
-                <input type="text" placeholder="Name *" required />
-                <input type="text" placeholder="Business Name *" required />
-  
-                <div class="phone-input">
-                  <span class="flag">🇮🇳 +91 ▼</span>
-                  <input
-                    type="tel"
-                    placeholder="Enter Your Contact Number"
-                    required
-                  />
+            <div class="flexbox1">
+                <img src="/assests/6505894.jpg" alt="image" />
+                <div class="downbx">
+                    <div>
+                        <img src="/assests/analytic.png" alt="image" />
+                        <h2>Integrated Module</h2>
+                    </div>
+                    <div>
+                        <img src="/assests/computer.png" alt="image" />
+                        <h2>POS</h2>
+                    </div>
+                    <div>
+                        <img src="/assests/settings.png" alt="image" />
+                        <h2>Efficient working</h2>
+                    </div>
                 </div>
-  
-                <input type="email" placeholder="Email *" required />
-                <input type="text" placeholder="City *" required />
-  
-                <div class="consent">
-                  <input type="checkbox" id="consent" required />
-                  <label for="consent">
-                    I hereby provide my consent to receive emails, phone calls,
-                    messages, and other communications from VasyERP to understand
-                    about Vasy services, offerings, promotions, and other related
-                    information.
-                  </label>
-                </div>
-  
-                <button type="submit">Book a Demo</button>
-              </form>
             </div>
-          </div>
+            <div class="flexbox2">
+                <div class="form-container">
+                    <h2>Request a Free Demo</h2>
+                    <form>
+                        <input type="text" placeholder="Name *" required />
+                        <input type="text" placeholder="Business Name *" required />
+
+                        <div class="phone-input">
+                            <span class="flag">🇮🇳 +91 ▼</span>
+                            <input type="tel" placeholder="Enter Your Contact Number" required />
+                        </div>
+
+                        <input type="email" placeholder="Email *" required />
+                        <input type="text" placeholder="City *" required />
+
+                        <div class="consent">
+                            <input type="checkbox" id="consent" required />
+                            <label for="consent">
+                                I hereby provide my consent to receive emails, phone calls,
+                                messages, and other communications from VasyERP to understand
+                                about Vasy services, offerings, promotions, and other related
+                                information.
+                            </label>
+                        </div>
+
+                        <button type="submit">Book a Demo</button>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
 
     <!-- form ends here  -->
 
@@ -133,14 +130,14 @@
 
 
 
- <div class="hero-section">
+    <div class="hero-section">
         <div>
             <h1>Best <b>ERP system</b> <br> for Selling Industry</h1>
             <p>A complete management system for managing your daily businesses. <br>
                 Take a step towards an innovative billing system
                 <br> for Retailers and Manufacturers
             </p>
-            <button class="accent-link btn">Transform Business</button>
+            <button class="accent-link btn" onclick="togglePopup()">Transform Business</button>
 
         </div>
         <div><img src="/assests/Online 247.jpg" alt="image"></div>
@@ -195,18 +192,28 @@
                 </div>
             </div>
         </div> -->
-    
+
 
         <div class="row">
-            <div class="card-box"><b>100+ </b> <p>Engineering Team</p></div>
-            <div class="card-box"><b>24*7</b> <p> Helping Desk</p></div>
-            <div class="card-box"><b>200+ </b> <p>Trusted Customers</p></div>
-            <div class="card-box"><b>200+ </b> <p>Successful Customizations</p></div>
-            <div class="card-box"><b>5+ </b> <p>Industries Serve</p></div>
+            <div class="card-box"><b>100+ </b>
+                <p>Engineering Team</p>
+            </div>
+            <div class="card-box"><b>24*7</b>
+                <p> Helping Desk</p>
+            </div>
+            <div class="card-box"><b>200+ </b>
+                <p>Trusted Customers</p>
+            </div>
+            <div class="card-box"><b>200+ </b>
+                <p>Successful Customizations</p>
+            </div>
+            <div class="card-box"><b>5+ </b>
+                <p>Industries Serve</p>
+            </div>
         </div>
-    
-    
-    </div> 
+
+
+    </div>
 
     <section class="info">
         <h2>Have a glimpse, How Dukaandari fits your needs!</h2>
@@ -419,7 +426,7 @@
             customizable features..
         </p>
 
-        <button>Book a demo!</button>
+        <button onclick="togglePopup()">Book a demo!</button>
     </div>
 
     <section class="mobile">
@@ -430,7 +437,7 @@
                 and monitor sales in real-time, all on the go. Stay in control of your business with a user-friendly
                 interface and instant accessibility anywhere, anytime."</p>
 
-            <button>Book a free Demo</button>
+            <button onclick="togglePopup()">Book a free Demo</button>
         </div>
         <div class="data">
             <img src="/assests/Untitled design (1).png" alt="image">
@@ -820,7 +827,7 @@
 
     <!-- form script  -->
 
-    <script>
+    <!-- <script>
         window.addEventListener("load", function () {
           setTimeout(function open(event) {
             document.querySelector(".popup").style.display = "block";
@@ -832,7 +839,26 @@
           document.querySelector(".popup").style.display = "none";
           document.querySelector(".overlay").classList.remove("active");
         });
-      </script>
+      </script> -->
+
+    <script>
+        function togglePopup() {
+            const popup = document.getElementById("popup-1");
+            const overlay = document.getElementById("overlay");
+            const body = document.body;
+
+            if (popup.style.display === "block") {
+                popup.style.display = "none";
+                overlay.style.display = "none";
+                body.classList.remove("popup-active"); // Allow scrolling
+            } else {
+                popup.style.display = "block";
+                overlay.style.display = "block";
+                body.classList.add("popup-active"); // Prevent scrolling
+            }
+        }
+
+    </script>
 </body>
 
 </html>
