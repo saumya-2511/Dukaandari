@@ -34,7 +34,9 @@ main p {
 }
 nav {
   padding: 9px 33px;
-  box-shadow: 10px 10px 10px #ecf0f2;
+  box-shadow: 1px 1px 64px #e5ecef;
+  margin: 10px 140px;
+  border-radius: 84px;
 }
 nav ul {
   list-style: none;
@@ -55,6 +57,10 @@ nav a {
   padding: 1em 2em;
   transition: background-color 150ms ease;
   cursor: pointer;
+  font-weight: 600;
+  font-family: "Poppins", serif;
+  font-size: 13px;
+  letter-spacing: 0.8px;
 }
 /* nav a.active-link{
   border-bottom: 2px solid var(--text-color);
@@ -66,8 +72,8 @@ nav a {
   background-color: #3578b3;
   color: white;
   margin: 2px;
-  padding: 14px 32px;
-  border-radius: 10px;
+  padding: 14px 16px;
+  border-radius: 25px;
 }
 #open-sidebar-button {
   display: none;
@@ -295,7 +301,6 @@ h1 {
   width: 56%;
 }
 
-
 .exp {
   display: flex;
   justify-content: space-around;
@@ -325,7 +330,7 @@ h1 {
     color: #606060;
     letter-spacing: 1px;
   }
-  button{
+  button {
     padding: 15px;
     background-color: transparent;
     border: 2px solid #010306;
@@ -335,6 +340,7 @@ h1 {
     font-weight: 700;
     letter-spacing: 2px;
     font-size: 15px;
+    color: black;
   }
 }
 .dv {
@@ -352,18 +358,18 @@ h1 {
   height: 348px;
   /* background-color: #573434; */
 }
-.grid>div{
+.grid > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
   gap: 14px;
-  strong{
+  strong {
     font-size: 64px;
     color: black;
   }
-  p{
+  p {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 15px;
@@ -371,12 +377,12 @@ h1 {
   }
 }
 
-.ed{
-    color: black;
-    text-align: center;
-    font-size: 35px;
-    letter-spacing: 3px;
-    padding-bottom: 23px;
+.ed {
+  color: black;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 3px;
+  padding-bottom: 23px;
 }
 
 footer {
@@ -419,20 +425,20 @@ footer .fa-brands {
   border-left: none;
 }
 
-main{
+main {
   color: black;
   display: flex;
   align-items: center;
 }
 
 main img {
-	height: 400px;
-	mix-blend-mode: multiply;
+  height: 400px;
+  mix-blend-mode: multiply;
 }
 main h2 {
-	font-size: 39px;
-	letter-spacing: 3px;
-	word-spacing: 7px;
+  font-size: 39px;
+  letter-spacing: 3px;
+  word-spacing: 7px;
   padding-bottom: 23px;
 }
 .containers {
@@ -506,7 +512,6 @@ main h2 {
   font-size: 15px;
   color: #333;
 }
-
 
 .info > .container {
   display: flex;
@@ -615,7 +620,7 @@ side h4 {
   display: block;
 }
 
-.btn1{
+.btn1 {
   padding: 15px;
   background-color: #3e9763;
   border: 2px solid #3e9763;
@@ -625,7 +630,7 @@ side h4 {
   letter-spacing: 2px;
 }
 
-.btn2{
+.btn2 {
   padding: 15px;
   background-color: transparent;
   border: 2px solid #fcfdff;
@@ -634,15 +639,14 @@ side h4 {
   letter-spacing: 2px;
 }
 
-.btn1:hover{
+.btn1:hover {
   background-color: transparent;
   border: 2px solid white;
   transition: 1s ease;
 }
 
-
 @media screen and (max-width: 700px) {
-  .exp{
+  .exp {
     flex-wrap: wrap;
   }
 }
@@ -655,3 +659,218 @@ side h4 {
     margin-top: 8rem;
   }
 } */
+
+/* form css starts  */
+.popup {
+  background-color: #fff;
+  width: 70%;
+  /* padding: 30px 40px; */
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  display: none;
+  /* border: 2px solid red; */
+  box-shadow: 10px 10px 30px rgb(178, 180, 182);
+  height: 90vh;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  z-index: 999;
+}
+
+.popup > button {
+  background-color: transparent;
+  font-size: 30px;
+  /* color: #2c5ba4; */
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  left: 67vw;
+  bottom: 23px;
+  display: block;
+  background: #a26363;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  padding: 1px 1px 6px 2px;
+}
+.popup p {
+  font-size: 14px;
+  text-align: justify;
+  margin: 20px 0;
+}
+.popup a {
+  width: 150px;
+  display: block;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  background-color: #0f72e5;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+.popup.active {
+  display: block !important;
+}
+
+.popup > h2 {
+  text-align: center;
+  margin-top: -28px;
+  margin-bottom: 31px;
+  color: black;
+}
+strong {
+  color: #d16f6f;
+}
+
+/* Background overlay */
+.overlay {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
+  backdrop-filter: blur(5px); /* Apply blur effect */
+  z-index: 10; /* Below popup but above content */
+}
+
+/* To prevent scrolling when popup is active */
+body.popup-active {
+  overflow: hidden;
+}
+
+/* When active, make the overlay visible */
+.overlay.active {
+  z-index: 5;
+  opacity: 1;
+}
+
+/* Ensure the popup appears above everything */
+.popup {
+  z-index: 10;
+}
+.form-container {
+  /* background: white; */
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.flexbox2 h2 {
+  /* color: #3e7cb3; */
+  color: #259694;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  background: white;
+  margin-bottom: 10px;
+}
+
+.phone-input > input {
+  margin-bottom: 0;
+}
+.phone-input .flag {
+  background: #f1f1f1;
+  padding: 10px;
+  font-size: 14px;
+  border-right: 1px solid #ccc;
+  white-space: nowrap;
+}
+
+.phone-input input {
+  border: none;
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.consent {
+  display: flex;
+  align-items: flex-start;
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.consent input {
+  width: 25%;
+}
+
+button {
+  background-color: #259694;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.flexx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+  flex-wrap: wrap;
+}
+.flexbox1 {
+  display: flex;
+  flex-direction: column;
+  img {
+    height: 292px;
+  }
+}
+.downbx {
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+}
+.downbx > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    font-size: 13px;
+    text-align: center;
+  }
+}
+.downbx img {
+  height: 50px;
+  /* background-color: #6fa3d1; */
+  background-color: #d16f6f;
+  padding: 18px;
+  display: block;
+  height: 77px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  margin: 12px 0;
+}

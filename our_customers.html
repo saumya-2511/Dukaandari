@@ -23,6 +23,66 @@
 
 <body>
 
+        <!-- form starts here  -->
+
+        <div class="overlay" id="overlay" onclick="togglePopup()"></div>
+        <!-- This will be used for blurring the background -->
+    
+        <div class="popup" id="popup-1">
+            <button id="close" onclick="togglePopup()">&times;</button>
+            <h2>ERP software for <strong>Retailers and Manufacturers</strong></h2>
+            <div class="flexx">
+                <div class="flexbox1">
+                    <img src="/assests/6505894.jpg" alt="image" />
+                    <div class="downbx">
+                        <div>
+                            <img src="/assests/analytic.png" alt="image" />
+                            <h2>Integrated Module</h2>
+                        </div>
+                        <div>
+                            <img src="/assests/computer.png" alt="image" />
+                            <h2>POS</h2>
+                        </div>
+                        <div>
+                            <img src="/assests/settings.png" alt="image" />
+                            <h2>Efficient working</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexbox2">
+                    <div class="form-container">
+                        <h2>Request a Free Demo</h2>
+                        <form>
+                            <input type="text" placeholder="Name *" required />
+                            <input type="text" placeholder="Business Name *" required />
+    
+                            <div class="phone-input">
+                                <span class="flag">🇮🇳 +91 ▼</span>
+                                <input type="tel" placeholder="Enter Your Contact Number" required />
+                            </div>
+    
+                            <input type="email" placeholder="Email *" required />
+                            <input type="text" placeholder="City *" required />
+    
+                            <div class="consent">
+                                <input type="checkbox" id="consent" required />
+                                <label for="consent">
+                                    I hereby provide my consent to receive emails, phone calls,
+                                    messages, and other communications from VasyERP to understand
+                                    about Vasy services, offerings, promotions, and other related
+                                    information.
+                                </label>
+                            </div>
+    
+                            <button type="submit">Book a Demo</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- form ends here  -->
+
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false"
@@ -48,9 +108,9 @@
             <li class="home-li"><a class="active-link" aria-current="page" href="nav.html">Home</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Enterprise</a></li>
-            <li><a href="#">Our Customers</a></li>
-            <li><a class="accent-link" href="#">Login</a></li>
-            <li><a class="accent-link" href="#">Signup</a></li>
+            <li><a href="/our_customers.html">Our Customers</a></li>
+            <!-- <li><a class="accent-link" href="#">Login</a></li> -->
+            <li><a class="accent-link" onclick="togglePopup()">Book a Demo!</a></li>
         </ul>
     </nav>
 
@@ -393,6 +453,25 @@
     </script>
 
     <script src="/script.js"></script>
+
+    <script>
+         <script>
+        function togglePopup() {
+            const popup = document.getElementById("popup-1");
+            const overlay = document.getElementById("overlay");
+            const body = document.body;
+
+            if (popup.style.display === "block") {
+                popup.style.display = "none";
+                overlay.style.display = "none";
+                body.classList.remove("popup-active"); // Allow scrolling
+            } else {
+                popup.style.display = "block";
+                overlay.style.display = "block";
+                body.classList.add("popup-active"); // Prevent scrolling
+            }
+        }
+    </script>
 
 </body>
 

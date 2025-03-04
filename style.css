@@ -676,7 +676,7 @@ side h4 {
     overflow-x: hidden !important;
   }
   nav.show {
-    right: -20%;
+    right: -33%;
     background-color: white;
     border-radius: 0;
   }
@@ -718,7 +718,7 @@ side h4 {
   }
   #dkndari p {
     color: #c1c2c4;
-    padding: 0px 13%;
+    padding: 0px 2%;
   }
   .flex1 {
     width: 60%;
@@ -747,8 +747,8 @@ side h4 {
     height: fit-content;
   }
   aside {
-    grid-template-columns: repeat(auto-fill, 173px);
-  }
+    grid-template-columns: repeat(auto-fill, 8.7rem);
+}
   .svg {
     display: none;
   }
@@ -762,7 +762,8 @@ side h4 {
     height: 95vh !important;
   }
   .popup > button {
-    bottom: 12px !important;
+    left: 66vw;
+    bottom: 26px !important;
     background-color: #259694 !important;
 
   }
@@ -773,6 +774,54 @@ side h4 {
   .popup>h2{
     display: none;
   }
+  .info h2{
+    margin-bottom: 30px;
+  }
+  .info h4{
+    display: none;
+  }
+  #dkndari{
+    padding: 12px !important;
+  }
+  #dkndari h3 {
+    font-size: 1.3rem;
+    margin: 32px 12px;
+}
+
+#dkndari button {
+  margin-top: 40px;
+  margin-bottom: 29px;
+}
+.flex1 button {
+  width: 100%;
+}
+.customers h2 {
+  margin: 10% 6%;
+}
+
+.swiper {
+  padding: 0px 8px;
+  padding-bottom: 45px;
+}
+.card__content {
+  padding: 12px 0px;
+}
+
+.faq .data {
+  padding: 21px;
+  height: 623px;
+}
+.slide p {
+  padding: 2rem 2rem;
+  /* height: 257px; */
+  text-align: justify;
+}
+.containers {
+  width: 96%;
+}
+ 
+
+
 
 }
 
@@ -901,16 +950,7 @@ side h4 {
   font-family: "Plus Jakarta Sans", sans-serif;
   z-index: 999;
 }
-/* .popup button {
-  display: block;
-  margin: 0 0 20px auto;
-  background-color: transparent;
-  font-size: 30px;
-  color: #c5c5c5;
-  border: none;
-  outline: none;
-  cursor: pointer;
-} */
+
 .popup > button {
 	background-color: transparent;
 	font-size: 30px;
@@ -918,8 +958,8 @@ side h4 {
 	color: #fff;
 	cursor: pointer;
 	position: relative;
-	left: 67vw;
-	bottom: 34px;
+	left: 68vw;
+	bottom: 26px;
 	display: block;
 	background: #a26363;
 	border-radius: 50%;
@@ -1082,7 +1122,7 @@ color: #d16f6f;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
   backdrop-filter: blur(5px); /* Apply blur effect */
   z-index: 10; /* Below popup but above content */
 }
@@ -1141,4 +1181,84 @@ color: #d16f6f;
 
 .popup.active{
   display: block !important;
+}
+
+/* ends here  */
+
+@media screen and (max-width:600px) {
+  nav.show {
+    right: -23%;
+  }
+  .hero-section {
+    padding: 21px 52px;
+  }
+  .hero-section {
+    .btn {
+      width: 41%;
+    }
+  }
+  aside {
+    grid-gap: 7px;
+    padding: 40px 0px;
+    width: 91%;
+    height: 100.5vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #dkndari h3 {
+    margin: 20px;
+  }
+  #dkndari p {
+    padding: 0px 1%;
+  }
+  #dkndari button {
+    margin-top: 52px;
+  }
+  .pricing h2 {
+    font-size: 26px;
+  }
+  .pricing h3 {
+    color: #a6a7a6;
+    font-size: 15px;
+  }
+  .customers h2 {
+    margin: 8% 11%;
+  }
+  .slide p {
+    padding: 2rem 1rem;
+  }
+  .slide {
+    overflow: scroll !important;
+  }
+  .faq .data {
+    padding: 37px;
+  }
+}
+
+@media screen and (max-width:550px) {
+  nav.show {
+    right: -26%;
+  }
+  .hero-section {
+    height: 55vh;
+  }
+  .info h4 {
+    bottom: 82px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  nav.show {
+    right: -28%;
+  }
+  .hero-section {
+    height: 57vh;
+  }
+  .info h4 {
+    bottom: 80px;
+  }
+  .slide p {
+    padding: 3rem 1rem;
+  }
 }
