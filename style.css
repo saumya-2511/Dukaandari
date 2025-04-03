@@ -937,7 +937,8 @@ side h4 {
   background-color: #fff;
   width: 70%;
   /* padding: 30px 40px; */
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
