@@ -6,339 +6,1283 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dukaandari</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile-section.css" />
+    <link rel="stylesheet" href="pricing-section.css" />
+    <link rel="stylesheet" href="faq.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="/test.css">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="/swiper-bundle.min.css">
+
+    <!-- font codes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- ends here  -->
 
     <script src="https://kit.fontawesome.com/73945c6808.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav>
-        <div style="display: flex; align-items: center;">
-            <a href="#"><img src="/assests/dukaandari_logo2-new.png" alt="logoImage"></a>
-            <a href="#" class="uline">Home</a>
-            <a href="#" class="uline">Pricing</a>
-            <a href="#" class="uline">Features</a>
+
+    <!-- form starts here  -->
+
+    <div class="overlay" id="overlay" onclick="togglePopup()"></div>
+    <!-- This will be used for blurring the background -->
+
+    <div class="popup" id="popup-1">
+        <button id="close" onclick="togglePopup()">&times;</button>
+        <h2>ERP software for <strong>Retailers and Manufacturers</strong></h2>
+        <div class="flex">
+            <div class="flexbox1">
+                <img src="/assests/6505894.jpg" alt="image" />
+                <div class="downbx">
+                    <div>
+                        <img src="/assests/analytic.png" alt="image" />
+                        <h2>Integrated Module</h2>
+                    </div>
+                    <div>
+                        <img src="/assests/computer.png" alt="image" />
+                        <h2>POS</h2>
+                    </div>
+                    <div>
+                        <img src="/assests/settings.png" alt="image" />
+                        <h2>Efficient working</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flexbox2">
+                <div class="form-container">
+                    <h2>Request a Free Demo</h2>
+                    <form>
+                        <input type="text" placeholder="Name *" required />
+                        <input type="text" placeholder="Business Name *" required />
+
+                        <div class="phone-input">
+                            <span class="flag">🇮🇳 +91 ▼</span>
+                            <input type="tel" placeholder="Enter Your Contact Number" required />
+                        </div>
+
+                        <input type="email" placeholder="Email *" required />
+                        <input type="text" placeholder="City *" required />
+
+                        <div class="consent">
+                            <input type="checkbox" id="consent" required />
+                            <label for="consent">
+                                I hereby provide my consent to receive emails, phone calls,
+                                messages, and other communications from VasyERP to understand
+                                about Vasy services, offerings, promotions, and other related
+                                information.
+                            </label>
+                        </div>
+
+                        <button type="submit">Book a Demo</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div>
-            <a href="#" class="uline">Partner with us!</a>
-            <a href="#"><button>Sign Up</button></a>
-            <a href="#"><button>Log In</button></a>
-        </div>
+    </div>
+
+    <!-- form ends here  -->
+
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false"
+        aria-controls="navbar">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000">
+            <path
+                d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+        </svg>
+    </button>
+
+    <nav id="navbar" role="navigation" aria-label="Main Navigation">
+        <ul>
+            <li>
+                <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                        fill="#000">
+                        <path
+                            d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
+                    </svg>
+                </button>
+            </li>
+            <!-- <li><a href="/index.html"><img src="/assests/dukaandari_logo2-new.png" alt="logoimage"></a></li> -->
+            <li class="home-li"><a class="active-link" aria-current="page" href="/index.html">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="/our_customers.html">Our Customers</a></li>
+            <li><a class="accent-link" onclick="togglePopup()">Book a Demo!</a></li>
+            <!-- <li><a class="accent-link" href="#">Signup</a></li> -->
+        </ul>
     </nav>
 
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+
+
+
     <div class="hero-section">
-        <h1>Take a step towards an innovative billing system for Retailers and Manufacturers</h1>
-        <div class="image">
-            <img style="height: 459px;" class="imageOne"
-                src="/assests/family-income-characters-planning-bookkeeping-budget-household-spending-savings-vector_773844-311.jpg"
-                alt="image">
-            <img style="height: 572px;" src="/assests/6667718.jpg" alt="image">
+        <div style="padding: 30px;">
+            <h1>Best <b>ERP system</b> <br> for Selling Industry</h1>
+            <p>A complete management system for managing your daily businesses. <br>
+                Take a step towards an innovative billing system
+                <br> for Retailers and Manufacturers
+            </p>
+            <button class="accent-link btn" onclick="togglePopup()">Transform Business</button>
+
         </div>
+        <div><img src="/assests/Online 247.jpg" alt="image"></div>
+    </div>
+    <div class="wave-container">
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path fill="#3578b3" fill-opacity="1"
+                d="M0,288L80,245.3C160,203,320,117,480,106.7C640,96,800,160,960,181.3C1120,203,1280,181,1360,170.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+
+    <style>
+        .wave-container {
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            margin-top: -1px;
+            /* Prevents tiny gap between sections */
+        }
+
+        .wave-svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+            transform-origin: center;
+            transition: all 0.3s ease;
+        }
+
+        @media (min-width: 768px) {
+            .wave-svg {
+                height: 200px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .wave-svg {
+                height: 250px;
+            }
+        }
+
+        /* Animation for a subtle wave effect on hover */
+        .wave-svg:hover path {
+            animation: waveAnimation 8s ease-in-out infinite;
+        }
+
+        @keyframes waveAnimation {
+            0% {
+                d: path('M0,288L80,245.3C160,203,320,117,480,106.7C640,96,800,160,960,181.3C1120,203,1280,181,1360,170.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z');
+            }
+
+            50% {
+                d: path('M0,288L80,270C160,252,320,216,480,213.3C640,211,800,245,960,234.7C1120,224,1280,173,1360,149.3L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z');
+            }
+
+            100% {
+                d: path('M0,288L80,245.3C160,203,320,117,480,106.7C640,96,800,160,960,181.3C1120,203,1280,181,1360,170.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z');
+            }
+        }
+    </style>
+    <div class="bxs">
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-number">100+</div>
+                <div class="stat-text">Engineering Team</div>
+                <div class="stat-icon">👨‍💻</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">24/7</div>
+                <div class="stat-text">Helping Desk</div>
+                <div class="stat-icon">🕒</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">200+</div>
+                <div class="stat-text">Trusted Customers</div>
+                <div class="stat-icon">👥</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">200+</div>
+                <div class="stat-text">Successful Customizations</div>
+                <div class="stat-icon">✅</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5+</div>
+                <div class="stat-text">Industries Served</div>
+                <div class="stat-icon">🏭</div>
+            </div>
+        </div>
+
+        <style>
+            .stats-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 20px;
+                padding: 30px 5%;
+                max-width: 1400px;
+                margin: 0 auto;
+            }
+
+            .stat-card {
+                background: white;
+                border-radius: 12px;
+                padding: 30px 20px;
+                text-align: center;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                position: relative;
+                overflow: hidden;
+                border: 1px solid #eee;
+            }
+
+            .stat-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: #2c3e50;
+                margin-bottom: 10px;
+                line-height: 1.2;
+            }
+
+            .stat-text {
+                font-size: 1rem;
+                color: #555;
+                margin-bottom: 15px;
+                line-height: 1.4;
+            }
+
+            .stat-icon {
+                font-size: 2rem;
+                opacity: 0.8;
+                margin-top: 10px;
+            }
+
+            @media (max-width: 1024px) {
+                .stats-container {
+                    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                }
+            }
+
+            @media (max-width: 768px) {
+                .stats-container {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 15px;
+                    padding: 20px 10px;
+                }
+
+                .stat-card {
+                    padding: 20px 90px;
+                }
+
+                .stat-number {
+                    font-size: 2rem;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .stats-container {
+                    grid-template-columns: 1fr;
+                }
+
+                .stat-card {
+                    max-width: 280px;
+                    margin: 0 auto;
+                }
+            }
+        </style>
+
 
     </div>
 
-    <section class="container">
-        <h2>Giving Opportunity to every small business for growing!!</h2>
-        <b>Har dukaan ki apni pehchan :></b>
+    <section class="features-section">
+        <div class="features-container">
+            <div class="section-header">
+                <h2>Discover How Dukaandari Fits Your Business Needs</h2>
+                <p class="section-subtitle">Explore our powerful features designed to streamline your operations</p>
+            </div>
 
-        <div class="grid-container">
-            <div><img src="/assests/rb_17163.png" alt="image" style="height: 174px;">
-                <p>Book Stores</p>
+            <div class="features-layout">
+                <div class="features-sidebar">
+                    <div class="feature-tab active" onclick="showContent('content1', event)">
+                        <div class="tab-icon">
+                            <img src="/assests/animated-icons/pos-terminal.gif" alt="POS" loading="lazy">
+                        </div>
+                        <span>Point of Sale</span>
+                    </div>
+                    <div class="feature-tab" onclick="showContent('content2', event)">
+                        <div class="tab-icon">
+                            <img src="/assests/animated-icons/cloud-network.gif" alt="Omnichannel" loading="lazy">
+                        </div>
+                        <span>Omnichannel Platform</span>
+                    </div>
+                    <div class="feature-tab" onclick="showContent('content3', event)">
+                        <div class="tab-icon">
+                            <img src="/assests/animated-icons/dashboard.gif" alt="Dashboard" loading="lazy">
+                        </div>
+                        <span>Dashboard</span>
+                    </div>
+                    <div class="feature-tab" onclick="showContent('content4', event)">
+                        <div class="tab-icon">
+                            <img src="/assests/animated-icons/line-chart.gif" alt="Inventory" loading="lazy">
+                        </div>
+                        <span>Inventory Management</span>
+                    </div>
+                    <div class="feature-tab" onclick="showContent('content5', event)">
+                        <div class="tab-icon">
+                            <img src="/assests/animated-icons/worldwide.gif" alt="Analytics" loading="lazy">
+                        </div>
+                        <span>Reports & Analytics</span>
+                    </div>
+                    <div class="feature-tab" onclick="showContent('content6', event)">
+                        <div class="tab-icon">
+                            <img src="/assests/animated-icons/home.gif" alt="Interface" loading="lazy">
+                        </div>
+                        <span>User Experience</span>
+                    </div>
+                    <div class="feature-tab" onclick="showContent('content7', event)">
+                        <div class="tab-icon">
+                            <img src="/assests/animated-icons/diagram.gif" alt="Customization" loading="lazy">
+                        </div>
+                        <span>Customization</span>
+                    </div>
+                </div>
+
+                <div class="feature-content-area">
+                    <div class="feature-content active" id="content1">
+                        <div class="content-card">
+                            <h3>Point of Sale System</h3>
+                            <p class="feature-description">
+                                Seamlessly integrate your sales operations with our comprehensive POS solution that
+                                connects directly with your ERP system, ensuring real-time data synchronization across
+                                all business functions.
+                            </p>
+                            <div class="feature-highlights">
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Seamless ERP Integration</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Real-time Inventory Updates</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Multiple Payment Options</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Automated Tax Calculations</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Customer Management</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Receipt Generation</span>
+                                </div>
+                            </div>
+                            <button class="cta-button" onclick="togglePopup()">
+                                <span>Request Demo</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Other content divs with similar structure -->
+                    <div class="feature-content" id="content2">
+                        <div class="content-card">
+                            <h3>Omnichannel Platform</h3>
+                            <p class="feature-description">
+                                Deliver a seamless shopping experience across all channels with our integrated
+                                omnichannel platform that unifies your online and offline operations.
+                            </p>
+                            <div class="feature-highlights">
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Unified Customer Experience</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Cross-Channel Integration</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Personalized Engagement</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Centralized Inventory</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Customer Retention Tools</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Advanced Analytics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add other content divs with the same structure -->
+                    <div class="feature-content" id="content3">
+                        <div class="content-card">
+                            <h3>Comprehensive Dashboard</h3>
+                            <p class="feature-description">
+                                Gain valuable insights and make data-driven decisions with our intuitive and
+                                customizable dashboard that puts all your key metrics in one place.
+                            </p>
+                            <div class="feature-highlights">
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Real-time Data Visualization</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Customizable Widgets</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Interactive Reports</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Performance Metrics</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Role-based Views</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Export Capabilities</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Continue with other content divs -->
+                    <div class="feature-content" id="content4">
+                        <div class="content-card">
+                            <h3>Inventory Management</h3>
+                            <p class="feature-description">
+                                Inventory Management in an ERP System refers to the integrated process of tracking,
+                                controlling, and optimizing a company’s inventory through a centralized enterprise
+                                resource planning (ERP) platform. It ensures that inventory data—such as stock levels,
+                                locations, costs, and movements—is always accurate and synchronized with other business
+                                functions like purchasing, sales, accounting, and production.
+                            </p>
+                            <div class="feature-highlights">
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Real-Time Inventory Tracking</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Stock Control & Optimization</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Integration with Other Modules</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Inventory Valuation & Costing</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Barcode & RFID Integration</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Batch & Serial Number Tracking</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-content" id="content5">
+                        <div class="content-card">
+                            <h3>Reports and Analytics</h3>
+                            <p class="feature-description">
+                                Reports and Analytics in an ERP System provide business leaders with real-time,
+                                data-driven insights to support decision-making, performance tracking, and strategic
+                                planning. These tools consolidate data across departments (like sales, inventory,
+                                finance, HR, etc.) into meaningful reports and dashboards—all from within the
+                                centralized ERP platform.
+                            </p>
+                            <div class="feature-highlights">
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Real-Time Reporting.</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Customizable Dashboards.</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Predefined and Ad-Hoc Reports.</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Data Integration Across Modules.</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Compliance and Regulatory Reporting.</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Error Detection and Anomaly Alerts.</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Data Accuracy and Consistency.</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Scalability for Large Data Sets.</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Historical Data Analysis.</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>User-Friendly Interface.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-content" id="content6">
+                        <div class="content-card">
+                            <h3>User Experience</h3>
+                            <p class="feature-description">
+                                User Experience (UX) in an ERP System plays a critical role in how effectively and
+                                efficiently users interact with the software. A good UX ensures that users—from clerks
+                                to C-level executives—can access, understand, and use the system with minimal training
+                                and maximum productivity.
+                            </p>
+                            <div class="feature-highlights">
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Intuitive Interface Design</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Easy Navigation & Search</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Responsive & Mobile-Friendly</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Personalization Options</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Dashboard & Task Prioritization</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Performance & Speed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-content" id="content7">
+                        <div class="content-card">
+                            <h3>Customizable Features</h3>
+                            <p class="feature-description">
+                                Customization in an ERP Billing System allows organizations to tailor the system’s
+                                functionality, interface, and workflows to meet specific business needs. Unlike
+                                off-the-shelf solutions, customizable ERP billing systems ensure greater flexibility,
+                                scalability, and alignment with company-specific processes.
+                            </p>
+                            <div class="feature-highlights">
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Invoice Layout & Format</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Pricing & Tax Rules</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Reports & Analytics</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Billing Cycles & Schedules</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>Workflow Automations</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">✓</span>
+                                    <span>User Roles & Permissions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div><img
-                    src="/assests/happy-woman-holding-looking-fashion-pair-heeled-shoes-admiring-them-female-with-perfect-women-footwear-hands-shopping-flat-vector-illustration-isolated-white-background_198278-14284.avif"
-                    alt="image" style="height: 178px;">
-                <p>Shoe Stores</p>
+        </div>
+
+        <style>
+            .features-section {
+                padding: 5rem 5%;
+                background: #f8faff;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .features-container {
+                max-width: 1400px;
+                margin: 0 auto;
+                position: relative;
+            }
+
+            .section-header {
+                text-align: center;
+                margin-bottom: 3rem;
+            }
+
+            .section-header h2 {
+                font-size: 2.5rem;
+                color: #1a1a1a;
+                margin-bottom: 1rem;
+                font-weight: 700;
+                /* background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text; */
+                color: #3578b3;
+            }
+
+            .section-subtitle {
+                color: #6b7280;
+                font-size: 1.125rem;
+                max-width: 700px;
+                margin: 0 auto;
+                line-height: 1.6;
+            }
+
+            .features-layout {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                background: white;
+                border-radius: 16px;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+                overflow: hidden;
+            }
+
+            .features-sidebar {
+                display: flex;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                padding: 1rem;
+                gap: 0.5rem;
+                background: #f9fafb;
+                border-bottom: 1px solid #e5e7eb;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+            }
+
+            .features-sidebar::-webkit-scrollbar {
+                display: none;
+            }
+
+            .feature-tab {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0.75rem 1.25rem;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                white-space: nowrap;
+                min-width: 120px;
+                background: white;
+                border: 1px solid #e5e7eb;
+                text-wrap: auto;
+            }
+
+            .feature-tab:hover {
+                background: #f3f4f6;
+                transform: translateY(-2px);
+            }
+
+            .feature-tab.active {
+                background: #2563eb;
+                color: white;
+                border-color: #2563eb;
+                box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+            }
+
+            .feature-tab.active .tab-icon {
+                background: rgba(255, 255, 255, 0.2);
+            }
+
+            .tab-icon {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                margin-bottom: 0.5rem;
+                background: #f3f4f6;
+                transition: all 0.3s ease;
+            }
+
+            .tab-icon img {
+                width: 24px;
+                height: 24px;
+                object-fit: contain;
+            }
+
+            .feature-content-area {
+                padding: 2rem;
+                min-height: 400px;
+            }
+
+            .feature-content {
+                display: none;
+                animation: fadeIn 0.5s ease;
+            }
+
+            .feature-content.active {
+                display: block;
+            }
+
+            .content-card {
+                background: white;
+                border-radius: 12px;
+                padding: 2rem;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            }
+
+            .content-card h3 {
+                font-size: 1.75rem;
+                color: #1f2937;
+                margin-bottom: 1rem;
+                font-weight: 700;
+            }
+
+            .feature-description {
+                color: #4b5563;
+                font-size: 1.125rem;
+                line-height: 1.7;
+                margin-bottom: 2rem;
+                max-width: 800px;
+            }
+
+            .feature-highlights {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 1rem;
+                margin-bottom: 2.5rem;
+            }
+
+            .highlight-item {
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+                color: #374151;
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+
+            .highlight-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background: #e0f2fe;
+                color: #0369a1;
+                font-size: 0.75rem;
+                flex-shrink: 0;
+            }
+
+            .cta-button {
+                background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%);
+                color: white;
+                border: none;
+                padding: 0.875rem 1.5rem;
+                border-radius: 8px;
+                font-weight: 600;
+                font-size: 1rem;
+                cursor: pointer;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                transition: all 0.3s ease;
+                margin-top: 1rem;
+            }
+
+            .cta-button:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2);
+            }
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(10px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @media (min-width: 1024px) {
+                .features-layout {
+                    flex-direction: row;
+                    min-height: 600px;
+                }
+
+                .features-sidebar {
+                    flex-direction: column;
+                    width: 300px;
+                    padding: 2rem 0;
+                    border-right: 1px solid #e5e7eb;
+                    border-bottom: none;
+                    overflow-y: auto;
+                }
+
+                .feature-tab {
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    padding: 0.75rem 1.5rem;
+                    border-radius: 0;
+                    border: none;
+                    border-left: 4px solid transparent;
+                    min-width: 100%;
+                    text-align: left;
+                }
+
+                .feature-tab.active {
+                    border-left-color: #2563eb;
+                    background: #eff6ff;
+                    color: #1e40af;
+                }
+
+                .tab-icon {
+                    margin-bottom: 0;
+                    margin-right: 0.75rem;
+                }
+
+                .feature-content-area {
+                    flex: 1;
+                    padding: 2.5rem;
+                    overflow-y: auto;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .section-header h2 {
+                    font-size: 2rem;
+                }
+
+                .feature-highlights {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .features-section {
+                    padding: 3rem 1rem;
+                }
+
+                .section-header h2 {
+                    font-size: 1.75rem;
+                }
+
+
+                .content-card {
+                    padding: 1.5rem;
+                }
+
+                .content-card h3 {
+                    font-size: 1.5rem;
+                }
+            }
+        </style>
+
+        <!-- <script>
+        // Initialize first tab as active
+        document.addEventListener('DOMContentLoaded', function() {
+            const firstTab = document.querySelector('.feature-tab');
+            if (firstTab) firstTab.click();
+        });
+
+        function showContent(contentId, event) {
+            // Prevent default anchor behavior
+            if (event) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+
+            // Hide all content divs
+            const contents = document.querySelectorAll('.feature-content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.feature-tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Show selected content and mark tab as active
+            const selectedContent = document.getElementById(contentId);
+            if (selectedContent) {
+                selectedContent.classList.add('active');
+            }
+
+            if (event && event.currentTarget) {
+                event.currentTarget.classList.add('active');
+            }
+        }
+    </script> -->
+    </section>
+
+    <div id="dkndari">
+        <h2>Why Choose Dukaandari?</h2>
+        <h3>Dukaandari: Empowering Your Business, Simplifying Your Operations</h3>
+        <p>
+            Streamline your business processes with our cutting-edge ERP system.
+            From inventory management to analytics, our solution integrates all
+            operations into a single platform, enhancing efficiency, improving
+            decision-making, and driving growth with real-time insights and
+            customizable features..
+        </p>
+
+        <button onclick="togglePopup()">Book a demo!</button>
+    </div>
+
+    <section class="mobile-section">
+        <div class="container">
+            <div class="mobile-content">
+                <span class="section-tag">Mobile App</span>
+                <h2>Run Your Business from Anywhere</h2>
+                <p class="mobile-description">Manage billing and inventory seamlessly from your mobile device. Create
+                    invoices, track stock levels, and monitor sales in real-time, all on the go.</p>
+
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">📱</div>
+                        <span>Mobile Invoicing</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📊</div>
+                        <span>Real-time Analytics</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📦</div>
+                        <span>Inventory Tracking</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">💳</div>
+                        <span>Payment Processing</span>
+                    </div>
+                </div>
+
+                <button class="cta-button" onclick="togglePopup()">
+                    <span>Book a Free Demo</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </button>
             </div>
-            <div><img src="/assests/7023667.jpg" alt="image" style="height: 173px;">
-                <p>Gift Stores</p>
-            </div>
-            <div><img src="/assests/rb_13292.png" alt="image" style="height: 152px;">
-                <p>Grocery Stores</p>
-            </div>
-            <div><img src="/assests/rb_61282.png" alt="image" style="height: 123px;">
-                <p style="margin-top: 22px;">Supermarket</p>
-            </div>
-            <div><img src="/assests/rb_82057.png" alt="image">
-                <p style="margin-top:37px;">Clothing Stores</p>
+
+            <div class="phone-mockup">
+                <div class="phone-frame">
+                    <div class="phone-notch"></div>
+                    <img src="/assests/Untitled design (1).png" alt="Dukaandari Mobile App">
+                    <div class="home-indicator"></div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="info">
-        <h2>Have a glimpse, How Dukaandari fits your needs!</h2>
-        <h4>DUKAANDARI</h4>
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Simple and Transparent Pricing</h2>
+                <p class="section-subtitle">Choose a Plan That Fits Your Business Needs</p>
+                <div class="billing-toggle">
+                    <span>Billed Monthly</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="billing-toggle" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <span>Billed Annually <span class="save-badge">Save 20%</span></span>
+                </div>
+            </div>
 
-        <div class="containers">
-            <aside class="HTMList">
-                <div><img src="/assests/animated-icons/pos-terminal.gif" alt="image"><a href="#"
-                        onclick="showContent('content1')" id="LinkId1">POS</a></div>
-                <div style="position: relative; top: 67px;"><img src="/assests/animated-icons/cloud-network.gif"
-                        alt="image"><a href="#" onclick="showContent('content2')">Omnichannel Platform</a></div>
-                <div><img src="/assests/animated-icons/dashboard.gif" alt="image"><a href="#"
-                        onclick="showContent('content3')">Comprehensive Dashboard</a></div>
-                <div><img src="/assests/animated-icons/line-chart.gif" alt="image"><a href="#"
-                        onclick="showContent('content4')">Inventory Management</a></div>
-                <div style="position: relative;top: 64px;"><img src="/assests/animated-icons/worldwide.gif"
-                        alt="image"><a href="#" onclick="showContent('content5')">Reports and Analytics</a></div>
-                <div><img src="/assests/animated-icons/home.gif" alt="image"><a href="#"
-                        onclick="showContent('content6')">User-Friendly Interface</a></div>
-                <div><img src="/assests/animated-icons/diagram.gif" alt="image"><a href="#"
-                        onclick="showContent('content7')">Customizable Features</a></div>
-            </aside>
-
-            <main class="content">
-                <div class="contents" id="content1">
-                    <h2>In the context of an ERP (Enterprise Resource Planning) billing system, a Point of Sale (POS)
-                        refers to the module or feature that handles the transactions where a customer purchases goods
-                        or services. It integrates with the ERP system to provide a seamless flow of data between sales,
-                        inventory, accounting, and other business operations.</h2>
-                    <br>
-                    <ul class="key-points">
-                        <li>POS integrates seamlessly with ERP systems.</li>
-                        <li>Real-time inventory updates after each transaction.</li>
-                        <li>Supports multiple payment methods for customer convenience.</li>
-                        <li>Enhances operational efficiency with accurate data synchronization.</li>
-                        <li>Provides tax-compliant invoicing and reporting.</li>
+            <div class="pricing-cards">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <div class="plan-icon">
+                            <img src="/assests/send.png" alt="Basic Plan">
+                        </div>
+                        <h3>Basic</h3>
+                        <p class="plan-desc">Perfect for small businesses getting started</p>
+                    </div>
+                    <div class="plan-pricing">
+                        <div class="price">
+                            <span class="currency">₹</span>
+                            <span class="amount">999</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="billing-note">Billed annually at ₹11,988</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="check-icon">✓</span> Inventory Management</li>
+                        <li><span class="check-icon">✓</span> POS Integration</li>
+                        <li><span class="check-icon">✓</span> Basic Reporting</li>
+                        <li><span class="check-icon">✓</span> Email Support</li>
                     </ul>
+                    <button class="btn-plan">Get Started</button>
                 </div>
 
-                <div class="contents" id="content2">
-                    <h2>Omnichannel strategies enable businesses to meet modern customer expectations by delivering a
-                        consistent, personalized, and convenient experience. It leverages technology and data
-                        integration to foster engagement, boost sales, and enhance loyalty.</h2> <br>
-                    <h3 style="margin-bottom: 20px;">Key Features</h3>
-                    <ul class="key-points">
-                        <li>Unified Customer Experience.</li>
-                        <li>Integration Across Channels.</li>
-                        <li>Personalized Customer Engagement.</li>
-                        <li>Enhanced Customer Convenience.</li>
-                        <li>Improved Customer Retention.</li>
-                        <li>Data-Driven Insights.</li>
-                        <li>Challenges in Implementation.</li>
+                <!-- Standard Plan (Featured) -->
+                <div class="pricing-card featured">
+                    <div class="popular-tag">Most Popular</div>
+                    <div class="plan-header">
+                        <div class="plan-icon">
+                            <img src="/assests/badge.png" alt="Standard Plan">
+                        </div>
+                        <h3>Standard</h3>
+                        <p class="plan-desc">Ideal for growing businesses</p>
+                    </div>
+                    <div class="plan-pricing">
+                        <div class="price">
+                            <span class="currency">₹</span>
+                            <span class="amount">1,999</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="billing-note">Billed annually at ₹23,988</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="check-icon">✓</span> Advanced Inventory</li>
+                        <li><span class="check-icon">✓</span> CRM Integration</li>
+                        <li><span class="check-icon">✓</span> Custom Reports</li>
+                        <li><span class="check-icon">✓</span> 24/7 Support</li>
+                        <li><span class="check-icon">✓</span> API Access</li>
                     </ul>
+                    <button class="btn-plan btn-featured">Get Started</button>
                 </div>
 
-                <div class="contents" id="content3">
-                    <h2>Key Features of Comprehensive Dashboard</h2>
-                    <ul class="key-points">
-                        <li>Clearly define the dashboard's purpose and what decisions it supports.</li>
-                        <li>Focus on essential metrics that align with business objectives.</li>
-                        <li>Ensure the data presented is reliable, up-to-date, and validated.</li>
-                        <li>Tailor the dashboard to the audience, considering their roles and needs.</li>
-                        <li>Organize data in a logical and user-friendly structure. Group similar metrics together.</li>
-                        <li>Use appropriate charts (e.g., bar, line, pie) to convey insights effectively.</li>
-                        <li>Display live or near-real-time data for time-sensitive decision-making.</li>
-                        <li>Allow users to explore detailed data by interacting with summarized metrics.</li>
-
+                <!-- Premium Plan -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <div class="plan-icon">
+                            <img src="/assests/crown.png" alt="Premium Plan">
+                        </div>
+                        <h3>Premium</h3>
+                        <p class="plan-desc">For established businesses</p>
+                    </div>
+                    <div class="plan-pricing">
+                        <div class="price">
+                            <span class="currency">₹</span>
+                            <span class="amount">2,999</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="billing-note">Billed annually at ₹35,988</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="check-icon">✓</span> Full Suite of Features</li>
+                        <li><span class="check-icon">✓</span> Advanced API Access</li>
+                        <li><span class="check-icon">✓</span> Custom Development</li>
+                        <li><span class="check-icon">✓</span> Dedicated Account Manager</li>
+                        <li><span class="check-icon">✓</span> Priority 24/7 Support</li>
+                        <li><span class="check-icon">✓</span> Onboarding & Training</li>
                     </ul>
-
+                    <button class="btn-plan">Get Started</button>
                 </div>
+            </div>
 
-                <div class="contents" id="content4">
-                    <h2>Key Features of Comprehensive Dashboard</h2>
-                    <ul class="key-points">
-                        <li>Align inventory management with customer demand to improve service levels and reduce
-                            delivery times.</li>
-                        <li>Actionable Insights and Alerts.</li>
-                        <li>Compliance and Reporting.</li>
-                        <li>Ensure centralized visibility of stock for businesses managing multiple sales channels,
-                            warehouses, or fulfillment centers.</li>
-                        <li>Implement software solutions, IoT devices, and AI-driven tools for tasks like inventory
-                            tracking, analytics, and process automation.</li>
-                        <li>Inventory Optimization.</li>
-                        <li>Maintain strong relationships with reliable suppliers to ensure timely deliveries and
-                            negotiate favorable terms.</li>
-                        <li>Reduce expenses associated with storing inventory, such as rent, utilities, and
-                            depreciation, by optimizing stock levels.</li>
-                    </ul>
-                </div>
-                <div class="contents" id="content5">
-                    <h2>Reports and Analytics</h2>
-                    <ul class="key-points">
-                        <li>Real-Time Reporting.</li>
-                        <li>Customizable Dashboards.</li>
-                        <li>Predefined and Ad-Hoc Reports.</li>
-                        <li>Data Integration Across Modules.</li>
-                        <li>Compliance and Regulatory Reporting.</li>
-                        <li>Error Detection and Anomaly Alerts.</li>
-                        <li>Data Accuracy and Consistency.</li>
-                        <li>Scalability for Large Data Sets.</li>
-                        <li>Historical Data Analysis.</li>
-                        <li>User-Friendly Interface.</li>
-                    </ul>
-
-                </div>
-                <div class="contents" id="content6">
-                    <h2>User-Friendly Interface</h2>
-                    <h2>A user-friendly interface is designed to prioritize ease of use, ensuring users can interact
-                        with a system effortlessly. It features intuitive navigation, clear labels, and logical layouts
-                        that guide users seamlessly through tasks. Consistent design elements, such as fonts, colors,
-                        and icons, create familiarity and reduce confusion. Responsive functionality ensures
-                        accessibility across devices, including desktops, tablets, and smartphones. Error messages are
-                        clear and actionable, helping users resolve issues quickly. Minimal loading times and
-                        clutter-free designs enhance efficiency. Overall, a user-friendly interface focuses on
-                        simplifying complex processes, improving user satisfaction, and ensuring an enjoyable,
-                        productive experience for all users.</h2>
-                </div>
-                <div class="contents" id="content7">
-                    <h2>Customizable Features</h2>
-                    <ul class="key-points">
-                        <li>Customizable Invoice Templates.</li>
-                        <li>Flexible Tax Configuration.</li>
-                        <li>Adjustable Pricing Rules and Discounts.</li>
-                        <li>User-Defined Payment Terms.</li>
-                        <li>Multi-Currency and Multi-Language Support.</li>
-                        <li>Role-Based Access Control.</li>
-                        <li>Customizable Reports and Analytics .</li>
-                        <li>Integration with Third-Party Applications .</li>
-                        <li>Scalable Modules for Business Growth.</li>
-                        <li>Custom Fields for Unique Business Needs.</li>
-                    </ul>
-
-                </div>
-            </main>
-
+            <div class="enterprise-cta">
+                <p>Need a custom solution for your enterprise?</p>
+                <a href="#contact" class="enterprise-link">Contact Sales <span>→</span></a>
+            </div>
         </div>
-
-
-
-        <!-- </div> -->
     </section>
 
     <section class="customers">
         <h2>Don’t just take our words for it, See what customers like you are saying </h2>
-        <div class="cnt">
 
-            <div class="slider slideOne">
-                <div class="ghd">
-                    <div><img src="/assests/man.png" alt="image"><strong>Vinayak
-                            Mart</strong></div> <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i></span>
-                </div>
-                <div class="ghd ghdn">
-                    <hr style="width: 100%; color: aliceblue;">
-                    <p>“Implementing the ERP omnichannel billing system at Vinayak Mart has been a game-changer for our
-                        business. We now have complete visibility of our sales across all channels, including our
-                        physical store, website, and mobile app. The real-time inventory tracking has significantly
-                        reduced stockouts, and customers love the seamless shopping experience.Overall, it has improved
-                        operational efficiency, reduced manual errors, and saved us
-                        time and money.”</p>
-                </div>
-            </div>
-            <div class="slider">
-                <div class="ghd">
-                    <div><img src="/assests/man.png" alt="image"><strong>Metro Fashion</strong></div><span><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i></span>
-                </div>
-                <div class="ghd ghdn">
-                    <hr style="width: 100%; color: aliceblue;">
-                    <p>“MetroFashion's business grew exponentially after adopting the ERP omnichannel billing system. It
-                        was difficult to maintain consistent pricing across our website and physical stores, but now,
-                        everything is synchronized.We’ve seen a 25% boost in repeat purchases since implementing this
-                        system. The
-                        support team was also very responsive during the setup and training process, ensuring a smooth
-                        transition.”</p>
-                </div>
-            </div>
-            <div class="slider">
-                <div class="ghd">
-                    <div><img src="/assests/man.png" alt="image"><strong>Shri Ji Mithai wale</strong></div><span><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i></span>
-                </div>
-                <div class="ghd ghdn">
-                    <hr style="width: 100%; color: aliceblue;">
-                    <p>“Being in the food and sweets industry, real-time inventory management is crucial for us. With
-                        the ERP omnichannel billing system, we can now track the shelf life of our products and avoid
-                        wastage. Previously, managing bulk festival orders was a nightmare, but now, everything is
-                        automated — from online orders to in-store pickups. Our customers love the option to pre-order
-                        sweets and pick them up at a convenient time. The system also helped us streamline payments, as
-                        we now accept digital wallets, UPI, and card payments seamlessly.”</p>
-                </div>
-            </div>
-            <div class="slider">
-                <div class="ghd">
-                    <div><img src="/assests/man.png" alt="image"><strong>Prince Hardwares</strong></div><span><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i></span>
-                </div>
-                <div class="ghd ghdn">
-                    <hr style="width: 100%; color: aliceblue;">
-                    <p>“Managing large inventories at Prince Hardwares was always a challenge due to the variety of SKUs
-                        we carry. But after deploying the ERP omnichannel billing system, we have achieved full control
-                        over our inventory. Stock updates are reflected instantly, even for bulk procurement orders. Our
-                        customers now get accurate information on product availability, and it has improved their
-                        shopping experience.Overall, this system has
-                        improved staff productivity and helped us maintain consistent growth.”</p>
-                </div>
-            </div>
-            <div class="slider">
-                <div class="ghd">
-                    <div><img src="/assests/man.png" alt="image"><strong>Vishnu Mobiles</strong></div><span><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i></span>
-                </div>
-                <div class="ghd ghdn">
-                    <hr style="width: 100%; color: aliceblue;">
-                    <p>“With multiple branches and an online store, Vishnu Mobiles faced challenges in synchronizing
-                        product availability and pricing. The ERP omnichannel billing system resolved this issue. Now,
-                        customers can check the stock at any store location or order online for in-store pickup.It’s
-                        been a total transformation
-                        for our business.”</p>
-                </div>
-            </div>
-            <div class="slider">
-                <div class="ghd">
-                    <div><img src="/assests/man.png" alt="image"><strong>Narayan Ji Gazak</strong></div><span><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i></span>
-                </div>
-                <div class="ghd ghdn">
-                    <hr style="width: 100%; color: aliceblue;">
-                    <p>“Narayan Ji Gazak has been using the ERP omnichannel billing system to streamline order
-                        processing during peak festival seasons. Bulk orders used to overwhelm our team, but with the
-                        new system, we can handle thousands of online orders and track every stage of the order cycle.
-                        With powerful reporting and analytics, we now forecast
-                        demand better, resulting in increased profitability and customer satisfaction.”</p>
+
+        <div class="card__container swiper">
+            <div class="card__content">
+                <div class="swiper-wrapper">
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="/assests/4529.jpg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <p class="card__description">
+                                Dukaandari has completely transformed my retail business! Managing inventory,
+                                tracking sales, and handling accounts have become so easy. The user-friendly
+                                interface and automated reports save me hours of manual work. Customer support is
+                                also fantastic, always quick to resolve any queries. The best part is the
+                                affordability compared to other ERP systems. I highly recommend Dukaandari to any
+                                business looking for efficiency and growth.
+                            </p>
+                            <strong>-By Rahul Gupta</strong> <br> <br>
+
+                            <a href="#" class="card__button">View More</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="assests/264816-P57YFF-396.jpg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <p class="card__description">
+                                I've been using Dukaandari for my small store, and it's been a
+                                game-changer. The real-time inventory tracking ensures I never run out of stock, and
+                                the sales insights help me make better decisions. The system is very easy to use,
+                                even for someone like me with limited technical knowledge. Plus, their customer
+                                service is excellent, always responsive and helpful. Dukaandari is a must-have for
+                                any retailer!
+                            </p>
+                            <strong>-By Pooja Sharma</strong> <br> <br>
+
+                            <a href="#" class="card__button">View More</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="assests/7939485.jpg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <p class="card__description">
+                                As a wholesaler, I struggled with inventory and order management before Dukaandari.
+                                This ERP has streamlined everything for me! Now, I can manage my suppliers, track
+                                orders, and generate invoices effortlessly. The dashboard gives me a clear view of
+                                my business performance, making planning much easier. It’s an affordable yet
+                                powerful solution for any business owner looking to simplify operations. Highly
+                                recommended!
+                            </p>
+                            <strong>-By Ankit Verma</strong> <br> <br>
+
+                            <a href="#" class="card__button">View More</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="assests/OIUG2I0.jpg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <p class="card__description">
+                                Dukaandari is a blessing for my online and offline store management. It syncs my
+                                inventory across platforms, reducing errors and improving efficiency. The automated
+                                GST calculations save me from tax-related headaches, and the reporting tools provide
+                                deep insights into my business. It’s a very reliable ERP system, and I appreciate
+                                how frequently they update features based on user feedback. Great investment!
+                            </p>
+                            <strong>-By Sneha Kapoor</strong> <br> <br>
+
+                            <a href="#" class="card__button">View More</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="assests/3538433.jpg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <p class="card__description">
+                                I own a store, and Dukaandari has made managing my stock so much easier.
+                                Earlier, I had trouble keeping track of fast-moving items, but now I get alerts
+                                before running out. The system also helps me track customer orders and payments,
+                                reducing errors. It’s a simple but highly effective tool for business owners. The
+                                customer support team is also very helpful and patient.
+                            </p>
+                            <strong>-By Ramesh Gupta</strong> <br> <br>
+
+                            <a href="#" class="card__button">View More</a>
+                        </div>
+                    </article>
                 </div>
             </div>
 
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next">
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+
+            <div class="swiper-button-prev">
+                <i class="ri-arrow-left-s-line"></i>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
-        <div class="nav navButtons">
-            <button onclick="goPrevious()"><img src="/assests/back-button.png" alt=""></button>
-            <button onclick="goNextOne()"><img src="/assests/right.png" alt=""></button>
-        </div>
+
     </section>
-
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#1e2237" fill-opacity="1"
-            d="M0,128L60,117.3C120,107,240,85,360,69.3C480,53,600,43,720,58.7C840,75,960,117,1080,128C1200,139,1320,117,1380,106.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
-        </path>
-    </svg>
-    <section class="join">
-        <div class="hh">
-            <h2>Your all time solution for managing business is here!!</h2>
-            <h5>Dukaandari is all set to solving your business managing problems at every point of business.</h5>
-            <button>Book a Demo</button>
-        </div>
-        <div><img src="/assests/Har_Dukaan_ki_Apni_Pehchan-removebg-preview.png" alt="Image"></div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="margin: -124px 0;">
-            <path fill="#1e2237" fill-opacity="1"
-                d="M0,128L60,117.3C120,107,240,85,360,69.3C480,53,600,43,720,58.7C840,75,960,117,1080,128C1200,139,1320,117,1380,106.7L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
-            </path>
-        </svg>
-
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="margin: -85px 0;"><path fill="#1e2237" fill-opacity="1" d="M0,128L40,106.7C80,85,160,43,240,37.3C320,32,400,64,480,112C560,160,640,224,720,224C800,224,880,160,960,138.7C1040,117,1120,139,1200,128C1280,117,1360,75,1400,53.3L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg> -->
-    </section>
-
 
 
 
@@ -363,7 +1307,7 @@
                     synchronized across all platforms.</p>
             </div>
             <div class="slide">
-                <h3>How does an omnichannel ERP billing system ensure data accuracy?
+                <h3>2. How does an omnichannel ERP billing system ensure data accuracy?
                 </h3>
                 <p>Data accuracy in omnichannel ERP systems is achieved through real-time synchronization of
                     information. The system updates and shares inventory, sales, and customer data across all connected
@@ -385,7 +1329,7 @@
                 </p>
             </div>
             <div class="slide">
-                <h3>What integrations are available with an ERP billing omnichannel application?</h3>
+                <h3>3. What integrations are available with an ERP billing omnichannel application?</h3>
                 <p>Integrations are a core strength of ERP systems, allowing businesses to extend their functionalities
                     by connecting with other tools and platforms. Common integrations include:
 
@@ -404,7 +1348,7 @@
                     operational needs.</p>
             </div>
             <div class="slide">
-                <h3>Can the system handle tax compliance across regions?</h3>
+                <h3>4. Can the system handle tax compliance across regions?</h3>
                 <p>Yes, modern ERP billing systems are equipped to manage tax compliance for multiple jurisdictions.
                     They are pre-configured with regional tax regulations such as GST (Goods and Services Tax) in India,
                     VAT (Value Added Tax) in Europe, or sales tax in the United States. Additionally, many systems allow
@@ -419,7 +1363,7 @@
                     where tax rules may vary significantly.</p>
             </div>
             <div class="slide">
-                <h3>How secure is the application?</h3>
+                <h3>5. How secure is the application?</h3>
                 <p>Security is a major consideration in ERP systems, particularly for billing applications handling
                     sensitive customer data and payment information. Key security measures include:
 
@@ -435,7 +1379,7 @@
                 </p>
             </div>
             <div class="slide">
-                <h3>Does the ERP system provide analytics and reporting?</h3>
+                <h3>6. Does the ERP system provide analytics and reporting?</h3>
                 <p>Yes, ERP billing systems include robust analytics and reporting tools to help businesses make
                     informed decisions. Dashboards display key performance indicators (KPIs) such as:
 
@@ -456,57 +1400,136 @@
     </section>
 
     <footer>
-        <div>
-            <div style="display: flex;flex-direction: column;align-items: center; margin-bottom: 20px;">
-                <!-- <img src="/assests/WhatsApp Image 2024-12-06 at 22.24.30.jpeg" alt="Logo"> -->
-                <h3 style="letter-spacing: 17px; font-size: 23px;">DUKAANDARI</h3>
-                <div><i class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-facebook-messenger"></i><i
-                        class="fa-brands fa-square-x-twitter"></i><i class="fa-brands fa-linkedin"></i></div>
-            </div>
-            <div>
-                <p>Dukaandari ERP is a comprehensive enterprise resource planning system designed to streamline and
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3 class="footer-logo">Dukaandari</h3>
+                <p class="footer-about">
+                    Dukaandari ERP is a comprehensive enterprise resource planning system designed to streamline and
                     automate business operations. It offers modules for inventory management, sales tracking, billing,
-                    accounting, customer relationship management (CRM), and supplier coordination. Tailored for small to
-                    medium-sized enterprises (SMEs), Dukaandari simplifies daily workflows, enhances decision-making
-                    with real-time data insights, and boosts overall operational efficiency. Its user-friendly interface
-                    and customizable features make it accessible for businesses across industries, from retail to
-                    wholesale. With Dukaandari, businesses can reduce manual tasks, minimize errors, and achieve better
-                    control over their processes, leading to increased productivity and profitability.</p>
-            </div>
-
-            <div class="links">
-                <ul>
-                    <li>Omnichannel</li>
-                    <li>POS</li>
-                    <li>Retail Stores</li>
-                    <li>ERP Software</li>
-                </ul>
-                <ul>
-                    <li>Partners</li>
-                    <li>How it works??</li>
-                    <li>Clients Feedback</li>
-                    <li>Smart Retail</li>
-                </ul>
-                <ul>
-                    <li>About</li>
-                    <li>Contact us</li>
-                    <li>Career</li>
-                    <li>Terms & Conditions</li>
-                </ul>
-                <div style="color: black; ">
-                    <li style="display: flex; align-items: center; gap: 12px;"><i class="fa-solid fa-envelope"></i>
-                        <h4>mail@dukaandari.com</h4>
-                    </li>
-                    <li style="display: flex; align-items: center; gap: 12px;"><i class="fa-solid fa-phone"></i>
-                        <h4>+91-8521454900</h4>
-                    </li>
+                    accounting, customer relationship management (CRM), and supplier coordination.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Messenger"><i class="fa-brands fa-facebook-messenger"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Omnichannel</a></li>
+                    <li><a href="#">POS</a></li>
+                    <li><a href="#">Retail Stores</a></li>
+                    <li><a href="#">ERP Software</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">How it Works</a></li>
+                    <li><a href="#">Client Feedback</a></li>
+                    <li><a href="#">Smart Retail</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Contact Us</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-envelope"></i> <a
+                            href="mailto:mail@dukaandari.com">mail@dukaandari.com</a></li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+918521454900">+91 85214 54900</a></li>
+                    <li><i class="fa-solid fa-location-dot"></i> Your Company Address</li>
+                </ul>
+            </div>
         </div>
-        <strong>© 2024 Dukaandari</strong>
+        <div class="copyright">
+            &copy; 2024 Dukaandari. All rights reserved.
+        </div>
     </footer>
 
-    <script src="/script.js"></script>
+
+
+    <!-- || -->
+    <script>
+        const openButton = document.getElementById('open-sidebar-button')
+        const navbar = document.getElementById('navbar')
+
+        const media = window.matchMedia("(width < 700px)")
+
+        media.addEventListener('change', (e) => updateNavbar(e))
+
+        function updateNavbar(e) {
+            const isMobile = e.matches
+            console.log(isMobile)
+            if (isMobile) {
+                navbar.setAttribute('inert', '')
+            }
+            else {
+                // desktop device
+                navbar.removeAttribute('inert')
+            }
+        }
+
+        function openSidebar() {
+            navbar.classList.add('show')
+            openButton.setAttribute('aria-expanded', 'true')
+            navbar.removeAttribute('inert')
+        }
+
+        function closeSidebar() {
+            navbar.classList.remove('show')
+            openButton.setAttribute('aria-expanded', 'false')
+            navbar.setAttribute('inert', '')
+        }
+
+        updateNavbar(media)
+
+    </script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- form script  -->
+
+    <!-- <script>
+        window.addEventListener("load", function () {
+          setTimeout(function open(event) {
+            document.querySelector(".popup").style.display = "block";
+            document.querySelector(".overlay").classList.add("active");
+          }, 5000);
+        });
+  
+        document.querySelector("#close").addEventListener("click", function () {
+          document.querySelector(".popup").style.display = "none";
+          document.querySelector(".overlay").classList.remove("active");
+        });
+      </script> -->
+
+    <script>
+        function togglePopup() {
+            const popup = document.getElementById("popup-1");
+            const overlay = document.getElementById("overlay");
+            const body = document.body;
+
+            if (popup.style.display === "block") {
+                popup.style.display = "none";
+                overlay.style.display = "none";
+                body.classList.remove("popup-active"); // Allow scrolling
+            } else {
+                popup.style.display = "block";
+                overlay.style.display = "block";
+                body.classList.add("popup-active"); // Prevent scrolling
+            }
+        }
+
+    </script>
+
+
 </body>
 
 </html>

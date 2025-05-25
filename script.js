@@ -28,7 +28,7 @@ const sliders = document.querySelectorAll(".slider");
 var counter = 0;
 
 sliders.forEach((slider, index) => {
-  slider.style.left = `${index * 33.33}%`;
+  slider.style.left = `${index * 40}%`;
 });
 
 const goPrevious = () => {
@@ -43,7 +43,7 @@ const goNextOne = () => {
 
 const slideImagee = () => {
   sliders.forEach((slider) => {
-    slider.style.transform = `translateX(-${counter * 33.33}%)`;
+    slider.style.transform = `translateX(-${counter * 40}%)`;
   });
 };
 
@@ -101,37 +101,78 @@ navLinks.forEach((link) => {
 //   });
 // });
 
+
+
+
+// function showContent(contentId, event) {
+//   // Prevent default behavior of anchor tags
+//   if (event) {
+//     event.preventDefault();
+//   }
+
+//   var contentSections = document.getElementsByClassName("contents");
+//   var links = document.querySelectorAll(".HTMList a");
+
+//   // Reset all content and links
+//   for (var i = 0; i < contentSections.length; i++) {
+//     contentSections[i].classList.remove("active-content");
+//   }
+//   links.forEach((link) => link.classList.remove("active-link"));
+
+//   // Activate selected content and link
+//   var selectedContent = document.getElementById(contentId);
+//   var activeLink = document.querySelector(`.HTMList a[onclick="showContent('${contentId}', event)"]`);
+
+//   if (selectedContent) {
+//     selectedContent.classList.add("active-content");
+//   }
+//   if (activeLink) {
+//     activeLink.classList.add("active-link");
+//   }
+// }
+
+// // Set default active link and content on page load
+// document.addEventListener("DOMContentLoaded", function () {
+//   const defaultContentId = "content1"; // ID of the first content
+//   showContent(defaultContentId);
+// });
+
+
+
+
 function showContent(contentId, event) {
-  // Prevent default behavior of anchor tags
+  // Prevent default behavior
   if (event) {
     event.preventDefault();
   }
 
-  var contentSections = document.getElementsByClassName("contents");
-  var links = document.querySelectorAll(".HTMList a");
+  // Get all content sections and tabs
+  const contentSections = document.getElementsByClassName("feature-content");
+  const tabs = document.querySelectorAll(".feature-tab");
 
-  // Reset all content and links
-  for (var i = 0; i < contentSections.length; i++) {
-    contentSections[i].classList.remove("active-content");
+  // Hide all content sections and remove active classes from all tabs
+  for (let i = 0; i < contentSections.length; i++) {
+    contentSections[i].classList.remove("active");
   }
-  links.forEach((link) => link.classList.remove("active-link"));
+  tabs.forEach((tab) => tab.classList.remove("active"));
 
-  // Activate selected content and link
-  var selectedContent = document.getElementById(contentId);
-  var activeLink = document.querySelector(`.HTMList a[onclick="showContent('${contentId}', event)"]`);
-
+  // Show selected content
+  const selectedContent = document.getElementById(contentId);
   if (selectedContent) {
-    selectedContent.classList.add("active-content");
+    selectedContent.classList.add("active");
   }
-  if (activeLink) {
-    activeLink.classList.add("active-link");
+
+  // Add active class to the clicked tab
+  if (event && event.currentTarget) {
+    event.currentTarget.classList.add("active");
   }
 }
 
-// Set default active link and content on page load
+// Set default active tab and content on page load
 document.addEventListener("DOMContentLoaded", function () {
   const defaultContentId = "content1"; // ID of the first content
-  showContent(defaultContentId);
+  const defaultTab = document.querySelector(`.feature-tab[onclick*="${defaultContentId}"]`);
+  showContent(defaultContentId, { preventDefault: () => {}, currentTarget: defaultTab });
 });
 
 
@@ -166,3 +207,35 @@ let swiperCards = new Swiper(".card__content", {
     },
   },
 });
+
+
+//popup form
+function togglePopup() {
+  document.getElementById("popup-1").classList.toggle("active");
+}
+
+// Pricing Toggle Functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleSwitch = document.getElementById('billing-toggle');
+  const monthlyPrices = ['999', '1,999', '2,999'];
+  const annualPrices = ['799', '1,599', '2,399'];
+  const monthlyBilling = ['Billed monthly', 'Billed monthly', 'Billed monthly'];
+  const annualBilling = ['Billed annually at ₹9,588', 'Billed annually at ₹19,188', 'Billed annually at ₹28,788'];
+
+  if (toggleSwitch) {
+    toggleSwitch.addEventListener('change', function() {
+      const prices = document.querySelectorAll('.amount');
+      const billingNotes = document.querySelectorAll('.billing-note');
+      
+      prices.forEach((price, index) => {
+        price.textContent = this.checked ? monthlyPrices[index] : annualPrices[index];
+      });
+      
+      billingNotes.forEach((note, index) => {
+        note.textContent = this.checked ? monthlyBilling[index] : annualBilling[index];
+      });
+    });
+  }
+});
+
+// Mobile Navigation Toggle

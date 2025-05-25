@@ -1,0 +1,247 @@
+/* Modern Mobile Section */
+.mobile-section {
+  padding: 100px 0 0 0;
+  background: linear-gradient(135deg, #f9fafb 0%, #f0f4ff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.mobile-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.mobile-content {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.section-tag {
+  display: inline-block;
+  background: rgba(37, 99, 235, 0.1);
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+.mobile-content h2 {
+  font-size: 2.5rem;
+  color: #1f2937;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.mobile-description {
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 32px;
+  max-width: 500px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 24px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f4ff;
+  border-radius: 12px;
+  color: #2563eb;
+}
+
+.feature-item span {
+  font-weight: 500;
+  color: #1f2937;
+  font-size: 0.95rem;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: #2563eb;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
+}
+
+.cta-button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+}
+
+.cta-button svg {
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover svg {
+  transform: translateX(5px);
+}
+
+/* Phone Mockup */
+.phone-mockup {
+  position: relative;
+  perspective: 2000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-frame {
+  width: 280px;
+  height: 560px;
+  background: white;
+  border-radius: 40px;
+  padding: 14px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+  position: relative;
+  overflow: hidden;
+  transform: rotateY(-15deg) rotateX(5deg);
+  transition: transform 0.5s ease;
+}
+
+.phone-mockup:hover .phone-frame {
+  transform: rotateY(-10deg) rotateX(5deg) translateY(-10px);
+}
+
+.phone-notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 30px;
+  background: #111827;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  z-index: 2;
+}
+
+.phone-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  display: block;
+}
+
+.home-indicator {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+}
+
+/* Responsive Design */
+@media (min-width: 1024px) {
+  .mobile-section .container {
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+  }
+  
+  .mobile-content {
+    text-align: left;
+    margin: 0 60px 0 0;
+    max-width: 500px;
+  }
+  
+  .phone-mockup {
+    position: sticky;
+    top: 120px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .mobile-section .container {
+    text-align: center;
+  }
+  
+  .mobile-content {
+    max-width: 600px;
+    margin: 0 auto 60px;
+  }
+  
+  .mobile-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .features-grid {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .phone-mockup {
+    margin-top: 40px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .mobile-section {
+    padding: 60px 0;
+  }
+  
+  .mobile-content h2 {
+    font-size: 2rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .phone-frame {
+    width: 85%;
+    height: auto;
+    aspect-ratio: 9/19;
+  }
+}

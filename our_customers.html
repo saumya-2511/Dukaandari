@@ -7,6 +7,7 @@
     <title>||Dukaandari-OurCustomers||</title>
     <link rel="shortcut icon" href="/assests/dukaandari_logo2-new.png" type="image/x-icon">
     <link rel="stylesheet" href="our_customers.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,6 +23,66 @@
 </head>
 
 <body>
+
+        <!-- form starts here  -->
+
+        <div class="overlay" id="overlay" onclick="togglePopup()"></div>
+        <!-- This will be used for blurring the background -->
+    
+        <div class="popup" id="popup-1">
+            <button id="close" onclick="togglePopup()">&times;</button>
+            <h2>ERP software for <strong>Retailers and Manufacturers</strong></h2>
+            <div class="flexx">
+                <div class="flexbox1">
+                    <img src="/assests/6505894.jpg" alt="image" />
+                    <div class="downbx">
+                        <div>
+                            <img src="/assests/analytic.png" alt="image" />
+                            <h2>Integrated Module</h2>
+                        </div>
+                        <div>
+                            <img src="/assests/computer.png" alt="image" />
+                            <h2>POS</h2>
+                        </div>
+                        <div>
+                            <img src="/assests/settings.png" alt="image" />
+                            <h2>Efficient working</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexbox2">
+                    <div class="form-container">
+                        <h2>Request a Free Demo</h2>
+                        <form>
+                            <input type="text" placeholder="Name *" required />
+                            <input type="text" placeholder="Business Name *" required />
+    
+                            <div class="phone-input">
+                                <span class="flag">🇮🇳 +91 ▼</span>
+                                <input type="tel" placeholder="Enter Your Contact Number" required />
+                            </div>
+    
+                            <input type="email" placeholder="Email *" required />
+                            <input type="text" placeholder="City *" required />
+    
+                            <div class="consent">
+                                <input type="checkbox" id="consent" required />
+                                <label for="consent">
+                                    I hereby provide my consent to receive emails, phone calls,
+                                    messages, and other communications from VasyERP to understand
+                                    about Vasy services, offerings, promotions, and other related
+                                    information.
+                                </label>
+                            </div>
+    
+                            <button type="submit">Book a Demo</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- form ends here  -->
 
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -45,12 +106,12 @@
                 </button>
             </li>
             <!-- <li><a href="/index.html"><img src="/assests/dukaandari_logo2-new.png" alt="logoimage"></a></li> -->
-            <li class="home-li"><a class="active-link" aria-current="page" href="nav.html">Home</a></li>
+            <li class="home-li"><a class="active-link" aria-current="page" href="index.html">Home</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Enterprise</a></li>
-            <li><a href="#">Our Customers</a></li>
-            <li><a class="accent-link" href="#">Login</a></li>
-            <li><a class="accent-link" href="#">Signup</a></li>
+            <li><a href="/our_customers.html">Our Customers</a></li>
+            <!-- <li><a class="accent-link" href="#">Login</a></li> -->
+            <li><a class="accent-link" onclick="togglePopup()">Book a Demo!</a></li>
         </ul>
     </nav>
 
@@ -174,7 +235,7 @@
             <img src="/assests/combined.png" alt="Image">
         </div>
     </main>
-    <section style="padding-top: 60px;text-align: center;color: black;">
+    <section style="padding-top: 60px;text-align: center;color: black;height: 121vh;">
         <h2 class="ed">Our Customers</h2>
         <i style="letter-spacing: 3px; font-weight: 600;color: #3d6588;">Making Dukaandari a reliable and trustable
             System among Customers</i>
@@ -304,53 +365,55 @@
     </section>
 
     <footer>
-        <div>
-            <div style="display: flex;flex-direction: column;align-items: center; margin-bottom: 20px;">
-                <h3 style="letter-spacing: 17px; font-size: 23px;">DUKAANDARI</h3>
-                <div><i class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-facebook-messenger"></i><i
-                        class="fa-brands fa-square-x-twitter"></i><i class="fa-brands fa-linkedin"></i></div>
-            </div>
-            <div>
-                <p>Dukaandari ERP is a comprehensive enterprise resource planning system designed to streamline and
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3 class="footer-logo">Dukaandari</h3>
+                <p class="footer-about">
+                    Dukaandari ERP is a comprehensive enterprise resource planning system designed to streamline and
                     automate business operations. It offers modules for inventory management, sales tracking, billing,
-                    accounting, customer relationship management (CRM), and supplier coordination. Tailored for small to
-                    medium-sized enterprises (SMEs), Dukaandari simplifies daily workflows, enhances decision-making
-                    with real-time data insights, and boosts overall operational efficiency. Its user-friendly interface
-                    and customizable features make it accessible for businesses across industries, from retail to
-                    wholesale. With Dukaandari, businesses can reduce manual tasks, minimize errors, and achieve better
-                    control over their processes, leading to increased productivity and profitability.</p>
-            </div>
-
-            <div class="links">
-                <ul>
-                    <li>Omnichannel</li>
-                    <li>POS</li>
-                    <li>Retail Stores</li>
-                    <li>ERP Software</li>
-                </ul>
-                <ul>
-                    <li>Partners</li>
-                    <li>How it works??</li>
-                    <li>Clients Feedback</li>
-                    <li>Smart Retail</li>
-                </ul>
-                <ul>
-                    <li>About</li>
-                    <li>Contact us</li>
-                    <li>Career</li>
-                    <li>Terms & Conditions</li>
-                </ul>
-                <div style="color: black; ">
-                    <li style="display: flex; align-items: center; gap: 12px;"><i class="fa-solid fa-envelope"></i>
-                        <h4>mail@dukaandari.com</h4>
-                    </li>
-                    <li style="display: flex; align-items: center; gap: 12px;"><i class="fa-solid fa-phone"></i>
-                        <h4>+91-8521454900</h4>
-                    </li>
+                    accounting, customer relationship management (CRM), and supplier coordination.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Messenger"><i class="fa-brands fa-facebook-messenger"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Omnichannel</a></li>
+                    <li><a href="#">POS</a></li>
+                    <li><a href="#">Retail Stores</a></li>
+                    <li><a href="#">ERP Software</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">How it Works</a></li>
+                    <li><a href="#">Client Feedback</a></li>
+                    <li><a href="#">Smart Retail</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Contact Us</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-envelope"></i> <a
+                            href="mailto:mail@dukaandari.com">mail@dukaandari.com</a></li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+918521454900">+91 85214 54900</a></li>
+                    <li><i class="fa-solid fa-location-dot"></i> Your Company Address</li>
+                </ul>
+            </div>
         </div>
-        <strong>© 2024 Dukaandari</strong>
+        <div class="copyright">
+            &copy; 2024 Dukaandari. All rights reserved.
+        </div>
     </footer>
 
 
@@ -393,6 +456,25 @@
     </script>
 
     <script src="/script.js"></script>
+
+    <script>
+         <script>
+        function togglePopup() {
+            const popup = document.getElementById("popup-1");
+            const overlay = document.getElementById("overlay");
+            const body = document.body;
+
+            if (popup.style.display === "block") {
+                popup.style.display = "none";
+                overlay.style.display = "none";
+                body.classList.remove("popup-active"); // Allow scrolling
+            } else {
+                popup.style.display = "block";
+                overlay.style.display = "block";
+                body.classList.add("popup-active"); // Prevent scrolling
+            }
+        }
+    </script>
 
 </body>
 

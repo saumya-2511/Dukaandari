@@ -47,15 +47,16 @@ img {
 
 /*=============== CARD ===============*/
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	/* margin-top: 69px; */
 }
 
 .card__container {
   padding-block: 5rem;
-  padding-top: 50px;
+  padding-top: 15px;
 }
 
 .card__content {
@@ -65,12 +66,13 @@ img {
 }
 
 .card__article {
-  /* width: 300px; Remove after adding swiper js */
-  border-radius: 1.25rem;
-  overflow: hidden;
-  width: 400px !important;
-  border: 1px solid;
-  margin-right: 32px;
+	/* width: 300px; */
+	border-radius: 1.25rem;
+	overflow: hidden;
+	width: 400px !important;
+	/* border: 1px solid; */
+	margin-right: 32px;
+	box-shadow: 2px 3px 17px rgb(217, 217, 217);
 }
 
 .card__image {
@@ -89,10 +91,11 @@ img {
   z-index: 10;
   text-align: justify;
   color: black;
+  font-size: 13px;
 }
 
 .card__img {
-  width: 180px;
+  width: 127px;
   margin: 0 auto;
   position: relative;
   z-index: 5;
@@ -176,7 +179,8 @@ img {
 /* For medium devices */
 @media screen and (min-width: 768px) {
   .card__content {
-    margin-inline: 3rem;
+    margin-inline: 4rem;
+    padding: 11px 0;
   }
 
   .swiper-button-next,
@@ -188,7 +192,8 @@ img {
 /* For large devices */
 @media screen and (min-width: 1120px) {
   .card__container {
-    max-width: 1360px;
+    max-width: 1061px;
+    height: 533px;
   }
 
   .swiper-button-prev {
@@ -197,4 +202,76 @@ img {
   .swiper-button-next {
     right: -1rem;
   }
+}
+
+
+
+/* new code  */
+/* body {
+	background: linear-gradient(to left, #209ef3, #2dbdf0); 
+	color: #fff;
+}
+.wrapper {
+	padding: 80px 0;
+}
+.section-header {
+	padding-bottom: 15px;
+}
+.section-header h2 {
+	font-weight: 700;
+}
+.icon-area {
+	text-align: center;
+}
+.icon-area i {
+	font-size: 80px;
+	margin-bottom: 20px;
+}
+.content p {
+	width: 60%;
+	margin: auto;
+}
+.img-area {
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: auto;
+	overflow: hidden;
+	border: 10px inset #fff;
+	margin-bottom: 30px;
+}
+.img-area img {
+	width: 100%;
+}
+.content h5 {
+	font-weight: 900;
+	margin-top: 15px;
+}
+.carousel-indicators {
+	bottom: -80px;
+}
+.carousel-indicators [data-bs-target] {
+	width: 60px;
+	height: 10px;
+	background-color: #fff;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.content p {
+		width: 95%;
+	}
+}
+@media (max-width: 767px) {
+	.wrapper {
+		padding: 30px 0;
+	}
+	.content p {
+		width: 100%;
+	}
+	.icon-area i {
+		font-size: 50px;
+	}
+} */
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  content: "";
 }
