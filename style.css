@@ -996,6 +996,10 @@ side h4 {
   background-color: #fff;
   width: 70%;
   /* padding: 30px 40px; */
+<<<<<<< HEAD
+=======
+  /* position: absolute; */
+>>>>>>> a90b48fe2c0636cf2fdce493e4b05ea2249d535d
   position: fixed;
   transform: translate(-50%, -50%);
   left: 50%;
