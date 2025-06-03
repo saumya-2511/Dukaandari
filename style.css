@@ -59,6 +59,7 @@ nav a {
   margin: 2px;
   padding: 14px 16px;
   border-radius: 25px;
+  cursor: pointer;
 }
 #open-sidebar-button {
   display: none;
@@ -114,7 +115,7 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 120px 20px;
+  /* padding: 120px 20px; */
   gap: 50px;
   max-width: 1400px;
   margin: 0 auto;
@@ -772,7 +773,7 @@ side h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 120px 20px;
+    /* padding: 120px 20px; */padding: 0 !important;
     gap: 50px;
     max-width: 1400px;
     margin: 0 auto;
@@ -902,80 +903,207 @@ side h4 {
   gap: 88px;
 }
 
+/* FAQ Section Styles */
+.faq_for_enterprise {
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    /* margin: 1.5rem 0; */
+}
+
+.faq_for_enterprise h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.faq-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+.faq-item.active {
+    border: 2px solid #2c3e50;
+}
+
+.faq-question {
+    padding: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(44, 62, 80, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.faq-question::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #2c3e50, transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.faq-item:hover .faq-question::after {
+    opacity: 1;
+}
+
+.faq-question h3 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    transition: color 0.3s ease;
+}
+
+.faq-item:hover .faq-question h3 {
+    color: #3498db;
+}
+
+.faq-arrow {
+    font-size: 1.6rem;
+    color: #666;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    z-index: 2;
+}
+
+.faq-item.active .faq-arrow {
+    transform: rotate(45deg);
+    color: #3498db;
+}
+
+.faq-answer {
+    padding: 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.85) 100%);
+}
+
+.faq-item.active .faq-answer {
+    max-height: 800px;
+    padding: 1.5rem;
+}
+
+.faq-answer p {
+    color: #333;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq_for_enterprise {
+        padding: 2rem 1rem;
+    }
+    
+    .faq_for_enterprise h2 {
+        font-size: 1.8rem;
+    }
+    
+    .faq-question h3 {
+        font-size: 1.2rem;
+    }
+    
+    .faq-answer p {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq_for_enterprise {
+        padding: 3rem 1rem;
+    }
+    
+    .faq_for_enterprise h2 {
+        font-size: 2rem;
+    }
+    
+    .faq-question h3 {
+        font-size: 1.2rem;
+    }
+    
+    .faq-answer p {
+        font-size: 1rem;
+    }
+}
+
 /* THE CARD HOLDS THE FRONT AND BACK FACES */
 .thecard {
   position: relative;
   top: 0;
   left: 0;
+  width: 100%;
   height: 100%;
-  border-radius: 10px;
+  perspective: 1000px;
   transform-style: preserve-3d;
-  transition: all 0.8s ease;
+  transition: transform 0.5s;
+  cursor: pointer;
 }
 
-/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
 .thecard:hover {
   transform: rotateY(180deg);
 }
 
-/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
-.thefront {
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.front, .back {
   position: absolute;
   top: 0;
   left: 0;
-  height: 82%;
-  border-radius: 10px;
+  width: 100%;
+  height: 100%;
   backface-visibility: hidden;
-  overflow: hidden;
-  background: #ffffff;
-  color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  h2 {
-    color: white;
-    -webkit-text-stroke-width: 1.2px;
-    -webkit-text-stroke-color: #1d73bd;
-  }
-
-  img {
-    height: 268px;
-  }
+  transition: transform 0.5s;
 }
 
-.front1 {
-  background-image: url(/assests/high-angle-customer-paying-with-nfc-device.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.front2 {
-  background-image: url(/assests/warehouse-inventory.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.front3 {
-  background-image: url(/assests/saas-concept-collage.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
-.theback {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 82%;
+.front {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
   border-radius: 10px;
-  backface-visibility: hidden;
-  overflow: hidden;
-  background: #d5cece;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.back {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transform: rotateY(180deg);
+}
+
+.front h2, .back h2 {
   color: #333;
   text-align: center;
-  transform: rotateY(180deg);
-  text-align: justify;
+  margin-bottom: 20px;
+  font-size: 24px;
   font-size: 14px;
   font-family: "Poppins", serif;
 }
@@ -996,10 +1124,7 @@ side h4 {
   background-color: #fff;
   width: 70%;
   /* padding: 30px 40px; */
-<<<<<<< HEAD
-=======
   /* position: absolute; */
->>>>>>> a90b48fe2c0636cf2fdce493e4b05ea2249d535d
   position: fixed;
   transform: translate(-50%, -50%);
   left: 50%;

@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dukaandari</title>
+
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/mobile-section.css" />
+    <link rel="stylesheet" href="/pricing-section.css" />
+    <link rel="stylesheet" href="/faq.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="/test.css">
+    <link rel="stylesheet" href="/Enterprise.css">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="/swiper-bundle.min.css">
+
+    <!-- font codes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- plus jhakarta font  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- ends here  -->
+
+    <script src="https://kit.fontawesome.com/73945c6808.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+    <!-- form starts here  -->
+
+    <div class="overlay" id="overlay" onclick="togglePopup()"></div>
+    <!-- This will be used for blurring the background -->
+
+    <div class="popup" id="popup-1">
+        <button id="close" onclick="togglePopup()">&times;</button>
+        <h2>ERP software for <strong>Retailers and Manufacturers</strong></h2>
+        <div class="flex">
+            <div class="flexbox1">
+                <img src="/assests/6505894.jpg" alt="image" />
+                <div class="downbx">
+                    <div>
+                        <img src="/assests/analytic.png" alt="image" />
+                        <h2>Integrated Module</h2>
+                    </div>
+                    <div>
+                        <img src="/assests/computer.png" alt="image" />
+                        <h2>POS</h2>
+                    </div>
+                    <div>
+                        <img src="/assests/settings.png" alt="image" />
+                        <h2>Efficient working</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flexbox2">
+                <div class="form-container">
+                    <h2>Request a Free Demo</h2>
+                    <form>
+                        <input type="text" placeholder="Name *" required />
+                        <input type="text" placeholder="Business Name *" required />
+
+                        <div class="phone-input">
+                            <span class="flag">🇮🇳 +91 ▼</span>
+                            <input type="tel" placeholder="Enter Your Contact Number" required />
+                        </div>
+
+                        <input type="email" placeholder="Email *" required />
+                        <input type="text" placeholder="City *" required />
+
+                        <div class="consent">
+                            <input type="checkbox" id="consent" required />
+                            <label for="consent">
+                                I hereby provide my consent to receive emails, phone calls,
+                                messages, and other communications from VasyERP to understand
+                                about Vasy services, offerings, promotions, and other related
+                                information.
+                            </label>
+                        </div>
+
+                        <button type="submit">Book a Demo</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- form ends here  -->
+
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false"
+        aria-controls="navbar">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000">
+            <path
+                d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+        </svg>
+    </button>
+
+    <div class="navbar_hero_data">
+
+        <nav id="navbar" role="navigation" aria-label="Main Navigation">
+            <ul>
+                <li>
+                    <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                            fill="#000">
+                            <path
+                                d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
+                        </svg>
+                    </button>
+                </li>
+                <!-- <li><a href="/index.html"><img src="/assests/dukaandari_logo2-new.png" alt="logoimage"></a></li> -->
+                <li class="home-li"><a class="active-link" aria-current="page" href="/index.html">Home</a></li>
+                <li><a href="#" class="nav-features">Key Features</a></li>
+                <li><a href="#" class="nav-erp">Why DukaanSarthi</a></li>
+                <li><a href="/our_customers.html">Our Customers</a></li>
+                <li><a class="accent-link" onclick="togglePopup()">Book a Demo!</a></li>
+                <!-- <li><a class="accent-link" href="#">Signup</a></li> -->
+                 
+            </ul>
+        </nav>
+
+        <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+
+        <section class="hero_section_enterprise">
+            <div class="container_hero">
+                <div class="information_hero">
+                    <h1>Smart Billing & ERP for Growing Businesses</h1>
+                    <p>Streamline your business operations with our all-in-one ERP solution. Manage inventory, sales,
+                        and more with ease.</p>
+                    <button class="accent-link btn" onclick="togglePopup()">Transform Business</button>
+                </div>
+                <div class="image_info">
+                    <img src="/assests/Untitled_design__4_-removebg-preview (1).png" alt="photo of laptop">
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <section class="key_features" id="features">
+        <div class="container_feature">
+            <div class="section-header">
+                <h2 class="section-title">KEY FEATURES</h2>
+                <p class="section-subtitle">Of DukaanSarthi - Your Omnichannel ERP Solution</p>
+            </div>
+            <div class="key_features_container">
+                <div class="key_features_box">
+                    <img src="/assests/network_9194968.png" alt="Omnichannel Integration">
+                    <h3>Omnichannel Integration</h3>
+                    <p>Seamlessly manage all your sales channels - physical stores, e-commerce, and marketplaces from a
+                        single platform.</p>
+                </div>
+                <div class="key_features_box">
+                    <img src="/assests/report_13385051.png" alt="Smart Billing">
+                    <h3>Smart Billing System</h3>
+                    <p>Automated billing with GST compliance, invoice generation, and real-time sales tracking.</p>
+                </div>
+                <div class="key_features_box">
+                    <img src="/assests/inventory_11000487.png" alt="Inventory Management">
+                    <h3>Advanced Inventory</h3>
+                    <p>Real-time inventory tracking, multi-location management, and automated stock alerts.</p>
+                </div>
+                <div class="key_features_box">
+                    <img src="/assests/customer-care_9608804.png" alt="Customer Management">
+                    <h3>Customer Management</h3>
+                    <p>CRM integration, customer insights, loyalty programs, and personalized marketing.</p>
+                </div>
+                <div class="key_features_box">
+                    <img src="/assests/web-analytics_15524237.png" alt="Business Analytics">
+                    <h3>Business Analytics</h3>
+                    <p>Real-time business insights, sales reports, and customizable dashboards.</p>
+                </div>
+                <div class="key_features_box">
+                    <img src="/assests/support_1429529.png" alt="24/7 Support">
+                    <h3>24/7 Support</h3>
+                    <p>Dedicated support team, instant chat, and regular software updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="challenge">
+        <div class="container_challenge">
+            <div class="section-header">
+                <h2>Challenges Faced by Small Businesses</h2>
+                <p class="section-subtitle">Of DukaanSarthi - Your Omnichannel ERP Solution</p>
+            </div>
+            <div class="challenge_container" style="display: flex;align-items: center;">
+                <div class="challenge_box">
+                    <img src="/assests/3028843.jpg" alt="image">
+                    <h3>Inventory Mismanagement</h3>
+                    <p>Retailers often struggle with overstocking or stockouts due to poor visibility into inventory.
+                        Dukaansarthi provides real-time inventory tracking, low-stock alerts, and automated stock
+                        reconciliation, ensuring optimal stock levels across all locations.</p>
+                </div>
+                <div class="challenge_box">
+                    <img src="/assests/8104941.jpg" alt="image">
+                    <h3>Manual Data Entry</h3>
+                    <p>Manual data entry is time-consuming and error-prone. Dukaansarthi automates data entry processes,
+                        reducing human errors and saving time.</p>
+                </div>
+                <div class="challenge_box">
+                    <img src="/assests/5174562.jpg" alt="image">
+                    <h3>Slow Processing</h3>
+                    <p>Slow processing and outdated systems can lead to delayed decision-making and lost opportunities.
+                        Dukaansarthi offers fast and efficient processing, enabling quick decision-making and improved
+                        business agility.</p>
+                </div>
+                <div class="challenge_box">
+                    <img src="/assests/4944103.jpg" alt="image">
+                    <h3>High Operational Costs</h3>
+                    <p>High operational costs can limit business growth. Dukaansarthi offers cost-effective solutions,
+                        helping retailers reduce expenses and focus on core business activities.</p>
+                </div>
+                <div class="challenge_box">
+                    <img src="/assests/3937464.jpg" alt="image">
+                    <h3>Difficulty in Scaling</h3>
+                    <p>Difficulty in scaling operations as businesses grow. Dukaansarthi provides scalable solutions
+                        that can grow with your business, ensuring flexibility and adaptability.</p>
+                </div>
+                <div class="challenge_box">
+                    <img src="/assests/3937443.jpg" alt="image">
+                    <h3>Lack of Integration Across Departments</h3>
+                    <p>Manufacturers face delays and miscommunication when data isn't centralized. Dukaansarthi unifies
+                        sales, purchases, inventory, and accounts into one system, enabling seamless data flow and
+                        better decision-making.</p>
+                </div>
+                <div class="challenge_box">
+                    <img src="/assests/6667718.jpg" alt="image">
+                    <h3>Difficulty Managing Multiple Branches</h3>
+                    <p>Retail chains and distributors find it hard to track operations across locations. Dukaansarthi
+                        offers centralized control, letting owners monitor sales, inventory, and staff performance in
+                        real-time from a single dashboard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.querySelector('.nav-features').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('features').scrollIntoView({ behavior: 'smooth' });
+        });
+
+    </script>
+
+
+    <section class="whyerp" id="whyerp">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Dukaansarthi ERP?</h2>
+                <p class="section-subtitle">Experience the power of Dukaansarthi ERP - the all-in-one solution for
+                    modern businesses. Our ERP system is designed to help you manage your business operations with ease,
+                    providing you with the tools you need to stay competitive and grow your business.</p>
+            </div>
+            <div class="whyerp_container">
+                <div class="whyerp-grid">
+                    <div class="whyerp-card" data-feature="security">
+                        <div class="icon-container">
+                            <i class="ri-shield-check-line"></i>
+                            <div class="pulse-ring"></div>
+                        </div>
+                        <h3>Enterprise-Grade Security</h3>
+                        <p>Bank-grade security with end-to-end encryption, regular security audits, and 24/7 monitoring
+                            to protect your business data.</p>
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="99">0</span>
+                                <span class="stat-label">Security Score</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="whyerp-card" data-feature="platform">
+                        <div class="icon-container">
+                            <i class="ri-stack-line"></i>
+                            <div class="pulse-ring"></div>
+                        </div>
+                        <h3>Unified Platform</h3>
+                        <p>All your business operations in one place - inventory, sales, purchases, accounting, and HR -
+                            seamlessly integrated.</p>
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="10000">0</span>
+                                <span class="stat-label">Active Users</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="whyerp-card" data-feature="scale">
+                        <div class="icon-container">
+                            <i class="ri-grow-line"></i>
+                            <div class="pulse-ring"></div>
+                        </div>
+                        <h3>Scalable Solutions</h3>
+                        <p>Grow with your business - our solutions scale seamlessly from small businesses to large
+                            enterprises.</p>
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="100">0</span>
+                                <span class="stat-label">Growth Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="whyerp-card" data-feature="support">
+                        <div class="icon-container">
+                            <i class="ri-customer-service-2-line"></i>
+                            <div class="pulse-ring"></div>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>Round-the-clock customer support with dedicated account managers and instant chat support.
+                        </p>
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="9.8">0</span>
+                                <span class="stat-label">Customer Rating</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="whyerp-card" data-feature="analytics">
+                        <div class="icon-container">
+                            <i class="ri-analytics-line"></i>
+                            <div class="pulse-ring"></div>
+                        </div>
+                        <h3>Real-Time Analytics</h3>
+                        <p>Get actionable insights with real-time dashboards and customizable reports for better
+                            decision-making.</p>
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="100">0</span>
+                                <span class="stat-label">Data Accuracy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="whyerp-card" data-feature="cloud">
+                        <div class="icon-container">
+                            <i class="ri-cloud-line"></i>
+                            <div class="pulse-ring"></div>
+                        </div>
+                        <h3>Cloud Native</h3>
+                        <p>Always up-to-date with automatic updates, backups, and access from anywhere, anytime.</p>
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="99.99">0</span>
+                                <span class="stat-label">Uptime Guarantee</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelector('.nav-erp').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('whyerp').scrollIntoView({ behavior: 'smooth' });
+        });
+
+    </script>
+
+    <section class="pricing-section" id="price">
+        <div class="container">
+            <div class="section-header">
+                <h2>Simple and Transparent Pricing</h2>
+                <p class="section-subtitle">Choose a Plan That Fits Your Business Needs</p>
+                <div class="billing-toggle">
+                    <span>Billed Monthly</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="billing-toggle" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <span>Billed Annually <span class="save-badge">Save 20%</span></span>
+                </div>
+            </div>
+
+            <div class="pricing-cards">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <div class="plan-icon">
+                            <img src="/assests/send.png" alt="Basic Plan">
+                        </div>
+                        <h3>Basic</h3>
+                        <p class="plan-desc">Perfect for small businesses getting started</p>
+                    </div>
+                    <div class="plan-pricing">
+                        <div class="price">
+                            <span class="currency">₹</span>
+                            <span class="amount">999</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="billing-note">Billed annually at ₹11,988</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="check-icon">✓</span> Inventory Management</li>
+                        <li><span class="check-icon">✓</span> POS Integration</li>
+                        <li><span class="check-icon">✓</span> Basic Reporting</li>
+                        <li><span class="check-icon">✓</span> Email Support</li>
+                    </ul>
+                    <button class="btn-plan">Get Started</button>
+                </div>
+
+                <!-- Standard Plan (Featured) -->
+                <div class="pricing-card featured">
+                    <div class="popular-tag">Most Popular</div>
+                    <div class="plan-header">
+                        <div class="plan-icon">
+                            <img src="/assests/badge.png" alt="Standard Plan">
+                        </div>
+                        <h3>Standard</h3>
+                        <p class="plan-desc">Ideal for growing businesses</p>
+                    </div>
+                    <div class="plan-pricing">
+                        <div class="price">
+                            <span class="currency">₹</span>
+                            <span class="amount">1,999</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="billing-note">Billed annually at ₹23,988</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="check-icon">✓</span> Advanced Inventory</li>
+                        <li><span class="check-icon">✓</span> CRM Integration</li>
+                        <li><span class="check-icon">✓</span> Custom Reports</li>
+                        <li><span class="check-icon">✓</span> 24/7 Support</li>
+                        <li><span class="check-icon">✓</span> API Access</li>
+                    </ul>
+                    <button class="btn-plan btn-featured">Get Started</button>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <div class="plan-icon">
+                            <img src="/assests/crown.png" alt="Premium Plan">
+                        </div>
+                        <h3>Premium</h3>
+                        <p class="plan-desc">For established businesses</p>
+                    </div>
+                    <div class="plan-pricing">
+                        <div class="price">
+                            <span class="currency">₹</span>
+                            <span class="amount">2,999</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="billing-note">Billed annually at ₹35,988</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="check-icon">✓</span> Full Suite of Features</li>
+                        <li><span class="check-icon">✓</span> Advanced API Access</li>
+                        <li><span class="check-icon">✓</span> Custom Development</li>
+                        <li><span class="check-icon">✓</span> Dedicated Account Manager</li>
+                        <li><span class="check-icon">✓</span> Priority 24/7 Support</li>
+                        <li><span class="check-icon">✓</span> Onboarding & Training</li>
+                    </ul>
+                    <button class="btn-plan">Get Started</button>
+                </div>
+            </div>
+
+            <div class="enterprise-cta">
+                <p>Need a custom solution for your enterprise?</p>
+                <a href="#contact" class="enterprise-link">Contact Sales <span>→</span></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="faq_for_enterprise">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What is Dukaansarthi ERP and how can it help my business?</h3>
+                    <span class="faq-arrow">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Dukaansarthi ERP is a comprehensive business management solution designed specifically for Indian
+                        businesses. It helps streamline your operations, manage inventory, track finances, and automate
+                        your business processes. Our system is built to handle the unique needs of Indian enterprises,
+                        making it the perfect choice for businesses of all sizes.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Is Dukaansarthi ERP suitable for small businesses?</h3>
+                    <span class="faq-arrow">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, absolutely! Dukaansarthi ERP is designed to be scalable and affordable for businesses of all
+                        sizes. Our system offers essential features that small businesses need to grow, including
+                        inventory management, customer relationship management, and financial tracking. Plus, our
+                        pricing plans are structured to fit different business needs.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How does Dukaansarthi ERP handle GST compliance?</h3>
+                    <span class="faq-arrow">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Dukaansarthi ERP is fully GST-compliant and helps businesses manage their tax obligations
+                        efficiently. The system automatically calculates GST rates, generates GST-compliant invoices,
+                        and maintains accurate records for GST returns. Our built-in GST features ensure your business
+                        stays compliant with all regulations.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I access Dukaansarthi ERP from multiple locations?</h3>
+                    <span class="faq-arrow">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, Dukaansarthi ERP offers cloud-based access, allowing you to manage your business from
+                        anywhere with an internet connection. Multiple users can access the system simultaneously,
+                        making it perfect for businesses with multiple locations or remote teams.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What kind of support does Dukaansarthi offer?</h3>
+                    <span class="faq-arrow">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We offer comprehensive support through multiple channels including phone, email, and live chat.
+                        Our dedicated support team is available to help you with setup, customization, and any questions
+                        about using the system. We also provide regular training sessions and detailed documentation to
+                        ensure you get the most out of Dukaansarthi ERP.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3 class="footer-logo">Dukaandari</h3>
+                <p class="footer-about">
+                    Dukaandari ERP is a comprehensive enterprise resource planning system designed to streamline and
+                    automate business operations. It offers modules for inventory management, sales tracking, billing,
+                    accounting, customer relationship management (CRM), and supplier coordination.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Messenger"><i class="fa-brands fa-facebook-messenger"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Omnichannel</a></li>
+                    <li><a href="#">POS</a></li>
+                    <li><a href="#">Retail Stores</a></li>
+                    <li><a href="#">ERP Software</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">How it Works</a></li>
+                    <li><a href="#">Client Feedback</a></li>
+                    <li><a href="#">Smart Retail</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Contact Us</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-envelope"></i> <a
+                            href="mailto:mail@dukaandari.com">mail@dukaandari.com</a></li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+918521454900">+91 85214 54900</a></li>
+                    <li><i class="fa-solid fa-location-dot"></i> Your Company Address</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 Dukaandari. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- open navbar and close for the small devices  -->
+     <script>
+        const openButton = document.getElementById('open-sidebar-button')
+        const navbar = document.getElementById('navbar')
+
+        const media = window.matchMedia("(width < 700px)")
+
+        media.addEventListener('change', (e) => updateNavbar(e))
+
+        function updateNavbar(e) {
+            const isMobile = e.matches
+            console.log(isMobile)
+            if (isMobile) {
+                navbar.setAttribute('inert', '')
+            }
+            else {
+                // desktop device
+                navbar.removeAttribute('inert')
+            }
+        }
+
+        function openSidebar() {
+            navbar.classList.add('show')
+            openButton.setAttribute('aria-expanded', 'true')
+            navbar.removeAttribute('inert')
+        }
+
+        function closeSidebar() {
+            navbar.classList.remove('show')
+            openButton.setAttribute('aria-expanded', 'false')
+            navbar.setAttribute('inert', '')
+        }
+
+        updateNavbar(media)
+    </script>
+
+    <script src = "/swiper-bundle.min.js" ></script>
+    <script src="/script.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        // Menu toggle functionality
+        const menuBtn = document.getElementById("menu-btn");
+        const menuIcon = document.getElementById("menu-icon");
+        const sidebar = document.getElementById("sidebar");
+
+        menuBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("active");
+            menuIcon.classList.toggle("ri-menu-line");
+            menuIcon.classList.toggle("ri-close-line");
+        });
+
+        // FAQ toggle functionality
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                item.classList.toggle('active');
+                const answer = item.querySelector('.faq-answer');
+                if (item.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                } else {
+                    answer.style.maxHeight = '0';
+                }
+            });
+        });
+
+        // Auto-scroll functionality
+        let isScrolling = false;
+        let scrollInterval;
+
+        function startAutoScroll() {
+            if (!isScrolling) {
+                isScrolling = true;
+                scrollInterval = setInterval(() => {
+                    const container = document.querySelector('.challenge_container');
+                    if (!container) return;
+
+                    const scrollLeft = container.scrollLeft;
+                    const maxScroll = container.scrollWidth - container.clientWidth;
+
+                    if (scrollLeft < maxScroll) {
+                        container.scrollLeft += 1;
+                    } else {
+                        container.scrollLeft = 0;
+                    }
+                }, 10);
+            }
+        }
+
+        function pauseAutoScroll() {
+            isScrolling = false;
+            clearInterval(scrollInterval);
+        }
+
+        function resumeAutoScroll() {
+            if (!isScrolling) {
+                startAutoScroll();
+            }
+        }
+
+        // Start auto-scroll when container is visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    startAutoScroll();
+                }
+            });
+        });
+
+        observer.observe(document.querySelector('.challenge_container'));
+
+        // Add hover and click handlers to navigation buttons
+        // const prevBtn = document.querySelector('.prev-btn');
+        // const nextBtn = document.querySelector('.next-btn');
+
+        // prevBtn.addEventListener('mouseenter', pauseAutoScroll);
+        // prevBtn.addEventListener('mouseleave', resumeAutoScroll);
+        // nextBtn.addEventListener('mouseenter', pauseAutoScroll);
+        // nextBtn.addEventListener('mouseleave', resumeAutoScroll);
+
+        // prevBtn.addEventListener('click', () => {
+        //     const container = document.querySelector('.challenge_container');
+        //     container.scrollLeft -= container.clientWidth;
+        // });
+
+        // nextBtn.addEventListener('click', () => {
+        //     const container = document.querySelector('.challenge_container');
+        //     container.scrollLeft += container.clientWidth;
+        // });
+
+        // Initialize ScrollReveal
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '60px',
+            duration: 800,
+            delay: 200,
+            reset: false,
+            easing: 'cubic-bezier(0.4, 0, 0.2, 1)'
+        });
+
+        // Hero section animations
+        const scrollRevealOption = {
+            distance: "50px",
+            origin: "bottom",
+            duration: 1000,
+        };
+
+        ScrollReveal().reveal(".container__left h1", {
+            ...scrollRevealOption,
+        });
+
+        ScrollReveal().reveal(".container__left .container__btn", {
+            ...scrollRevealOption,
+            delay: 500,
+        });
+
+        ScrollReveal().reveal(".container__right h4", {
+            ...scrollRevealOption,
+            delay: 2000,
+        });
+
+        ScrollReveal().reveal(".container__right h2", {
+            ...scrollRevealOption,
+            delay: 2500,
+        });
+
+        ScrollReveal().reveal(".container__right h3", {
+            ...scrollRevealOption,
+            delay: 3000,
+        });
+
+        ScrollReveal().reveal(".container__right p", {
+            ...scrollRevealOption,
+            delay: 3500,
+        });
+
+        ScrollReveal().reveal(".container__right .tent-1", {
+            duration: 1000,
+            delay: 4000,
+        });
+
+        ScrollReveal().reveal(".container__right .tent-2", {
+            duration: 1000,
+            delay: 4500,
+        });
+
+        ScrollReveal().reveal(".location", {
+            ...scrollRevealOption,
+            origin: "left",
+            delay: 5000,
+        });
+
+        ScrollReveal().reveal(".key_features_box", {
+            ...scrollRevealOption,
+            origin: "bottom",
+            delay: 1000,
+            interval: 500,
+        });
+
+        ScrollReveal().reveal(".socials span", {
+            ...scrollRevealOption,
+            origin: "top",
+        });
+
+        // Why Choose section animations
+        sr.reveal('.whyerp .section-header', {
+            duration: 1000,
+            delay: 300,
+            distance: '40px'
+        });
+
+        sr.reveal('.whyerp-card', {
+            duration: 800,
+            distance: '50px',
+            interval: 200,
+            origin: 'bottom',
+            scale: 0.95,
+            reset: false
+        });
+
+        // Number animation for stats
+        function animateNumbers() {
+            const stats = document.querySelectorAll('.stat-number');
+            stats.forEach(stat => {
+                const target = parseInt(stat.getAttribute('data-target'));
+                const duration = 2000;
+                const startValue = parseInt(stat.textContent);
+                const increment = (target - startValue) / (duration / 16);
+
+                function updateValue(currentValue) {
+                    if (currentValue < target) {
+                        stat.textContent = Math.ceil(currentValue);
+                        currentValue += increment;
+                        requestAnimationFrame(() => updateValue(currentValue));
+                    } else {
+                        stat.textContent = target;
+                    }
+                }
+
+                updateValue(startValue);
+            });
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateNumbers();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+
+        document.querySelectorAll('.stats-container').forEach(container => {
+            observer.observe(container);
+        });
+
+        // Card hover and click animations
+        const cards = document.querySelectorAll('.whyerp-card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                const icon = card.querySelector('.icon-container i');
+                icon.style.transform = 'scale(1.2) rotate(360deg)';
+                icon.style.transition = 'all 0.3s ease';
+
+                const pulse = card.querySelector('.pulse-ring');
+                pulse.style.animation = 'pulse 1.5s infinite';
+            });
+
+            card.addEventListener('mouseleave', () => {
+                const icon = card.querySelector('.icon-container i');
+                icon.style.transform = 'scale(1) rotate(0)';
+
+                const pulse = card.querySelector('.pulse-ring');
+                pulse.style.animation = 'none';
+            });
+
+            card.addEventListener('click', (e) => {
+                e.preventDefault();
+                const feature = card.getAttribute('data-feature');
+                highlightFeature(feature);
+            });
+        });
+
+        // Feature highlight animation
+        function highlightFeature(feature) {
+            const cards = document.querySelectorAll('.whyerp-card');
+            cards.forEach(card => {
+                if (card.getAttribute('data-feature') === feature) {
+                    card.classList.add('highlighted');
+                    setTimeout(() => card.classList.remove('highlighted'), 2000);
+                }
+            });
+        }
+
+        // Navigation links
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const feature = link.getAttribute('data-feature');
+                highlightFeature(feature);
+
+                document.getElementById('whyerp').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+        // Floating header animation
+        const header = document.querySelector('.whyerp .section-header');
+        if (header) {
+            header.style.position = 'relative';
+            header.style.zIndex = '1';
+
+            const floatAnimation = () => {
+                const y = Math.sin(Date.now() / 2000) * 10;
+            }
+        }
+
+
+        let isScrolling = false;
+        let scrollInterval;
+
+        function startAutoScroll() {
+            if (!isScrolling) {
+                isScrolling = true;
+                scrollInterval = setInterval(() => {
+                    const container = document.querySelector('.challenge_container');
+                    if (!container) return;
+
+                    const scrollLeft = container.scrollLeft;
+                    const maxScroll = container.scrollWidth - container.clientWidth;
+
+                    if (scrollLeft < maxScroll) {
+                        container.scrollLeft += 1;
+                    } else {
+                        container.scrollLeft = 0;
+                    }
+                }, 10);
+            }
+        }
+
+        function pauseAutoScroll() {
+            isScrolling = false;
+            clearInterval(scrollInterval);
+        }
+
+        function resumeAutoScroll() {
+            if (!isScrolling) {
+                startAutoScroll();
+            }
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    startAutoScroll();
+                }
+            });
+        });
+
+        observer.observe(document.querySelector('.challenge_container'));
+
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+
+        prevBtn.addEventListener('mouseenter', pauseAutoScroll);
+        prevBtn.addEventListener('mouseleave', resumeAutoScroll);
+        nextBtn.addEventListener('mouseenter', pauseAutoScroll);
+        nextBtn.addEventListener('mouseleave', resumeAutoScroll);
+
+        prevBtn.addEventListener('click', () => {
+            const container = document.querySelector('.challenge_container');
+            container.scrollLeft -= container.clientWidth;
+        });
+
+        nextBtn.addEventListener('click', () => {
+            const container = document.querySelector('.challenge_container');
+            container.scrollLeft += container.clientWidth;
+        });
+    </script>
+    <script>
+        // FAQ toggle functionality
+        (function () {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            // Add click event to FAQ arrow
+            faqItems.forEach(item => {
+                const arrow = item.querySelector('.faq-arrow');
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+
+                // Add click event to arrow
+                arrow.addEventListener('click', (e) => {
+                    e.stopPropagation(); // Prevent question click event from firing
+                    toggleFAQ(item);
+                });
+
+                // Add click event to question
+                question.addEventListener('click', () => {
+                    toggleFAQ(item);
+                });
+            });
+
+            function toggleFAQ(item) {
+                // Close other open FAQs
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                        const answer = otherItem.querySelector('.faq-answer');
+                        answer.style.maxHeight = '0';
+                    }
+                });
+
+                // Toggle current FAQ
+                item.classList.toggle('active');
+                const answer = item.querySelector('.faq-answer');
+
+                // Smooth animation for answer height
+                if (item.classList.contains('active')) {
+                    // Get the natural height of the answer
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+
+                    // Add animation class
+                    answer.classList.add('faq-animate-in');
+                } else {
+                    // Remove animation class
+                    answer.classList.remove('faq-animate-in');
+
+                    // Set max height to 0 after animation completes
+                    setTimeout(() => {
+                        answer.style.maxHeight = '0';
+                    }, 300); // Match the animation duration
+                }
+            }
+
+            // Add smooth scroll to answer when opened
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    if (item.classList.contains('active')) {
+                        const answer = item.querySelector('.faq-answer');
+                        const rect = answer.getBoundingClientRect();
+                        window.scrollTo({
+                            top: window.scrollY + rect.top - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Add touch feedback for mobile devices
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const arrow = item.querySelector('.faq-arrow');
+
+                // Add touch feedback for question
+                question.addEventListener('touchstart', () => {
+                    question.style.backgroundColor = '#f0f0f0';
+                });
+
+                question.addEventListener('touchend', () => {
+                    question.style.backgroundColor = 'transparent';
+                });
+
+                // Add touch feedback for arrow
+                arrow.addEventListener('touchstart', () => {
+                    arrow.style.color = '#007bff';
+                });
+
+                arrow.addEventListener('touchend', () => {
+                    arrow.style.color = '#666';
+                });
+            });
+        })();
+    </script>
+
+    <!-- form starts here  -->
+    <script>
+        function togglePopup() {
+            const popup = document.getElementById("popup-1");
+            const overlay = document.getElementById("overlay");
+            const body = document.body;
+
+            if (popup.style.display === "block") {
+                popup.style.display = "none";
+                overlay.style.display = "none";
+                body.classList.remove("popup-active"); // Allow scrolling
+            } else {
+                popup.style.display = "block";
+                overlay.style.display = "block";
+                body.classList.add("popup-active"); // Prevent scrolling
+            }
+        }
+
+    </script>
+</body>
+
+</html>

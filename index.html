@@ -122,8 +122,8 @@
             </li>
             <!-- <li><a href="/index.html"><img src="/assests/dukaandari_logo2-new.png" alt="logoimage"></a></li> -->
             <li class="home-li"><a class="active-link" aria-current="page" href="/index.html">Home</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Enterprise</a></li>
+            <li><a href="#" class="nav-pricing">Pricing</a></li>
+            <li><a href="/Enterprise.html">Enterprise</a></li>
             <li><a href="/our_customers.html">Our Customers</a></li>
             <li><a class="accent-link" onclick="togglePopup()">Book a Demo!</a></li>
             <!-- <li><a class="accent-link" href="#">Signup</a></li> -->
@@ -1051,7 +1051,7 @@
         </div>
     </section>
 
-    <section class="pricing-section">
+    <section class="pricing-section" id="price">
         <div class="container">
             <div class="section-header">
                 <h2>Simple and Transparent Pricing</h2>
@@ -1156,6 +1156,14 @@
             </div>
         </div>
     </section>
+
+    <script>
+        document.querySelector('.nav-pricing').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.getElementById('price').scrollIntoView({ behavior: 'smooth' });
+});
+
+    </script>
 
     <section class="customers">
         <h2>Don’t just take our words for it, See what customers like you are saying </h2>
@@ -1494,21 +1502,7 @@
     <script src="/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 
-    <!-- form script  -->
 
-    <!-- <script>
-        window.addEventListener("load", function () {
-          setTimeout(function open(event) {
-            document.querySelector(".popup").style.display = "block";
-            document.querySelector(".overlay").classList.add("active");
-          }, 5000);
-        });
-  
-        document.querySelector("#close").addEventListener("click", function () {
-          document.querySelector(".popup").style.display = "none";
-          document.querySelector(".overlay").classList.remove("active");
-        });
-      </script> -->
 
     <script>
         function togglePopup() {

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -20,69 +21,70 @@
     <!--=============== SWIPER CSS ===============-->
     <link rel="stylesheet" href="/swiper-bundle.min.css">
     <link rel="stylesheet" href="/test.css">
+    <script src="https://kit.fontawesome.com/73945c6808.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-        <!-- form starts here  -->
+    <!-- form starts here  -->
 
-        <div class="overlay" id="overlay" onclick="togglePopup()"></div>
-        <!-- This will be used for blurring the background -->
-    
-        <div class="popup" id="popup-1">
-            <button id="close" onclick="togglePopup()">&times;</button>
-            <h2>ERP software for <strong>Retailers and Manufacturers</strong></h2>
-            <div class="flexx">
-                <div class="flexbox1">
-                    <img src="/assests/6505894.jpg" alt="image" />
-                    <div class="downbx">
-                        <div>
-                            <img src="/assests/analytic.png" alt="image" />
-                            <h2>Integrated Module</h2>
-                        </div>
-                        <div>
-                            <img src="/assests/computer.png" alt="image" />
-                            <h2>POS</h2>
-                        </div>
-                        <div>
-                            <img src="/assests/settings.png" alt="image" />
-                            <h2>Efficient working</h2>
-                        </div>
+    <div class="overlay" id="overlay" onclick="togglePopup()"></div>
+    <!-- This will be used for blurring the background -->
+
+    <div class="popup" id="popup-1">
+        <button id="close" onclick="togglePopup()">&times;</button>
+        <h2>ERP software for <strong>Retailers and Manufacturers</strong></h2>
+        <div class="flexx">
+            <div class="flexbox1">
+                <img src="/assests/6505894.jpg" alt="image" />
+                <div class="downbx">
+                    <div>
+                        <img src="/assests/analytic.png" alt="image" />
+                        <h2>Integrated Module</h2>
                     </div>
-                </div>
-                <div class="flexbox2">
-                    <div class="form-container">
-                        <h2>Request a Free Demo</h2>
-                        <form>
-                            <input type="text" placeholder="Name *" required />
-                            <input type="text" placeholder="Business Name *" required />
-    
-                            <div class="phone-input">
-                                <span class="flag">🇮🇳 +91 ▼</span>
-                                <input type="tel" placeholder="Enter Your Contact Number" required />
-                            </div>
-    
-                            <input type="email" placeholder="Email *" required />
-                            <input type="text" placeholder="City *" required />
-    
-                            <div class="consent">
-                                <input type="checkbox" id="consent" required />
-                                <label for="consent">
-                                    I hereby provide my consent to receive emails, phone calls,
-                                    messages, and other communications from VasyERP to understand
-                                    about Vasy services, offerings, promotions, and other related
-                                    information.
-                                </label>
-                            </div>
-    
-                            <button type="submit">Book a Demo</button>
-                        </form>
+                    <div>
+                        <img src="/assests/computer.png" alt="image" />
+                        <h2>POS</h2>
+                    </div>
+                    <div>
+                        <img src="/assests/settings.png" alt="image" />
+                        <h2>Efficient working</h2>
                     </div>
                 </div>
             </div>
+            <div class="flexbox2">
+                <div class="form-container">
+                    <h2>Request a Free Demo</h2>
+                    <form>
+                        <input type="text" placeholder="Name *" required />
+                        <input type="text" placeholder="Business Name *" required />
+
+                        <div class="phone-input">
+                            <span class="flag">🇮🇳 +91 ▼</span>
+                            <input type="tel" placeholder="Enter Your Contact Number" required />
+                        </div>
+
+                        <input type="email" placeholder="Email *" required />
+                        <input type="text" placeholder="City *" required />
+
+                        <div class="consent">
+                            <input type="checkbox" id="consent" required />
+                            <label for="consent">
+                                I hereby provide my consent to receive emails, phone calls,
+                                messages, and other communications from VasyERP to understand
+                                about Vasy services, offerings, promotions, and other related
+                                information.
+                            </label>
+                        </div>
+
+                        <button type="submit">Book a Demo</button>
+                    </form>
+                </div>
+            </div>
         </div>
-    
-        <!-- form ends here  -->
+    </div>
+
+    <!-- form ends here  -->
 
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -176,65 +178,131 @@
         </div>
     </div>
 
+    <style>
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tab-button {
+            padding: 10px 20px;
+            cursor: pointer;
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .tab-button.active {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+    </style>
+
     <main>
         <div style="flex: 1;">
             <h2>Get More With Us</h2>
             <div class="containers">
                 <aside class="HTMList">
-                    <div>
+                    <!-- <div>
                         <a href="#" onclick="showContent('content1',event)" id="LinkId1">01</a>
                     </div>
                     <div>
                         <a href="#" onclick="showContent('content2',event)">02</a>
                     </div>
                     <div>
-                        <a href="#" onclick="showContent('content3',event)">03</a>
+                        <a href="#" onclick="showContent('content3',event)">0ncla>
                     </div>
                     <div>
                         <a href="#" onclick="showContent('content4',event)">04 </a>
+                    </div> -->
+
+                    <div class="tabs">
+                        <div class="tab-button" data-tab="1">01</div>
+                        <div class="tab-button" data-tab="2">02</div>
+                        <div class="tab-button" data-tab="3">03</div>
+                        <div class="tab-button" data-tab="4">04</div>
                     </div>
                 </aside>
 
-                <main class="content">
-                    <div class="contents" id="content1">
+                <div class="contents">
+                    <div class="content" id="content-1">
                         <h2>
                             CUSTOMER SERVICE
                         </h2>
-                      <p>Every customer of DreamSoft can get access to our friendly and qualified 24/7 support via chat or phone. Feel free to ask us any questions!</p>
-                      <span><button class="btn1">Get in touch</button></span><span><button class="btn2">Book a demo</button></span>
+                        <p>Every customer of DreamSoft can get access to our friendly and qualified 24/7 support via
+                            chat or phone. Feel free to ask us any questions!</p>
+                        <span><button class="btn1">Get in touch</button></span><span><button class="btn2">Book a
+                                demo</button></span>
                     </div>
 
-                    <div class="contents" id="content2">
+                    <div class="content" id="content-2">
                         <h2>
                             GREAT USABILITY
                         </h2>
-                      <p>All our apps are designed to have great usability in order to easily operate our applications. That is why our software has high ratings and lots of awards.</p>
-                      <span><button class="btn1">Get in touch</button></span><span><button class="btn2">Book a demo</button></span>
+                        <p>All our apps are designed to have great usability in order to easily operate our
+                            applications. That is why our software has high ratings and lots of awards.</p>
+                        <span><button class="btn1">Get in touch</button></span><span><button class="btn2">Book a
+                                demo</button></span>
                     </div>
 
-                    <div class="contents" id="content3">
+                    <div class="content" id="content-3">
                         <h2>
                             CUSTOMER SERVICE
                         </h2>
-                      <p>Every customer of DreamSoft can get access to our friendly and qualified 24/7 support via chat or phone. Feel free to ask us any questions!</p>
-                      <span><button class="btn1">Get in touch</button></span><span><button class="btn2">Book a demo</button></span>
+                        <p>Every customer of DreamSoft can get access to our friendly and qualified 24/7 support via
+                            chat or phone. Feel free to ask us any questions!</p>
+                        <span><button class="btn1">Get in touch</button></span><span><button class="btn2">Book a
+                                demo</button></span>
                     </div>
 
-                    <div class="contents" id="content4">
+                    <div class="content" id="content-4">
                         <h2>
                             CUSTOMER SERVICE
                         </h2>
-                      <p>Every customer of DreamSoft can get access to our friendly and qualified 24/7 support via chat or phone. Feel free to ask us any questions!</p>
-                      <span><button class="btn1">Get in touch</button></span><span><button class="btn2">Book a demo</button></span>
+                        <p>Every customer of DreamSoft can get access to our friendly and qualified 24/7 support via
+                            chat or phone. Feel free to ask us any questions!</p>
+                        <span><button class="btn1">Get in touch</button></span><span><button class="btn2">Book a
+                                demo</button></span>
                     </div>
 
-                </main>
+                </div>
             </div>
         </div>
         <div>
             <img src="/assests/combined.png" alt="Image">
         </div>
     </main>
+    <script>
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const contents = document.querySelectorAll('.content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+
+                // Remove active class from all buttons and contents
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                contents.forEach(content => content.classList.remove('active'));
+
+                // Add active class to the clicked button and corresponding content
+                button.classList.add('active');
+                document.getElementById(`content-${tabId}`).classList.add('active');
+            });
+        });
+
+        // Optional: Activate first tab by default
+        tabButtons[0].click();
+    </script>
+
     <section style="padding-top: 60px;text-align: center;color: black;height: 121vh;">
         <h2 class="ed">Our Customers</h2>
         <i style="letter-spacing: 3px; font-weight: 600;color: #3d6588;">Making Dukaandari a reliable and trustable
@@ -458,22 +526,22 @@
     <script src="/script.js"></script>
 
     <script>
-         <script>
-        function togglePopup() {
-            const popup = document.getElementById("popup-1");
-            const overlay = document.getElementById("overlay");
-            const body = document.body;
+            < script >
+            function togglePopup() {
+                const popup = document.getElementById("popup-1");
+                const overlay = document.getElementById("overlay");
+                const body = document.body;
 
-            if (popup.style.display === "block") {
-                popup.style.display = "none";
-                overlay.style.display = "none";
-                body.classList.remove("popup-active"); // Allow scrolling
-            } else {
-                popup.style.display = "block";
-                overlay.style.display = "block";
-                body.classList.add("popup-active"); // Prevent scrolling
+                if (popup.style.display === "block") {
+                    popup.style.display = "none";
+                    overlay.style.display = "none";
+                    body.classList.remove("popup-active"); // Allow scrolling
+                } else {
+                    popup.style.display = "block";
+                    overlay.style.display = "block";
+                    body.classList.add("popup-active"); // Prevent scrolling
+                }
             }
-        }
     </script>
 
 </body>
