@@ -34,6 +34,13 @@
     <!-- ends here  -->
 
     <script src="https://kit.fontawesome.com/73945c6808.js" crossorigin="anonymous"></script>
+
+
+
+
+    <!-- <script src="https://hcaptcha.com/1/api.js" async defer></script> -->
+
+
 </head>
 
 <body>
@@ -67,17 +74,22 @@
             <div class="flexbox2">
                 <div class="form-container">
                     <h2>Request a Free Demo</h2>
-                    <form>
-                        <input type="text" placeholder="Name *" required />
-                        <input type="text" placeholder="Business Name *" required />
+                    <!-- <form action="https://api.web3forms.com/submit" method="POST"> -->
+                        <form id="myForm">
+
+                        <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="aca01c9b-4d7a-4e14-8ecd-2cc30c082b51">
+
+                        <input type="text" name="name" placeholder="Name *" required />
+                        <input type="text" name="business_name" placeholder="Business Name *" required />
 
                         <div class="phone-input">
                             <span class="flag">🇮🇳 +91 ▼</span>
-                            <input type="tel" placeholder="Enter Your Contact Number" required />
+                            <input type="tel" name="phone" placeholder="Enter Your Contact Number" required />
                         </div>
 
-                        <input type="email" placeholder="Email *" required />
-                        <input type="text" placeholder="City *" required />
+                        <input type="email" name="email" placeholder="Email *" required />
+                        <input type="text" name="city" placeholder="City *" required />
 
                         <div class="consent">
                             <input type="checkbox" id="consent" required />
@@ -89,8 +101,16 @@
                             </label>
                         </div>
 
-                        <button type="submit">Book a Demo</button>
+                        <!-- hCaptcha widget -->
+                        <!-- <div class="h-captcha" data-captcha="true"></div> -->
+                        <!-- <div class="h-captcha" data-captcha="true" data-lang="de" data-theme="dark"
+                            data-onload="myFunction" data-render="explicit" data-size="compact"></div> -->
+
+                        <button type="submit" onclick="return validateForm()" value="Submit request" id="submitBtn">Book a Demo</button>
                     </form>
+
+                    <script src="https://web3forms.com/client/script.js" async defer></script>
+
                 </div>
             </div>
         </div>
@@ -1158,10 +1178,10 @@
     </section>
 
     <script>
-        document.querySelector('.nav-pricing').addEventListener('click', function(e) {
-  e.preventDefault();
-  document.getElementById('price').scrollIntoView({ behavior: 'smooth' });
-});
+        document.querySelector('.nav-pricing').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('price').scrollIntoView({ behavior: 'smooth' });
+        });
 
     </script>
 
@@ -1523,6 +1543,37 @@
 
     </script>
 
+
+    <!-- <script src="https://web3forms.com/client/script.js" async defer></script> -->
+
+
+    <script>
+        /* JS to clear form */
+        // function myFunction() { document.getElementById("myForm").reset(); }
+    
+        function validateForm() {
+      // Get all form fields
+      var fields = document.getElementById("myForm").getElementsByTagName("input");
+      
+      // Loop through fields and check if empty
+      for (var i = 0; i < fields.length; i++) {
+        if (fields[i].value.trim() === "") {
+          alert("Please fill out all fields!");
+          return false; // Prevent form submission
+        }
+      }
+      
+      // If all fields are filled, allow submission
+      return true;
+    }
+        </script>
+    
+    <script>
+        document.getElementById("submitBtn").addEventListener("click", myFunction);  
+        function myFunction() {  
+          window.location.href="/thankYou.html";  
+        }
+      </script>
 
 </body>
 

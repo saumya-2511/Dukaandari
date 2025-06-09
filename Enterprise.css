@@ -208,7 +208,7 @@ nav a{
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
-.key_features::before {
+/* .key_features::before {
     content: '';
     position: absolute;
     top: 0;
@@ -218,7 +218,7 @@ nav a{
     background: linear-gradient(45deg, rgba(0, 123, 255, 0.1) 0%, rgba(0, 123, 255, 0.05) 100%);
     z-index: 0;
     animation: float 6s ease-in-out infinite;
-}
+} */
 
 .key_features_container {
     display: grid;
@@ -429,12 +429,12 @@ nav a{
         font-size: 0.8rem;
     }
 }
-
+/* 
 .accent-link{
    font-weight: 600; 
    font-size: 14px;
    letter-spacing: 1px;
-}
+} */
 
 /* Animation keyframes */
 @keyframes fadeInUp {
@@ -1104,7 +1104,7 @@ nav a{
     .information_hero h1 {
         font-size: 2.5rem;
     }
-}
+} 
 
 .challenge img {
     height: 100px;
