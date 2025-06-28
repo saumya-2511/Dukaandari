@@ -650,6 +650,9 @@ side h4 {
   .exp {
     flex-wrap: wrap;
   }
+  nav{
+    margin: 0px 0px !important;
+  }
 }
 
 /* @media screen and (max-width: 1250px){

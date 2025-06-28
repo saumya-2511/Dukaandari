@@ -78,7 +78,7 @@
                         <form id="myForm">
 
                         <!-- Replace with your Access Key -->
-            <input type="hidden" name="access_key" value="aca01c9b-4d7a-4e14-8ecd-2cc30c082b51">
+                        <input type="hidden" name="access_key" value="f4df32ca-fed5-47cb-a155-8a8bbd864bc4">
 
                         <input type="text" name="name" placeholder="Name *" required />
                         <input type="text" name="business_name" placeholder="Business Name *" required />
@@ -155,7 +155,7 @@
 
 
     <div class="hero-section">
-        <div style="         padding: 30px;">
+        <div style="padding: 30px;">
             <h1>Best <b>ERP system</b> <br> for Selling Industry</h1>
             <p>A complete management system for managing your daily businesses. <br>
                 Take a step towards an innovative billing system
@@ -322,7 +322,63 @@
                 }
             }
 
+            @media (max-width: 700px) {
+                .stats-container {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 15px;
+                    padding: 20px 10px;
+                }
+
+                .stat-card {
+                    padding: 15px;
+                    min-height: 120px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .stat-number {
+                    font-size: 1.75rem;
+                }
+
+                .stat-text {
+                    font-size: 0.9rem;
+                    margin-bottom: 10px;
+                }
+
+                .stat-icon {
+                    font-size: 1.5rem;
+                    margin-top: 5px;
+                }
+            }
+
             @media (max-width: 480px) {
+                .stats-container {
+                    grid-template-columns: 1fr;
+                }
+
+                .stat-card {
+                    /* padding: 15px; */
+                    padding: 39px;
+                    min-height: 100px;
+                }
+
+                .stat-number {
+                    font-size: 1.5rem;
+                }
+
+                .stat-text {
+                    font-size: 0.85rem;
+                    margin-bottom: 8px;
+                }
+
+                .stat-icon {
+                    font-size: 1.25rem;
+                }
+            }
+
+            /* @media (max-width: 480px) {
                 .stats-container {
                     grid-template-columns: 1fr;
                 }
@@ -331,11 +387,11 @@
                     max-width: 280px;
                     margin: 0 auto;
                 }
-            }
+            } */
         </style>
 
 
-    </div>
+    </div> 
 
     <section class="features-section">
         <div class="features-container">
@@ -1314,118 +1370,222 @@
 
 
 
-    <section class="faq">
-        <img src="/assests/faq.png" alt="image">
-        <h2>Frequently Asked Questions</h2>
-        <div class="data">
-            <div class="slide">
-                <h3>1. What is an ERP billing omnichannel application, and why is it important?</h3>
-                <p>An ERP (Enterprise Resource Planning) billing omnichannel application is a unified software system
-                    designed to manage and automate billing processes across multiple sales channels, such as online
-                    stores, physical retail outlets, and mobile platforms.
-
-                    Its importance lies in its ability to centralize data and operations. Businesses often face
-                    challenges in synchronizing transactions across diverse channels, which can lead to errors,
-                    inefficiencies, and poor customer experiences. An omnichannel ERP resolves these issues by ensuring
-                    consistency in pricing, tax calculations, and invoicing while providing a 360-degree view of
-                    financial data. This centralization enhances decision-making and streamlines operations.
-
-                    For example, a retail chain can use an omnichannel ERP to handle in-store purchases, online orders,
-                    and app transactions seamlessly, ensuring that inventory, pricing, and customer details are
-                    synchronized across all platforms.</p>
-            </div>
-            <div class="slide">
-                <h3>2. How does an omnichannel ERP billing system ensure data accuracy?
-                </h3>
-                <p>Data accuracy in omnichannel ERP systems is achieved through real-time synchronization of
-                    information. The system updates and shares inventory, sales, and customer data across all connected
-                    channels simultaneously. This reduces the risk of discrepancies, such as double billing or inventory
-                    mismatches.
-
-                    Key features include:
-
-                    Real-time Data Updates: Any transaction, whether online or offline, immediately reflects in the
-                    system, ensuring data consistency.
-                    Centralized Database: A unified database prevents conflicting information from being generated in
-                    different channels.
-                    Audit Trails: ERP systems often include logging mechanisms that allow administrators to track and
-                    verify changes, ensuring accountability.
-                    For instance, if a customer purchases a product online and opts for in-store pickup, the system
-                    updates inventory levels for both channels instantaneously. This minimizes errors and enhances
-                    operational efficiency.
-
-                </p>
-            </div>
-            <div class="slide">
-                <h3>3. What integrations are available with an ERP billing omnichannel application?</h3>
-                <p>Integrations are a core strength of ERP systems, allowing businesses to extend their functionalities
-                    by connecting with other tools and platforms. Common integrations include:
-
-                    Customer Relationship Management (CRM): CRM integration helps track customer interactions and
-                    personalize experiences. For example, if a customer purchases from a physical store, their
-                    preferences can be recorded and used for targeted online marketing.
-                    Inventory Management Systems: These ensure that stock levels are updated across all channels in
-                    real-time.
-                    Payment Gateways: ERP applications integrate with multiple payment processors, such as Stripe,
-                    PayPal, and local options, ensuring flexibility in transactions.
-                    E-commerce Platforms: Popular platforms like Shopify, WooCommerce, and Magento can be integrated for
-                    seamless online store management.
-                    Accounting Tools: Integration with accounting software like QuickBooks or Tally helps streamline
-                    financial reporting and compliance.
-                    By leveraging these integrations, businesses can create a cohesive ecosystem that supports all their
-                    operational needs.</p>
-            </div>
-            <div class="slide">
-                <h3>4. Can the system handle tax compliance across regions?</h3>
-                <p>Yes, modern ERP billing systems are equipped to manage tax compliance for multiple jurisdictions.
-                    They are pre-configured with regional tax regulations such as GST (Goods and Services Tax) in India,
-                    VAT (Value Added Tax) in Europe, or sales tax in the United States. Additionally, many systems allow
-                    custom tax configurations to adapt to specific business needs.
-
-                    Key features include:
-
-                    Automatic tax calculation based on customer location.
-                    Tax-inclusive and tax-exclusive pricing options.
-                    Filing and reporting tools to simplify compliance audits.
-                    This functionality is particularly useful for businesses operating across state or country lines,
-                    where tax rules may vary significantly.</p>
-            </div>
-            <div class="slide">
-                <h3>5. How secure is the application?</h3>
-                <p>Security is a major consideration in ERP systems, particularly for billing applications handling
-                    sensitive customer data and payment information. Key security measures include:
-
-                    Data Encryption: Ensures that transaction details and personal data are protected during
-                    transmission.
-                    Role-based Access Control (RBAC): Restricts access based on user roles, ensuring that only
-                    authorized personnel can view or modify sensitive data.
-                    Regular Updates: Vendors often release updates to address vulnerabilities and enhance system
-                    security.
-                    Compliance Standards: Most ERP systems adhere to regulatory frameworks like PCI DSS (for payment
-                    data security) and GDPR (for data privacy in the EU).
-                    Investing in a secure ERP ensures customer trust and prevents financial losses from breaches.
-                </p>
-            </div>
-            <div class="slide">
-                <h3>6. Does the ERP system provide analytics and reporting?</h3>
-                <p>Yes, ERP billing systems include robust analytics and reporting tools to help businesses make
-                    informed decisions. Dashboards display key performance indicators (KPIs) such as:
-
-                    Total sales and revenue by channel.
-                    Customer acquisition and retention metrics.
-                    Inventory turnover rates.
-                    Regional or product-specific performance.
-                    Customizable reports allow businesses to drill down into data, identify trends, and optimize
-                    operations. For example, a retailer can analyze which channels contribute the most to revenue and
-                    adjust strategies accordingly.</p>
-            </div>
+    <section class="faq-section">
+    <div class="faq-container">
+        <div class="faq-header">
+            <img src="/assests/faq.png" alt="FAQ Icon" class="faq-icon">
+            <h2>Frequently Asked Questions</h2>
+            <p class="faq-subtitle">Get answers to your most common questions about our ERP system</p>
         </div>
 
-        <div class="nav">
-            <button onclick="goPrev()"><img src="/assests/back-button.png" alt=""></button>
-            <button onclick="goNext()"><img src="/assests/right.png" alt=""></button>
+        <div class="faq-content">
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span class="question-number">1</span>
+                    <h3>What is an ERP billing omnichannel application, and why is it important?</h3>
+                    <i class="ri-arrow-down-s-line"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>An ERP (Enterprise Resource Planning) billing omnichannel application is a unified software system designed to manage and automate billing processes across multiple sales channels, such as online stores, physical retail outlets, and mobile platforms. Its importance lies in its ability to centralize data and operations. Businesses often face challenges in synchronizing transactions across diverse channels, which can lead to errors, inefficiencies, and poor customer experiences. An omnichannel ERP resolves these issues by ensuring consistency in pricing, tax calculations, and invoicing while providing a 360-degree view of financial data. This centralization enhances decision-making and streamlines operations. For example, a retail chain can use an omnichannel ERP to handle in-store purchases, online orders, and app transactions seamlessly, ensuring that inventory, pricing, and customer details are synchronized across all platforms.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span class="question-number">2</span>
+                    <h3>How does an omnichannel ERP billing system ensure data accuracy?</h3>
+                    <i class="ri-arrow-down-s-line"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Data accuracy in omnichannel ERP systems is achieved through real-time synchronization of information. The system updates and shares inventory, sales, and customer data across all connected channels simultaneously. This reduces the risk of discrepancies, such as double billing or inventory mismatches. Key features include: Real-time Data Updates: Any transaction, whether online or offline, immediately reflects in the system, ensuring data consistency. Centralized Database: A unified database prevents conflicting information from being generated in different channels. Audit Trails: ERP systems often include logging mechanisms that allow administrators to track and verify changes, ensuring accountability. For instance, if a customer purchases a product online and opts for in-store pickup, the system updates inventory levels for both channels instantaneously. This minimizes errors and enhances operational efficiency.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span class="question-number">3</span>
+                    <h3>What integrations are available with an ERP billing omnichannel application?</h3>
+                    <i class="ri-arrow-down-s-line"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Integrations are a core strength of ERP systems, allowing businesses to extend their functionalities by connecting with other tools and platforms. Common integrations include: Customer Relationship Management (CRM): CRM integration helps track customer interactions and personalize experiences. For example, if a customer purchases from a physical store, their preferences can be recorded and used for targeted online marketing. Inventory Management Systems: These ensure that stock levels are updated across all channels in real-time. Payment Gateways: ERP applications integrate with multiple payment processors, such as Stripe, PayPal, and local options, ensuring flexibility in transactions. E-commerce Platforms: Popular platforms like Shopify, WooCommerce, and Magento can be integrated for seamless online store management. Accounting Tools: Integration with accounting software like QuickBooks or Tally helps streamline financial reporting and compliance. By leveraging these integrations, businesses can create a cohesive ecosystem that supports all their operational needs.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span class="question-number">4</span>
+                    <h3>Can the system handle tax compliance across regions?</h3>
+                    <i class="ri-arrow-down-s-line"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, modern ERP billing systems are equipped to manage tax compliance for multiple jurisdictions. They are pre-configured with regional tax regulations such as GST (Goods and Services Tax) in India, VAT (Value Added Tax) in Europe, or sales tax in the United States. Additionally, many systems allow custom tax configurations to adapt to specific business needs. Key features include: Automatic tax calculation based on customer location. Tax-inclusive and tax-exclusive pricing options. Filing and reporting tools to simplify compliance audits. This functionality is particularly useful for businesses operating across state or country lines, where tax rules may vary significantly.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span class="question-number">5</span>
+                    <h3>How secure is the application?</h3>
+                    <i class="ri-arrow-down-s-line"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Security is a major consideration in ERP systems, particularly for billing applications handling sensitive customer data and payment information. Key security measures include: Data Encryption: Ensures that transaction details and personal data are protected during transmission. Role-based Access Control (RBAC): Restricts access based on user roles, ensuring that only authorized personnel can view or modify sensitive data. Regular Updates: Vendors often release updates to address vulnerabilities and enhance system security. Compliance Standards: Most ERP systems adhere to regulatory frameworks like PCI DSS (for payment data security) and GDPR (for data privacy in the EU). Investing in a secure ERP ensures customer trust and prevents financial losses from breaches.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span class="question-number">6</span>
+                    <h3>Does the ERP system provide analytics and reporting?</h3>
+                    <i class="ri-arrow-down-s-line"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, ERP billing systems include robust analytics and reporting tools to help businesses make informed decisions. Dashboards display key performance indicators (KPIs) such as: Total sales and revenue by channel. Customer acquisition and retention metrics. Inventory turnover rates. Regional or product-specific performance. Customizable reports allow businesses to drill down into data, identify trends, and optimize operations. For example, a retailer can analyze which channels contribute the most to revenue and adjust strategies accordingly.</p>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<style>
+    .faq-section {
+        padding: 5rem 5%;
+        background: #f8faff;
+    }
+
+    .faq-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .faq-header {
+        text-align: center;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .faq-icon {
+        width: 64px;
+        height: 64px;
+        margin: 0;
+    }
+
+    .faq-header h2 {
+        font-size: 2.5rem;
+        color: #3578b3;
+        margin-bottom: 1rem;
+    }
+
+    .faq-subtitle {
+        color: #6b7280;
+        font-size: 1.125rem;
+    }
+
+    .faq-content {
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    .faq-item {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        overflow: hidden;
+    }
+
+    .faq-item:hover {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .faq-question {
+        display: flex;
+        align-items: center;
+        padding: 1.5rem;
+        cursor: pointer;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .question-number {
+        background: #3578b3;
+        color: white;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        font-weight: bold;
+    }
+
+    .faq-question h3 {
+        flex: 1;
+        font-size: 1.25rem;
+        color: #1f2937;
+        margin: 0;
+    }
+
+    .faq-question i {
+        color: #6b7280;
+        transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .faq-question i {
+        transform: rotate(180deg);
+    }
+
+    .faq-answer {
+        padding: 0 1.5rem 1.5rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .faq-item.active .faq-answer {
+        /* max-height: 500px; */
+        max-height: fit-content;
+    }
+
+    .faq-answer p {
+        color: #4b5563;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        .faq-section {
+            padding: 3rem 2rem;
+        }
+
+        .faq-header h2 {
+            font-size: 2rem;
+        }
+
+        .faq-icon {
+            width: 48px;
+            height: 48px;
+        }
+
+        .faq-question {
+            padding: 1rem;
+        }
+
+        .faq-answer {
+            padding: 0 1rem 1rem;
+        }
+    }
+</style>
+
+<script>
+    function toggleFAQ(faqItem) {
+        faqItem.classList.toggle('active');
+    }
+</script>
 
     <footer>
         <div class="footer-container">
