@@ -50,7 +50,8 @@ img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	/* height: 100vh; */
+  height: auto;
 	/* margin-top: 69px; */
 }
 
@@ -192,7 +193,8 @@ img {
 /* For large devices */
 @media screen and (min-width: 1120px) {
   .card__container {
-    max-width: 1061px;
+    /* max-width: 1061px; */
+    max-width: 1300px;
     height: 533px;
   }
 

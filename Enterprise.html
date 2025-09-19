@@ -483,10 +483,10 @@
                 </div>
             </div>
 
-            <div class="enterprise-cta">
+            <!-- <div class="enterprise-cta">
                 <p>Need a custom solution for your enterprise?</p>
                 <a href="#contact" class="enterprise-link">Contact Sales <span>→</span></a>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -556,58 +556,652 @@
         </div>
     </section>
 
+    <style>
+        .faq-section {
+            padding: 5rem 5%;
+            background: #f8faff;
+        }
 
-    <footer>
+        .faq-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .faq-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .faq-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0;
+        }
+
+        .faq-header h2 {
+            font-size: 2 rem;
+            color: #3578b3;
+            margin-bottom: 1rem;
+        }
+
+        .faq-subtitle {
+            color: #6b7280;
+            font-size: 1.125rem;
+        }
+
+        .faq-content {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-question {
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+            cursor: pointer;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .question-number {
+            background: #3578b3;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            font-weight: bold;
+        }
+
+        .faq-question h3 {
+            flex: 1;
+            font-size: 1.1rem;
+            color: #1f2937;
+            margin: 0;
+        }
+
+        .faq-question i {
+            color: #6b7280;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            /* max-height: 500px; */
+            max-height: fit-content;
+        }
+
+        .faq-answer p {
+            color: #4b5563;
+            line-height: 1.6;
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .faq-section {
+                padding: 3rem 2rem;
+            }
+
+            .faq-header h2 {
+                font-size: 2rem;
+            }
+
+            .faq-icon {
+                width: 48px;
+                height: 48px;
+            }
+
+            .faq-question {
+                padding: 1rem;
+            }
+
+            .faq-answer {
+                padding: 0 1rem 1rem;
+            }
+        }
+    </style>
+
+
+<style>
+    /* Modern Footer Styles */
+    .modern-footer {
+        position: relative;
+        /* background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%); */
+        color: white;
+        overflow: hidden;
+    }
+
+    .footer-wave {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        /* transform: rotate(180deg); */
+    }
+
+    .footer-wave svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 69px;
+    }
+
+    .footer-wave .shape-fill {
+        fill: #f8faff;
+    }
+
+    .footer-content {
+        position: relative;
+        z-index: 2;
+        padding: 80px 0 40px;
+    }
+
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
+        gap: 40px;
+    }
+
+    /* Brand Section */
+    .footer-brand {
+        max-width: 400px;
+    }
+
+    .brand-logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .logo-icon {
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+    }
+
+    .logo-icon span {
+        font-size: 24px;
+        font-weight: 800;
+        color: white;
+    }
+
+    .brand-logo h3 {
+        font-size: 28px;
+        font-weight: 700;
+        margin: 0;
+        background: linear-gradient(135deg, #60a5fa, #a78bfa);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .brand-description {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #cbd5e1;
+        margin-bottom: 30px;
+    }
+
+    .social-media {
+        display: flex;
+        gap: 15px;
+    }
+
+    .social-link {
+        width: 45px;
+        height: 45px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .social-link::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 12px;
+        padding: 2px;
+        background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask-composite: exclude;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .social-link:hover::before {
+        opacity: 1;
+    }
+
+    .social-link i {
+        font-size: 20px;
+        color: #cbd5e1;
+        transition: all 0.3s ease;
+        z-index: 1;
+    }
+
+    .social-link:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .social-link:hover i {
+        color: white;
+    }
+
+    /* Footer Sections */
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 25px;
+        position: relative;
+    }
+
+    .section-title::after {
+content: '';
+position: absolute;
+bottom: -8px;
+left: 0;
+width: 30px;
+height: 3px;
+/* background: linear-gradient(135deg, #3b82f6, #8b5cf6); */
+border-radius: 2px;
+background: white;
+}
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-links li {
+        margin-bottom: 12px;
+    }
+
+    .footer-link {
+        color: #cbd5e1;
+        text-decoration: none;
+        font-size: 15px;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+    }
+
+    .footer-link::before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        /* background: linear-gradient(135deg, #3b82f6, #8b5cf6); */
+        transition: width 0.3s ease;
+    }
+
+    .footer-link:hover {
+        color: white;
+        transform: translateX(5px);
+    }
+
+    .footer-link:hover::before {
+        width: 100%;
+    }
+
+    /* Contact Section */
+    .contact-section {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border-radius: 16px;
+        padding: 25px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .contact-icon {
+        width: 40px;
+        height: 40px;
+        /* background: linear-gradient(135deg, #3b82f6, #8b5cf6); */
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        background: #ffffff;
+    }
+
+    .contact-icon i {
+font-size: 18px;
+color: #404562;
+}
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .contact-label {
+        font-size: 12px;
+        color: #94a3b8;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    .contact-value {
+        font-size: 15px;
+        color: #e2e8f0;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .contact-value:hover {
+        color: #60a5fa;
+    }
+
+    /* Footer Bottom */
+    .footer-bottom {
+        background: rgba(0, 0, 0, 0.2);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 25px 0;
+    }
+
+    .footer-bottom-content {
+display: flex;
+justify-content: space-between;
+/* align-items: center; */
+/* max-width: 1200px; */
+/* margin: 0 auto; */
+/* padding: 0 20px; */
+}
+
+    .copyright p {
+        margin: 0;
+        color: #94a3b8;
+        font-size: 14px;
+    }
+
+    .footer-legal {
+        display: flex;
+        gap: 25px;
+    }
+
+    .legal-link {
+        color: #94a3b8;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s ease;
+    }
+
+    .legal-link:hover {
+        color: #60a5fa;
+    }
+
+    .foot{
+        grid-template-columns: none;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+        .footer-container {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+        }
+
+        .footer-brand {
+            grid-column: 1 / -1;
+            max-width: none;
+            margin-bottom: 20px;
+        }
+
+        .contact-section {
+            grid-column: 1 / -1;
+            margin-top: 20px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .footer-content {
+            padding: 60px 0 30px;
+        }
+
+        .footer-container {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .footer-brand {
+            text-align: center;
+        }
+
+        .brand-logo {
+            justify-content: center;
+        }
+
+        .social-media {
+            justify-content: center;
+        }
+
+        .footer-bottom-content {
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+        }
+
+        .footer-legal {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .footer-container {
+            padding: 0 15px;
+        }
+
+        .contact-section {
+            padding: 20px;
+        }
+
+        .footer-legal {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+</style>
+
+<!-- Modern Footer Design -->
+<footer class="modern-footer">
+    <div class="footer-wave">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    
+    <div class="footer-content">
         <div class="footer-container">
+            <!-- Brand Section -->
             <div class="footer-brand">
-                <h3 class="footer-logo">Dukaandari</h3>
-                <p class="footer-about">
-                    Dukaandari ERP is a comprehensive enterprise resource planning system designed to streamline and
-                    automate business operations. It offers modules for inventory management, sales tracking, billing,
-                    accounting, customer relationship management (CRM), and supplier coordination.
+                <div class="brand-logo">
+                    <div class="logo-icon">
+                        <span>D</span>
+                    </div>
+                    <h3>Dukaandari</h3>
+                </div>
+                <p class="brand-description">
+                    Empowering businesses with comprehensive ERP solutions. Streamline operations, boost productivity, and drive growth with our intelligent business management platform.
                 </p>
-                <div class="social-links">
-                    <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
-                    <a href="#" aria-label="Messenger"><i class="ri-messenger-fill"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="ri-twitter-fill"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                <div class="social-media">
+                    <a href="#" class="social-link facebook" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link twitter" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link instagram" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
                 </div>
             </div>
 
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#">Omnichannel</a></li>
-                    <li><a href="#">POS</a></li>
-                    <li><a href="#">Retail Stores</a></li>
-                    <li><a href="#">ERP Software</a></li>
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4 class="section-title">Solutions</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Inventory Management</a></li>
+                    <li><a href="#" class="footer-link">Point of Sale</a></li>
+                    <li><a href="#" class="footer-link">Retail Analytics</a></li>
+                    <li><a href="#" class="footer-link">Supply Chain</a></li>
+                    <li><a href="#" class="footer-link">Customer Management</a></li>
                 </ul>
             </div>
 
-            <div class="footer-links">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">How it Works</a></li>
-                    <li><a href="#">Client Feedback</a></li>
-                    <li><a href="#">Smart Retail</a></li>
+            <!-- Company Links -->
+            <div class="footer-section">
+                <h4 class="section-title">Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">About Us</a></li>
+                    <li><a href="#" class="footer-link">Careers</a></li>
+                    <li><a href="#" class="footer-link">Success Stories</a></li>
+                    <li><a href="#" class="footer-link">Blog</a></li>
+                    <li><a href="#" class="footer-link">Press</a></li>
                 </ul>
             </div>
 
-            <div class="footer-links">
-                <h4>Contact Us</h4>
-                <ul class="contact-info">
-                    <li><i class="ri-mail-fill"></i> <a
-                            href="mailto:mail@dukaandari.com">mail@dukaandari.com</a></li>
-                    <li><i class="ri-phone-fill"></i> <a href="tel:+918521454900">+91 85214 54900</a></li>
-                    <li><i class="ri-map-pin-fill"></i> Your Company Address</li>
+            <!-- Support -->
+            <div class="footer-section">
+                <h4 class="section-title">Support</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Help Center</a></li>
+                    <li><a href="#" class="footer-link">Documentation</a></li>
+                    <li><a href="#" class="footer-link">API Reference</a></li>
+                    <li><a href="#" class="footer-link">Community</a></li>
+                    <li><a href="#" class="footer-link">Contact Support</a></li>
                 </ul>
             </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section contact-section">
+                <h4 class="section-title">Get in Touch</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:mail@dukaandari.com" class="contact-value">mail@dukaandari.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:+918521454900" class="contact-value">+91 85214 54900</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Address</span>
+                            <span class="contact-value">Vista Tower, Bella Vista society, Noida Extension sector 1- 201306</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="copyright">
-            &copy; 2024 Dukaandari. All rights reserved.
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="footer-container foot">
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    <p>&copy; 2024 Dukaandari. All rights reserved.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#" class="legal-link">Privacy Policy</a>
+                    <a href="#" class="legal-link">Terms of Service</a>
+                    <a href="#" class="legal-link">Cookie Policy</a>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
     <!-- open navbar and close for the small devices  -->
      <script>

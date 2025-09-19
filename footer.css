@@ -14,7 +14,8 @@ footer::before {
   left: 0;
   width: 100%;
   height: 4px;
-  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  /* background: linear-gradient(90deg, #4f46e5, #06b6d4); */
+  background-color: #fff;
 }
 
 .footer-container {
@@ -123,7 +124,8 @@ footer::before {
   height: 1px;
   bottom: -2px;
   left: 0;
-  background-color: #4f46e5;
+  /* background-color: #4f46e5; */
+  background-color: #fff;
   transition: width 0.3s ease;
 }
 
@@ -153,9 +155,9 @@ footer::before {
 
 .copyright {
   text-align: center;
-  margin-top: 60px;
+  /* margin-top: 60px;
   padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1); */
   color: #94a3b8;
   font-size: 0.9rem;
 }

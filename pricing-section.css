@@ -1,12 +1,15 @@
 /* Pricing Section Styles */
 .pricing-section {
-  padding: 167px 0 154px;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  background: #f8fafc;
-  position: relative;
-  overflow: hidden;
+	padding: 68px 0 90px;
+	/* min-height: 100vh; */
+  height: auto;
+	display: flex;
+	align-items: center;
+	background: #f8fafc;
+	position: relative;
+	overflow: hidden;
+	margin: 50px;
+	border-radius: 10px;
 }
 
 .pricing-section .container {
@@ -135,6 +138,8 @@ input:checked + .slider:before {
   height: 100%;
   min-height: 600px;
   box-sizing: border-box;
+  overflow: hidden;
+  backdrop-filter: blur(20px);
 }
 
 .pricing-card:hover {
@@ -166,13 +171,13 @@ input:checked + .slider:before {
 }
 
 .plan-header {
-  text-align: center;
-  margin-bottom: 25px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #f1f5f9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	text-align: center;
+	margin-bottom: -20px;
+	/* padding-bottom: 20px; */
+	/* border-bottom: 1px solid #f1f5f9; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .plan-header h3 {
@@ -264,11 +269,12 @@ input:checked + .slider:before {
 }
 
 .plan-features li {
-  padding: 8px 0;
-  color: #475569;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+	padding: 5px 0;
+	color: #000;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 13px;
 }
 
 .check-icon {
@@ -304,7 +310,7 @@ input:checked + .slider:before {
 }
 
 .btn-featured {
-  background: #2563eb;
+  background: #0081b6;
   color: white;
   box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
 }
@@ -416,4 +422,34 @@ input:checked + .slider:before {
   .amount {
     font-size: 2.5rem;
   }
+}
+
+.pricing-card::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background: linear-gradient(90deg, #3b82f6, #76829f, #dbdbdb);
+	opacity: 0;
+	transition: opacity 0.4s ease;
+}
+.pricing-card.featured::before {
+	opacity: 1;
+}
+.pricing-card.featured {
+	transform: scale(1.05);
+	/* border: 2px solid #3b82f6; */
+	box-shadow: 0 25px 50px rgba(59, 130, 246, 0.2);
+}
+.pricing-card.featured {
+	animation: glow 3s ease-in-out infinite;
+}
+.plan-pricing {
+	text-align: center;
+	margin: 30px 0;
+	padding: 20px 0;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
 }

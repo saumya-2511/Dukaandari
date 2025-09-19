@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="mobile-section.css" />
     <link rel="stylesheet" href="pricing-section.css" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <!-- <link rel="stylesheet" href="faq.css" />
     <link rel="stylesheet" href="/test.css"> -->
 
@@ -28,6 +29,10 @@
     <link rel="stylesheet" href="/test.css">
     <script src="https://kit.fontawesome.com/73945c6808.js" crossorigin="anonymous"></script>
 </head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
 
 <body>
 
@@ -77,7 +82,7 @@
                             <label for="consent">
                                 I hereby provide my consent to receive emails, phone calls,
                                 messages, and other communications from VasyERP to understand
-                                about Vasy services, offerings, promotions, and other related
+                                about dukaandari services, offerings, promotions, and other related
                                 information.
                             </label>
                         </div>
@@ -113,75 +118,450 @@
                 </button>
             </li>
             <!-- <li><a href="/index.html"><img src="/assests/dukaandari_logo2-new.png" alt="logoimage"></a></li> -->
-            <li class="home-li"><a class="active-link" aria-current="page" href="index.html">Home</a></li>
-            <li><a href="#"  class="nav-pricing">Pricing</a></li>
-            <li><a href="/Enterprise.html">Enterprise</a></li>
-            <li><a href="/our_customers.html">Our Customers</a></li>
-            <!-- <li><a class="accent-link" href="#">Login</a></li> -->
-            <li><a class="accent-link" onclick="togglePopup()">Book a Demo!</a></li>
+            <li class="home-li"><a class="active-link" aria-current="page" href="/index.html">Home</a></li>
+                <li><a href="#" class="nav-pricing">Pricing</a></li>
+                <li><a href="/Enterprise.html">Enterprise</a></li>
+                <li><a>Features</a></li>
+                <li><a href="/our_customers.html">Our Customers</a></li>
+                <li><a>Company <span>→</span></a></li>
+                <li><a class="accent-link" onclick="togglePopup()">Book a Demo!</a></li>
         </ul>
     </nav>
 
     <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
 
-    <header>
-        <div class="header-container">
-            <div class="header-content">
-                <h1>Our Customers</h1>
-                <b>Success Stories of an ERP System: Empowering Businesses Worldwide</b>
-                <p>Join the thousands of innovative businesses that trust Dukaandari to run their business.</p>
-                <p>
-                    ERP systems have revolutionized the way businesses operate, enabling them to streamline processes,
-                    improve efficiency, and make data-driven decisions. Customers from various industries have
-                    experienced remarkable transformations through the implementation of ERP solutions.
-                    <br>
-                    Retailers have enhanced inventory management by gaining real-time visibility into stock levels,
-                    reducing overstock and stockouts. With seamless integrations across departments, manufacturing
-                    companies have optimized production schedules, ensuring timely delivery and reduced costs.
-                    Service-based businesses have seen improved customer satisfaction through efficient resource
-                    allocation and faster response times.
+    <header class="modern-hero">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+            <div class="animated-shapes">
+                <div class="shape-blob blob-1"></div>
+                <div class="shape-blob blob-2"></div>
+                <div class="shape-blob blob-3"></div>
             </div>
-            <button>Talk To our expert!</button>
         </div>
-
-        <div class="header-image">
-            <!-- <a href="#"><img src="/assests/grocery-store-with-fruits-vegetables-shopping-variety-tastes_1204564-5376.avif" alt=""></a> -->
-            <span class="cd-1"><img src="/assests/7510951.jpg" alt="image" class="md1"></span>
-            <span class="cd-2"><img src="/assests/4529.jpg" alt="image" class="md2"></span>
-            <span class="cd-3"><img src="/assests/7939485.jpg" alt="image" class="md3"></span>
-            <span class="cd-4"><img src="/assests/57206-O97UOA-740.jpg" alt="image" class="md4"></span>
-            <span class="cd-5"><img src="/assests/6631237.jpg" alt="image" class="md5"></span>
-            <span class="cd-6"><img src="/assests/3538433.jpg" alt="image" class="md6"></span>
-            <span class="cd-7"><img src="/assests/OIUG2I0.jpg" alt="image" class="md7"></span>
-            <span class="cd-8"><img src="/assests/264816-P57YFF-396.jpg" alt="image" class="md8"></span>
+        
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-badge">
+                    <span class="badge-icon">🚀</span>
+                    <span>Trusted by 500+ Companies</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Real Stories,
+                    <span class="highlight-text">Real Results</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Join the ranks of successful businesses that have transformed their operations 
+                    and achieved remarkable growth with our innovative ERP solutions.
+                </p>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Companies</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Satisfaction</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4.9</div>
+                        <div class="stat-label">Rating</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">150%</div>
+                        <div class="stat-label">Avg Growth</div>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <button class="cta-primary" onclick="togglePopup()">
+                        <span>Get Started Today</span>
+                        <div class="btn-arrow">→</div>
+                    </button>
+                    <button class="cta-secondary">
+                        <div class="play-icon">▶</div>
+                        <span>Watch Success Stories</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-right">
+                <div class="testimonial-showcase">
+                    <div class="testimonial-card active" data-testimonial="1">
+                        <div class="card-header">
+                            <div class="client-photo">
+                                <img src="/assests/7510951.jpg" alt="Sarah Johnson">
+                                <div class="verified-badge">✓</div>
+                            </div>
+                            <div class="client-info">
+                                <h3>Sarah Johnson</h3>
+                                <p>CEO, RetailMax</p>
+                                <div class="company-tag retail">Retail</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <!-- <div class="quote-mark">"</div> -->
+                            <p class="testimonial-quote">
+                                "Dukaandari revolutionized our inventory management. We reduced costs by 40% 
+                                and improved customer satisfaction dramatically."
+                            </p>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-text">5.0</span>
+                            </div>
+                        </div>
+                        <div class="impact-metrics">
+                            <div class="metric">
+                                <span class="metric-value">40%</span>
+                                <span class="metric-desc">Cost Reduction</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">3x</span>
+                                <span class="metric-desc">Faster Processing</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card" data-testimonial="2">
+                        <div class="card-header">
+                            <div class="client-photo">
+                                <img src="/assests/4529.jpg" alt="Michael Chen">
+                                <div class="verified-badge">✓</div>
+                            </div>
+                            <div class="client-info">
+                                <h3>Michael Chen</h3>
+                                <p>CTO, TechFlow</p>
+                                <div class="company-tag tech">Technology</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <!-- <div class="quote-mark">"</div> -->
+                            <p class="testimonial-quote">
+                                "The integration was seamless and the ROI was immediate. Our team productivity 
+                                increased by 60% in just the first month."
+                            </p>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-text">5.0</span>
+                            </div>
+                        </div>
+                        <div class="impact-metrics">
+                            <div class="metric">
+                                <span class="metric-value">60%</span>
+                                <span class="metric-desc">Productivity Boost</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">2 weeks</span>
+                                <span class="metric-desc">Implementation</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card" data-testimonial="3">
+                        <div class="card-header">
+                            <div class="client-photo">
+                                <img src="/assests/7939485.jpg" alt="Dr. Emily Rodriguez">
+                                <div class="verified-badge">✓</div>
+                            </div>
+                            <div class="client-info">
+                                <h3>Dr. Emily Rodriguez</h3>
+                                <p>Director, HealthCare Plus</p>
+                                <div class="company-tag healthcare">Healthcare</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <!-- <div class="quote-mark">"</div> -->
+                            <p class="testimonial-quote">
+                                "Patient care improved significantly with streamlined processes. We now serve 
+                                50% more patients with the same resources."
+                            </p>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-text">5.0</span>
+                            </div>
+                        </div>
+                        <div class="impact-metrics">
+                            <div class="metric">
+                                <span class="metric-value">50%</span>
+                                <span class="metric-desc">More Patients</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">95%</span>
+                                <span class="metric-desc">Satisfaction Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-controls">
+                    <button class="control-dot active" data-target="1"></button>
+                    <button class="control-dot" data-target="2"></button>
+                    <button class="control-dot" data-target="3"></button>
+                </div>
+            </div>
         </div>
+        
+        <script>
+            // Enhanced testimonial slider with better error handling
+            document.addEventListener('DOMContentLoaded', function() {
+                let currentTestimonial = 1;
+                let autoRotateInterval;
+                
+                const testimonialCards = document.querySelectorAll('.testimonial-card');
+                const controlDots = document.querySelectorAll('.control-dot');
+                
+                // Debug: Check if elements exist
+                console.log('Testimonial cards found:', testimonialCards.length);
+                console.log('Control dots found:', controlDots.length);
+                
+                function showTestimonial(index) {
+                    // Remove active class from all cards and dots
+                    testimonialCards.forEach(card => {
+                        card.classList.remove('active');
+                    });
+                    controlDots.forEach(dot => {
+                        dot.classList.remove('active');
+                    });
+                    
+                    // Add active class to target elements
+                    const targetCard = document.querySelector(`[data-testimonial="${index}"]`);
+                    const targetDot = document.querySelector(`[data-target="${index}"]`);
+                    
+                    if (targetCard) {
+                        targetCard.classList.add('active');
+                        console.log(`Activated testimonial ${index}`);
+                    } else {
+                        console.error(`Testimonial card ${index} not found`);
+                    }
+                    
+                    if (targetDot) {
+                        targetDot.classList.add('active');
+                    } else {
+                        console.error(`Control dot ${index} not found`);
+                    }
+                    
+                    currentTestimonial = index;
+                }
+                
+                function nextTestimonial() {
+                    const next = currentTestimonial >= testimonialCards.length ? 1 : currentTestimonial + 1;
+                    showTestimonial(next);
+                }
+                
+                function startAutoRotate() {
+                    if (autoRotateInterval) clearInterval(autoRotateInterval);
+                    autoRotateInterval = setInterval(nextTestimonial, 5000);
+                }
+                
+                function stopAutoRotate() {
+                    if (autoRotateInterval) clearInterval(autoRotateInterval);
+                }
+                
+                // Add click handlers to dots
+                controlDots.forEach((dot, index) => {
+                    dot.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const target = parseInt(dot.dataset.target);
+                        console.log(`Dot clicked: ${target}`);
+                        showTestimonial(target);
+                        
+                        // Restart auto-rotate after manual interaction
+                        stopAutoRotate();
+                        setTimeout(startAutoRotate, 3000);
+                    });
+                });
+                
+                // Add keyboard navigation
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowLeft') {
+                        const prev = currentTestimonial <= 1 ? testimonialCards.length : currentTestimonial - 1;
+                        showTestimonial(prev);
+                        stopAutoRotate();
+                        setTimeout(startAutoRotate, 3000);
+                    } else if (e.key === 'ArrowRight') {
+                        nextTestimonial();
+                        stopAutoRotate();
+                        setTimeout(startAutoRotate, 3000);
+                    }
+                });
+                
+                // Pause auto-rotate on hover
+                const testimonialShowcase = document.querySelector('.testimonial-showcase');
+                if (testimonialShowcase) {
+                    testimonialShowcase.addEventListener('mouseenter', stopAutoRotate);
+                    testimonialShowcase.addEventListener('mouseleave', startAutoRotate);
+                }
+                
+                // Initialize first testimonial and start auto-rotate
+                showTestimonial(1);
+                startAutoRotate();
+                
+                console.log('Testimonial slider initialized successfully');
+            });
+        </script>
     </header>
 
-    <div class="exp">
-        <div class="dv">
-            <h2>5</h2>
-        </div>
-        <div class="inner-dv">
-            <h3>Years of Experience</h3>
-            <p>With over 5 years of experience in the industry, we have developed a deep understanding of the
-                challenges faced by businesses and the solutions needed to overcome them.</p>
-            <button>Book a Demo!</button>
-        </div>
-        <div class="grid">
-            <div style="border-right: 1px solid;border-bottom: 1px solid;"><strong>100+</strong>
-                <p>Employee</p>
+    <section class="impact-zone">
+        <div class="zone-background">
+            <div class="neural-network">
+                <div class="network-node node-1"></div>
+                <div class="network-node node-2"></div>
+                <div class="network-node node-3"></div>
+                <div class="network-node node-4"></div>
+                <div class="network-node node-5"></div>
+                <div class="network-connection conn-1"></div>
+                <div class="network-connection conn-2"></div>
+                <div class="network-connection conn-3"></div>
+                <div class="network-connection conn-4"></div>
             </div>
-            <div style="border-bottom: 1px solid;"><strong>10</strong>
-                <p>Awards win</p>
-            </div>
-            <div style="border-right: 1px solid;"><strong>40</strong>
-                <p>consultants</p>
-            </div>
-            <div><strong>100+</strong>
-                <p>Businesses</p>
+            <div class="floating-geometry">
+                <div class="geo-shape triangle-1"></div>
+                <div class="geo-shape circle-1"></div>
+                <div class="geo-shape hexagon-1"></div>
+                <div class="geo-shape triangle-2"></div>
+                <div class="geo-shape circle-2"></div>
             </div>
         </div>
-    </div>
+        <div class="zone-container">
+            <div class="impact-main">
+                <div class="experience-hub">
+                    <div class="hub-core">
+                        <div class="core-ring"></div>
+                        <div class="core-center">
+                            <span class="core-number">5+</span>
+                            <span class="core-label">Years</span>
+                        </div>
+                        <div class="orbit-dots">
+                            <div class="orbit-dot dot-1"></div>
+                            <div class="orbit-dot dot-2"></div>
+                            <div class="orbit-dot dot-3"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="hub-content">
+                        <h2 class="impact-title">
+                            <span class="holographic-text">Industry</span>
+                            <span class="title-glow neon-pulse">Leadership</span>
+                        </h2>
+                        <p class="impact-description cyber-text">
+                            Pioneering next-generation ERP solutions with proven expertise across 
+                            diverse industries, delivering transformational results at scale.
+                        </p>
+                        <button class="quantum-btn enhanced" onclick="togglePopup()">
+                            <div class="btn-background">
+                                <div class="energy-wave wave-1"></div>
+                                <div class="energy-wave wave-2"></div>
+                                <div class="energy-wave wave-3"></div>
+                            </div>
+                            <span class="btn-core">
+                                <span class="btn-text">Book Demo</span>
+                                <span class="btn-icon">⚡</span>
+                            </span>
+                            <div class="btn-particles">
+                                <span class="particle p-1"></span>
+                                <span class="particle p-2"></span>
+                                <span class="particle p-3"></span>
+                                <span class="particle p-4"></span>
+                                <span class="particle p-5"></span>
+                                <span class="particle p-6"></span>
+                            </div>
+                            <div class="quantum-field">
+                                <div class="field-line line-1"></div>
+                                <div class="field-line line-2"></div>
+                                <div class="field-line line-3"></div>
+                                <div class="field-line line-4"></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="metrics-constellation">
+                    <div class="constellation-item" data-metric="team" data-target="100">
+                        <div class="metric-orb">
+                            <div class="orb-glow"></div>
+                            <div class="orb-core">
+                                <span class="metric-value counter" data-count="100">0</span>
+                                <span class="metric-plus">+</span>
+                                <span class="metric-unit">Experts</span>
+                            </div>
+                            <div class="data-stream">
+                                <div class="stream-line"></div>
+                                <div class="stream-dots">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="metric-trail"></div>
+                    </div>
+                    
+                    <div class="constellation-item" data-metric="awards" data-target="10">
+                        <div class="metric-orb">
+                            <div class="orb-glow"></div>
+                            <div class="orb-core">
+                                <span class="metric-value counter" data-count="10">0</span>
+                                <span class="metric-plus"></span>
+                                <span class="metric-unit">Awards</span>
+                            </div>
+                            <div class="data-stream">
+                                <div class="stream-line"></div>
+                                <div class="stream-dots">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="metric-trail"></div>
+                    </div>
+                    
+                    <div class="constellation-item" data-metric="consultants" data-target="40">
+                        <div class="metric-orb">
+                            <div class="orb-glow"></div>
+                            <div class="orb-core">
+                                <span class="metric-value counter" data-count="40">0</span>
+                                <span class="metric-plus"></span>
+                                <span class="metric-unit">Consultants</span>
+                            </div>
+                            <div class="data-stream">
+                                <div class="stream-line"></div>
+                                <div class="stream-dots">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="metric-trail"></div>
+                    </div>
+                    
+                    <div class="constellation-item" data-metric="businesses" data-target="500">
+                        <div class="metric-orb">
+                            <div class="orb-glow"></div>
+                            <div class="orb-core">
+                                <span class="metric-value counter" data-count="500">0</span>
+                                <span class="metric-plus">+</span>
+                                <span class="metric-unit">Clients</span>
+                            </div>
+                            <div class="data-stream">
+                                <div class="stream-line"></div>
+                                <div class="stream-dots">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="metric-trail"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <style>
         .tabs {
@@ -203,110 +583,491 @@
             color: white;
         }
 
-        .content {
-            display: none;
+        /* Modern Corporate ERP Section Styles */
+        main {
+	background: #ffffff;
+	padding: 53px 20px;
+	max-width: 1400px;
+	margin: auto;
+	position: relative;
+	min-height: 800px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    margin-top: 43px;
+}
+
+        main h2 {
+            font-size: 30px;
+            font-weight: 800;
+            color: #1e293b;
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            letter-spacing: -0.02em;
         }
 
-        .content.active {
-            display: block;
+        .erp-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        /* Central Business Professional Figure */
+        .central-figure {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 280px;
+            height: 280px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            z-index: 10;
+            overflow: hidden;
+        }
+
+        .central-figure img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .business-icon {
+            width: 120px;
+            height: 120px;
+            background: #3b82f6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            position: relative;
+        }
+
+        .business-icon::after {
+            content: '💼';
+            font-size: 2.5rem;
+        }
+
+        /* Circular Dotted Lines */
+        .orbit-ring {
+            position: absolute;
+            border: 2px dotted #cbd5e1;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .orbit-ring-1 {
+            width: 400px;
+            height: 400px;
+            animation: rotate 30s linear infinite;
+        }
+
+        .orbit-ring-2 {
+            width: 520px;
+            height: 520px;
+            animation: rotate 45s linear infinite reverse;
+            border-color: #e2e8f0;
+        }
+
+        .orbit-ring-3 {
+            width: 640px;
+            height: 640px;
+            animation: rotate 60s linear infinite;
+            border-color: #f1f5f9;
+        }
+
+        @keyframes rotate {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        /* Infographic Icons */
+        .info-icon {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border: 3px solid #e2e8f0;
+            font-size: 1.5rem;
+            z-index: 8;
+        }
+
+        .icon-chart { top: 80px; left: 50%; transform: translateX(-50%); }
+        .icon-barcode { top: 50%; right: 80px; transform: translateY(-50%); }
+        .icon-cart { bottom: 80px; left: 50%; transform: translateX(-50%); }
+        .icon-location { top: 50%; left: 80px; transform: translateY(-50%); }
+        .icon-docs { top: 150px; right: 150px; }
+        .icon-analytics { bottom: 150px; left: 150px; }
+
+        /* Feature Boxes */
+        .feature-box {
+            position: absolute;
+            width: 280px;
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+
+        .feature-box:hover {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .feature-box h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 12px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .feature-box p {
+            font-size: 0.9rem;
+            color: #64748b;
+            line-height: 1.6;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Feature Box Positioning - Centered Layout */
+        .feature-1 { top: 20px; left: 50%; transform: translateX(-50%) translateX(-200px); }
+        .feature-2 { top: 20px; left: 50%; transform: translateX(-50%) translateX(200px); }
+        .feature-3 { bottom: 20px; left: 50%; transform: translateX(-50%) translateX(-200px); }
+        .feature-4 { bottom: 20px; left: 50%; transform: translateX(-50%) translateX(200px); }
+        .feature-5 { top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%) translateX(380px); }
+        .feature-6 { top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%) translateX(-380px); }
+
+        /* Arrow Lines */
+        .arrow {
+            position: absolute;
+            z-index: 5;
+        }
+
+        .arrow::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #3b82f6;
+            animation: drawLine 2s ease-in-out infinite;
+        }
+
+        .arrow::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            animation: showArrow 2s ease-in-out infinite;
+        }
+
+        @keyframes drawLine {
+            0% { width: 0; }
+            50% { width: 100%; }
+            100% { width: 100%; }
+        }
+
+        @keyframes showArrow {
+            0%, 50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Arrow 1 - Top Left (from center outward) */
+        .arrow-1 {
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%) translateY(-70px) translateX(-70px) rotate(-45deg);
+            width: 120px;
+        }
+
+        .arrow-1::before {
+            width: 120px;
+        }
+
+        .arrow-1::after {
+            right: -8px;
+            top: -4px;
+            border-left: 8px solid #3b82f6;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+        }
+
+        /* Arrow 2 - Top Right (from center outward) */
+        .arrow-2 {
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%) translateY(-70px) translateX(70px) rotate(45deg);
+            width: 120px;
+        }
+
+        .arrow-2::before {
+            width: 120px;
+        }
+
+        .arrow-2::after {
+            right: -8px;
+            top: -4px;
+            border-left: 8px solid #3b82f6;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+        }
+
+        /* Arrow 3 - Bottom Left (from center outward) */
+        .arrow-3 {
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%) translateY(70px) translateX(-70px) rotate(-135deg);
+            width: 120px;
+        }
+
+        .arrow-3::before {
+            width: 120px;
+        }
+
+        .arrow-3::after {
+            right: -8px;
+            top: -4px;
+            border-left: 8px solid #3b82f6;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+        }
+
+        /* Arrow 4 - Bottom Right (from center outward) */
+        .arrow-4 {
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%) translateY(70px) translateX(70px) rotate(135deg);
+            width: 120px;
+        }
+
+        .arrow-4::before {
+            width: 120px;
+        }
+
+        .arrow-4::after {
+            right: -8px;
+            top: -4px;
+            border-left: 8px solid #3b82f6;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+        }
+
+        /* Arrow 5 - Right (from center outward) */
+        .arrow-5 {
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%) translateX(140px);
+            width: 140px;
+        }
+
+        .arrow-5::before {
+            width: 140px;
+        }
+
+        .arrow-5::after {
+            right: -8px;
+            top: -4px;
+            border-left: 8px solid #3b82f6;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+        }
+
+        /* Arrow 6 - Left (from center outward) */
+        .arrow-6 {
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%) translateX(-140px) rotate(180deg);
+            width: 140px;
+        }
+
+        .arrow-6::before {
+            width: 140px;
+        }
+
+        .arrow-6::after {
+            right: -8px;
+            top: -4px;
+            border-left: 8px solid #3b82f6;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+        }
+
+        /* Connection Dots */
+        .connection-dot {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #3b82f6;
+            border-radius: 50%;
+            z-index: 6;
+        }
+
+        .dot-1 { top: 180px; left: 50%; transform: translateX(-50%) translateX(-140px); }
+        .dot-2 { top: 180px; left: 50%; transform: translateX(-50%) translateX(140px); }
+        .dot-3 { bottom: 180px; left: 50%; transform: translateX(-50%) translateX(-140px); }
+        .dot-4 { bottom: 180px; left: 50%; transform: translateX(-50%) translateX(140px); }
+        .dot-5 { top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%) translateX(180px); }
+        .dot-6 { top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%) translateX(-180px); }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .erp-container { max-width: 1000px; height: 650px; }
+            .feature-box { width: 260px; padding: 22px; }
+            .central-figure { width: 260px; height: 260px; }
+        }
+
+        @media (max-width: 1024px) {
+            main { padding: 60px 15px; }
+            .erp-container { max-width: 800px; height: 600px; }
+            .central-figure { width: 240px; height: 240px; }
+            .orbit-ring-1 { width: 340px; height: 340px; }
+            .orbit-ring-2 { width: 440px; height: 440px; }
+            .orbit-ring-3 { width: 540px; height: 540px; }
+            .feature-box { width: 240px; padding: 20px; }
+            .feature-1 { transform: translateX(-50%) translateX(-180px); }
+            .feature-2 { transform: translateX(-50%) translateX(180px); }
+            .feature-3 { transform: translateX(-50%) translateX(-180px); }
+            .feature-4 { transform: translateX(-50%) translateX(180px); }
+            .feature-5 { transform: translateY(-50%) translateX(-50%) translateX(320px); }
+            .feature-6 { transform: translateY(-50%) translateX(-50%) translateX(-320px); }
+        }
+
+        @media (max-width: 768px) {
+            main { padding: 40px 15px; min-height: auto; }
+            main h2 { font-size: 2.2rem; margin-bottom: 40px; }
+            .erp-container { 
+                height: auto;
+                flex-direction: column;
+                padding: 40px 0;
+            }
+            .central-figure { 
+                position: static;
+                transform: none;
+                width: 200px; 
+                height: 200px;
+                margin-bottom: 40px;
+            }
+            .orbit-ring-1, .orbit-ring-2, .orbit-ring-3 { display: none; }
+            .feature-box { 
+                position: static;
+                width: 100%;
+                max-width: 320px;
+                padding: 20px;
+                margin: 15px 0;
+                transform: none;
+            }
+            .arrow, .connection-dot { display: none; }
+        }
+
+        @media (max-width: 480px) {
+            main { padding: 30px 10px; }
+            main h2 { font-size: 1.8rem; }
+            .central-figure { width: 160px; height: 160px; }
+            .feature-box { 
+                padding: 16px;
+                margin: 10px 0;
+            }
+            .feature-box h3 { font-size: 1.1rem; }
+            .feature-box p { font-size: 0.85rem; }
         }
     </style>
 
     <main>
-        <div style="flex: 1;">
-            <h2>Get More With Us</h2>
-            <div class="containers">
-                <aside class="HTMList">
-                    <!-- <div>
-                        <a href="#" onclick="showContent('content1',event)" id="LinkId1">01</a>
-                    </div>
-                    <div>
-                        <a href="#" onclick="showContent('content2',event)">02</a>
-                    </div>
-                    <div>
-                        <a href="#" onclick="showContent('content3',event)">0ncla>
-                    </div>
-                    <div>
-                        <a href="#" onclick="showContent('content4',event)">04 </a>
-                    </div> -->
+        <h2>Comprehensive Retail ERP Solutions</h2>
+        <div class="containers">
 
-                    <div class="tabs">
-                        <div class="tab-button" data-tab="1">01</div>
-                        <div class="tab-button" data-tab="2">02</div>
-                        <div class="tab-button" data-tab="3">03</div>
-                        <div class="tab-button" data-tab="4">04</div>
-                    </div>
-                </aside>
-
-                <div class="contents">
-                    <div class="content" id="content-1">
-                        <h2>
-                            CUSTOMER SERVICE
-                        </h2>
-                        <p>Every customer of DreamSoft can get access to our friendly and qualified 24/7 support via
-                            chat or phone. Feel free to ask us any questions!</p>
-                        <span><button class="btn1">Get in touch</button></span><span><button class="btn2">Book a
-                                demo</button></span>
+                <div class="erp-container">
+                    <!-- Central Business Professional Figure -->
+                    <div class="central-figure">
+                        <img src="/assests/Untitled design (6).png" alt="">
+                        <!-- <div class="business-icon"></div> -->
                     </div>
 
-                    <div class="content" id="content-2">
-                        <h2>
-                            GREAT USABILITY
-                        </h2>
-                        <p>All our apps are designed to have great usability in order to easily operate our
-                            applications. That is why our software has high ratings and lots of awards.</p>
-                        <span><button class="btn1">Get in touch</button></span><span><button class="btn2">Book a
-                                demo</button></span>
+                    <!-- Circular Dotted Lines -->
+                    <div class="orbit-ring orbit-ring-1"></div>
+                    <div class="orbit-ring orbit-ring-2"></div>
+                    <div class="orbit-ring orbit-ring-3"></div>
+
+                    <!-- Infographic Icons -->
+                    <!-- <div class="info-icon icon-chart">📊</div>
+                    <div class="info-icon icon-barcode">🏷️</div>
+                    <div class="info-icon icon-cart">🛒</div>
+                    <div class="info-icon icon-location">📍</div>
+                    <div class="info-icon icon-docs">📋</div>
+                    <div class="info-icon icon-analytics">📈</div> -->
+
+                    <!-- Feature Boxes -->
+                    <div class="feature-box feature-1">
+                        <h3>Inventory Management</h3>
+                        <p>Real-time stock tracking across multiple locations with automated reorder points and comprehensive reporting.</p>
                     </div>
 
-                    <div class="content" id="content-3">
-                        <h2>
-                            CUSTOMER SERVICE
-                        </h2>
-                        <p>Every customer of DreamSoft can get access to our friendly and qualified 24/7 support via
-                            chat or phone. Feel free to ask us any questions!</p>
-                        <span><button class="btn1">Get in touch</button></span><span><button class="btn2">Book a
-                                demo</button></span>
+                    <div class="feature-box feature-2">
+                        <h3>Sales Analytics</h3>
+                        <p>Advanced analytics and reporting tools to track performance, identify trends, and make data-driven decisions.</p>
                     </div>
 
-                    <div class="content" id="content-4">
-                        <h2>
-                            CUSTOMER SERVICE
-                        </h2>
-                        <p>Every customer of DreamSoft can get access to our friendly and qualified 24/7 support via
-                            chat or phone. Feel free to ask us any questions!</p>
-                        <span><button class="btn1">Get in touch</button></span><span><button class="btn2">Book a
-                                demo</button></span>
+                    <div class="feature-box feature-3">
+                        <h3>Multi-Store Operations</h3>
+                        <p>Centralized management of multiple retail locations with unified inventory, pricing, and customer data.</p>
                     </div>
 
+                    <div class="feature-box feature-4">
+                        <h3>Customer Management</h3>
+                        <p>Complete customer relationship management with purchase history, loyalty programs, and personalized marketing.</p>
+                    </div>
+
+                    <div class="feature-box feature-5">
+                        <h3>Financial Integration</h3>
+                        <p>Seamless integration with accounting systems, automated invoicing, and comprehensive financial reporting.</p>
+                    </div>
+
+                    <div class="feature-box feature-6">
+                        <h3>Supply Chain Management</h3>
+                        <p>End-to-end supply chain visibility with vendor management, purchase orders, and automated procurement workflows.</p>
+                    </div>
+
+                    <!-- Arrows -->
+                    <div class="arrow arrow-1"></div>
+                    <div class="arrow arrow-2"></div>
+                    <div class="arrow arrow-3"></div>
+                    <div class="arrow arrow-4"></div>
+                    <div class="arrow arrow-5"></div>
+                    <div class="arrow arrow-6"></div>
+
+                    <!-- Connection Dots -->
+                    <div class="connection-dot dot-1"></div>
+                    <div class="connection-dot dot-2"></div>
+                    <div class="connection-dot dot-3"></div>
+                    <div class="connection-dot dot-4"></div>
+                    <div class="connection-dot dot-5"></div>
+                    <div class="connection-dot dot-6"></div>
                 </div>
-            </div>
-        </div>
-        <div>
-            <img src="/assests/combined.png" alt="Image">
         </div>
     </main>
-    <script>
-        const tabButtons = document.querySelectorAll('.tab-button');
-        const contents = document.querySelectorAll('.content');
-
-        tabButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const tabId = button.getAttribute('data-tab');
-
-                // Remove active class from all buttons and contents
-                tabButtons.forEach(btn => btn.classList.remove('active'));
-                contents.forEach(content => content.classList.remove('active'));
-
-                // Add active class to the clicked button and corresponding content
-                button.classList.add('active');
-                document.getElementById(`content-${tabId}`).classList.add('active');
-            });
-        });
-
-        // Optional: Activate first tab by default
-        tabButtons[0].click();
-    </script>
 
 <section class="pricing-section" id="price">
     <div class="container">
@@ -352,7 +1113,7 @@
 
             <!-- Standard Plan (Featured) -->
             <div class="pricing-card featured">
-                <div class="popular-tag">Most Popular</div>
+                <!-- <div class="popular-tag">Most Popular</div> -->
                 <div class="plan-header">
                     <div class="plan-icon">
                         <img src="/assests/badge.png" alt="Standard Plan">
@@ -407,10 +1168,10 @@
             </div>
         </div>
 
-        <div class="enterprise-cta">
+        <!-- <div class="enterprise-cta">
             <p>Need a custom solution for your enterprise?</p>
             <a href="#contact" class="enterprise-link">Contact Sales <span>→</span></a>
-        </div>
+        </div> -->
     </div>
 </section>
 
@@ -423,7 +1184,7 @@
 </script>
 
 
-    <section style="padding-top: 60px;text-align: center;color: black;height: 121vh;">
+    <section style="padding-top: 60px;text-align: center;color: black;height: fit-content;background-color: #ffffff;">
         <h2 class="ed">Our Customers</h2>
         <i style="letter-spacing: 3px; font-weight: 600;color: #3d6588;">Making Dukaandari a reliable and trustable
             System among Customers</i>
@@ -552,55 +1313,902 @@
         </section>
     </section>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-brand">
-                <h3 class="footer-logo">Dukaandari</h3>
-                <p class="footer-about">
-                    Dukaandari ERP is a comprehensive enterprise resource planning system designed to streamline and
-                    automate business operations. It offers modules for inventory management, sales tracking, billing,
-                    accounting, customer relationship management (CRM), and supplier coordination.
-                </p>
-                <div class="social-links">
-                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Messenger"><i class="fa-brands fa-facebook-messenger"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <style>
+        /* Modern Footer Styles */
+        .modern-footer {
+            position: relative;
+            /* background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%); */
+            color: white;
+            overflow: hidden;
+        }
+
+        .footer-wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            /* transform: rotate(180deg); */
+        }
+
+        .footer-wave svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 69px;
+        }
+
+        .footer-wave .shape-fill {
+            fill: #f8faff;
+        }
+
+        .footer-content {
+            position: relative;
+            z-index: 2;
+            padding: 80px 0 40px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
+            gap: 40px;
+        }
+
+        /* Brand Section */
+        .footer-brand {
+            max-width: 400px;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+        }
+
+        .logo-icon span {
+            font-size: 24px;
+            font-weight: 800;
+            color: white;
+        }
+
+        .brand-logo h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0;
+            background: linear-gradient(135deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .brand-description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+
+        .social-media {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-link {
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 12px;
+            padding: 2px;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-link:hover::before {
+            opacity: 1;
+        }
+
+        .social-link i {
+            font-size: 20px;
+            color: #cbd5e1;
+            transition: all 0.3s ease;
+            z-index: 1;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-link:hover i {
+            color: white;
+        }
+
+        /* Footer Sections */
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .section-title::after {
+	content: '';
+	position: absolute;
+	bottom: -8px;
+	left: 0;
+	width: 30px;
+	height: 3px;
+	/* background: linear-gradient(135deg, #3b82f6, #8b5cf6); */
+	border-radius: 2px;
+	background: white;
+}
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-link {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-link::before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            /* background: linear-gradient(135deg, #3b82f6, #8b5cf6); */
+            transition: width 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: white;
+            transform: translateX(5px);
+        }
+
+        .footer-link:hover::before {
+            width: 100%;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            /* background: linear-gradient(135deg, #3b82f6, #8b5cf6); */
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            background: #ffffff;
+        }
+
+        .contact-icon i {
+	font-size: 18px;
+	color: #404562;
+}
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .contact-label {
+            font-size: 12px;
+            color: #94a3b8;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .contact-value {
+            font-size: 15px;
+            color: #e2e8f0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-value:hover {
+            color: #60a5fa;
+        }
+
+        /* Footer Bottom */
+        .footer-bottom {
+            background: rgba(0, 0, 0, 0.2);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 25px 0;
+        }
+
+        .footer-bottom-content {
+	display: flex;
+	justify-content: space-between;
+	/* align-items: center; */
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+        .legal-link:hover {
+            color: #60a5fa;
+        }
+
+        .foot{
+            grid-template-columns: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .footer-container {
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 30px;
+            }
+
+            .footer-brand {
+                grid-column: 1 / -1;
+                max-width: none;
+                margin-bottom: 20px;
+            }
+
+            .contact-section {
+                grid-column: 1 / -1;
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                padding: 60px 0 30px;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .footer-brand {
+                text-align: center;
+            }
+
+            .brand-logo {
+                justify-content: center;
+            }
+
+            .social-media {
+                justify-content: center;
+            }
+
+            .footer-bottom-content {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .footer-legal {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-container {
+                padding: 0 15px;
+            }
+
+            .contact-section {
+                padding: 20px;
+            }
+
+            .footer-legal {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+
+    <!-- New Hero Section Styles -->
+    <style>
+        .hero-section {
+            position: relative;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .animated-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            gap: 2px;
+            opacity: 0.1;
+        }
+
+        .grid-item {
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+            animation: gridPulse 4s ease-in-out infinite;
+        }
+
+        .grid-item:nth-child(1) { animation-delay: 0s; }
+        .grid-item:nth-child(2) { animation-delay: 0.5s; }
+        .grid-item:nth-child(3) { animation-delay: 1s; }
+        .grid-item:nth-child(4) { animation-delay: 1.5s; }
+        .grid-item:nth-child(5) { animation-delay: 2s; }
+        .grid-item:nth-child(6) { animation-delay: 2.5s; }
+
+        @keyframes gridPulse {
+            0%, 100% { opacity: 0.1; transform: scale(1); }
+            50% { opacity: 0.3; transform: scale(1.05); }
+        }
+
+        .hero-container {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .hero-text {
+            color: white;
+        }
+
+        .breadcrumb {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .breadcrumb span:last-child {
+            color: #60a5fa;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 24px;
+        }
+
+        .accent {
+            background: linear-gradient(135deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-description {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #cbd5e1;
+            margin-bottom: 40px;
+        }
+
+        .achievement-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .achievement-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .achievement-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .achievement-icon {
+            font-size: 2rem;
+        }
+
+        .achievement-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #60a5fa;
+            margin-bottom: 4px;
+        }
+
+        .achievement-label {
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary, .btn-secondary {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(59, 130, 246, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+        }
+
+        .hero-visual {
+            position: relative;
+        }
+
+        .testimonial-carousel {
+            position: relative;
+            height: 400px;
+            margin-bottom: 30px;
+        }
+
+        .testimonial-card {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(70px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 30px;
+            opacity: 0;
+            transform: translateX(100px);
+            transition: all 0.5s ease;
+        }
+
+        .testimonial-card.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .customer-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .customer-info h4 {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .customer-info p {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+
+        .industry-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .industry-badge.retail { background: #fef3c7; color: #92400e; }
+        .industry-badge.tech { background: #dbeafe; color: #1e40af; }
+        .industry-badge.healthcare { background: #dcfce7; color: #166534; }
+
+        .testimonial-content {
+            position: relative;
+        }
+
+        .quote-icon {
+            font-size: 4rem;
+            color: #3b82f6;
+            opacity: 0.3;
+            position: absolute;
+            top: -20px;
+            left: -10px;
+        }
+
+        .testimonial-content p {
+            color: #e2e8f0;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .rating {
+            color: #fbbf24;
+            font-size: 1.2rem;
+        }
+
+        .carousel-controls {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .carousel-btn {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .carousel-btn.active {
+            background: #3b82f6;
+            transform: scale(1.2);
+        }
+
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .float-element {
+            position: absolute;
+            font-size: 2rem;
+            opacity: 0.6;
+            animation: floatAround 8s ease-in-out infinite;
+        }
+
+        .element-1 {
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .element-2 {
+            top: 20%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+
+        .element-3 {
+            bottom: 30%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+
+        .element-4 {
+            bottom: 10%;
+            right: 10%;
+            animation-delay: 6s;
+        }
+
+        @keyframes floatAround {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            25% { transform: translateY(-20px) rotate(90deg); }
+            50% { transform: translateY(-10px) rotate(180deg); }
+            75% { transform: translateY(-30px) rotate(270deg); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 60px;
+                text-align: center;
+            }
+
+            .hero-title {
+                font-size: 3.5rem;
+            }
+
+            .achievement-cards {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                min-height: auto;
+                padding: 80px 0;
+            }
+
+            .hero-container {
+                padding: 0 15px;
+            }
+
+            .hero-title {
+                font-size: 2.8rem;
+            }
+
+            .achievement-cards {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .testimonial-carousel {
+                height: 350px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2.2rem;
+            }
+
+            .testimonial-card {
+                padding: 20px;
+            }
+        }
+        
+        .footer-legal {
+            flex-direction: column;
+            gap: 10px;
+        }
+    </style>
+
+    <!-- Modern Footer Design -->
+    <footer class="modern-footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        
+        <div class="footer-content">
+            <div class="footer-container">
+                <!-- Brand Section -->
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <div class="logo-icon">
+                            <span>D</span>
+                        </div>
+                        <h3>Dukaandari</h3>
+                    </div>
+                    <p class="brand-description">
+                        Empowering businesses with comprehensive ERP solutions. Streamline operations, boost productivity, and drive growth with our intelligent business management platform.
+                    </p>
+                    <div class="social-media">
+                        <a href="#" class="social-link facebook" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link twitter" aria-label="Twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link instagram" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4 class="section-title">Solutions</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Inventory Management</a></li>
+                        <li><a href="#" class="footer-link">Point of Sale</a></li>
+                        <li><a href="#" class="footer-link">Retail Analytics</a></li>
+                        <li><a href="#" class="footer-link">Supply Chain</a></li>
+                        <li><a href="#" class="footer-link">Customer Management</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Links -->
+                <div class="footer-section">
+                    <h4 class="section-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="#" class="footer-link">Success Stories</a></li>
+                        <li><a href="#" class="footer-link">Blog</a></li>
+                        <li><a href="#" class="footer-link">Press</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="footer-section">
+                    <h4 class="section-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">Documentation</a></li>
+                        <li><a href="#" class="footer-link">API Reference</a></li>
+                        <li><a href="#" class="footer-link">Community</a></li>
+                        <li><a href="#" class="footer-link">Contact Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section contact-section">
+                    <h4 class="section-title">Get in Touch</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:mail@dukaandari.com" class="contact-value">mail@dukaandari.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+918521454900" class="contact-value">+91 85214 54900</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Address</span>
+                                <span class="contact-value">Vista Tower, Bella Vista society, Noida Extension sector 1- 201306</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#">Omnichannel</a></li>
-                    <li><a href="#">POS</a></li>
-                    <li><a href="#">Retail Stores</a></li>
-                    <li><a href="#">ERP Software</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-links">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">How it Works</a></li>
-                    <li><a href="#">Client Feedback</a></li>
-                    <li><a href="#">Smart Retail</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-links">
-                <h4>Contact Us</h4>
-                <ul class="contact-info">
-                    <li><i class="fa-solid fa-envelope"></i> <a
-                            href="mailto:mail@dukaandari.com">mail@dukaandari.com</a></li>
-                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+918521454900">+91 85214 54900</a></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Your Company Address</li>
-                </ul>
-            </div>
         </div>
-        <div class="copyright">
-            &copy; 2024 Dukaandari. All rights reserved.
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-container foot">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2024 Dukaandari. All rights reserved.</p>
+                    </div>
+                    <div class="footer-legal">
+                        <a href="#" class="legal-link">Privacy Policy</a>
+                        <a href="#" class="legal-link">Terms of Service</a>
+                        <a href="#" class="legal-link">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -646,7 +2254,6 @@
     <script src="/script.js"></script>
 
     <script>
-            < script >
             function togglePopup() {
                 const popup = document.getElementById("popup-1");
                 const overlay = document.getElementById("overlay");
@@ -662,6 +2269,156 @@
                     body.classList.add("popup-active"); // Prevent scrolling
                 }
             }
+
+            // Simple Slider with inline styles
+            let currentSlide = 1;
+            let slideTimer;
+            
+            function showSlide(slideNumber) {
+                // Hide all slides
+                document.getElementById('slide1').style.display = 'none';
+                document.getElementById('slide2').style.display = 'none';
+                document.getElementById('slide3').style.display = 'none';
+                
+                // Reset all dots
+                const dots = document.querySelectorAll('.slider-dot');
+                dots.forEach(dot => {
+                    dot.style.background = 'rgba(255, 255, 255, 0.4)';
+                    dot.style.transform = 'scale(1)';
+                });
+                
+                // Show selected slide
+                document.getElementById('slide' + slideNumber).style.display = 'block';
+                
+                // Highlight active dot
+                dots[slideNumber - 1].style.background = '#ffd700';
+                dots[slideNumber - 1].style.transform = 'scale(1.2)';
+                
+                currentSlide = slideNumber;
+            }
+            
+            function nextSlide() {
+                let next = currentSlide + 1;
+                if (next > 3) next = 1;
+                showSlide(next);
+            }
+            
+            function startAutoSlide() {
+                slideTimer = setInterval(nextSlide, 4000);
+            }
+            
+            function stopAutoSlide() {
+                if (slideTimer) {
+                    clearInterval(slideTimer);
+                }
+            }
+            
+            // Start slider when page loads
+            setTimeout(function() {
+                showSlide(1);
+                startAutoSlide();
+            }, 500);
+
+            // Enhanced Interactive Animations
+            document.addEventListener('DOMContentLoaded', function() {
+                // Animate elements on scroll
+                const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -50px 0px'
+                };
+
+                const observer = new IntersectionObserver(function(entries) {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('animate-in');
+                        }
+                    });
+                }, observerOptions);
+
+                // Observe impact zone elements
+                const impactElements = document.querySelectorAll('.constellation-item, .experience-hub, .hero-content, .testimonial-card');
+                impactElements.forEach(el => observer.observe(el));
+
+                // Add particle effect on button hover
+                const ctaButtons = document.querySelectorAll('.cta-button, .cta-secondary');
+                ctaButtons.forEach(button => {
+                    button.addEventListener('mouseenter', function() {
+                        this.classList.add('particle-effect');
+                    });
+                    button.addEventListener('mouseleave', function() {
+                        this.classList.remove('particle-effect');
+                    });
+                });
+
+                // Interactive orb pulsing
+                const metricOrbs = document.querySelectorAll('.metric-orb');
+                metricOrbs.forEach((orb, index) => {
+                    setTimeout(() => {
+                        orb.classList.add('pulse-animation');
+                    }, index * 200);
+                });
+
+                // Constellation connection lines animation
+                const constellationItems = document.querySelectorAll('.constellation-item');
+                constellationItems.forEach((item, index) => {
+                    item.addEventListener('mouseenter', function() {
+                        constellationItems.forEach((otherItem, otherIndex) => {
+                            if (index !== otherIndex) {
+                                otherItem.classList.add('connected');
+                            }
+                        });
+                    });
+                    item.addEventListener('mouseleave', function() {
+                        constellationItems.forEach(otherItem => {
+                            otherItem.classList.remove('connected');
+                        });
+                    });
+                });
+
+                // Animated Counter Function
+                function animateCounter(element, target, duration = 2000) {
+                    const start = 0;
+                    const increment = target / (duration / 16);
+                    let current = start;
+                    
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= target) {
+                            current = target;
+                            clearInterval(timer);
+                        }
+                        element.textContent = Math.floor(current);
+                    }, 16);
+                }
+
+                // Initialize counters when elements come into view
+                const counterObserver = new IntersectionObserver(function(entries) {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const counter = entry.target.querySelector('.counter');
+                            const target = parseInt(counter.getAttribute('data-count'));
+                            animateCounter(counter, target);
+                            counterObserver.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+
+                // Observe all constellation items for counter animation
+                constellationItems.forEach(item => {
+                    counterObserver.observe(item);
+                });
+
+                // Enhanced quantum button effects
+                const quantumBtn = document.querySelector('.quantum-btn.enhanced');
+                if (quantumBtn) {
+                    quantumBtn.addEventListener('mouseenter', function() {
+                        this.classList.add('quantum-active');
+                    });
+                    quantumBtn.addEventListener('mouseleave', function() {
+                        this.classList.remove('quantum-active');
+                    });
+                }
+            });
     </script>
 
 </body>
